@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.padTop {
+  padding: 50px 0px;
+}
+
+body {
+  background-color: #B2E3EE;
+}
+
+.text {
+  color: #858591;
+}
