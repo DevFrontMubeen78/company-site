@@ -16,3 +16,9 @@ body {
 .text {
   color: #858591;
 }
+
+@media (max-width : 767.98px) {
+  .inline {
+    display: none;
+  }
+}
