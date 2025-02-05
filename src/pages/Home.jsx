@@ -1,12 +1,13 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import PageLastSec from "../components/PageLastSec";
 import mobile from "../../public/images/Group 70 1.png";
 import website from "../../public/images/website.png";
 import iPhone from "../../public/images/iPhone.png";
 import ai from "../../public/images/ai.png";
 import about from "../../public/images/about.png";
-import layer1 from "../../public/images/Layer 1.png";
-import layer2 from "../../public/images/Layer 2.png";
+// import layer1 from "../../public/images/Layer 1.png";
+// import layer2 from "../../public/images/Layer 2.png";
 import clint from "../../public/images/WhatsApp Image 2024-11-17 at 4.21.18 PM.png";
 import clint2 from "../../public/images/Rectangle 7.png";
 import video from "../../public/images/videos.png";
@@ -477,12 +478,15 @@ const Home = () => {
                 </p>
               </div>
               <div className="">
-               <img src={clint} alt="" />
+                <img src={clint} alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* last section  */}
+      <PageLastSec />
       <Footer />
     </div>
   );

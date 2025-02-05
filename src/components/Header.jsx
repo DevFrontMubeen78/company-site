@@ -5,7 +5,7 @@ const navMenu = [
     },
     {
         name: "about",
-        path: "#",
+        path: "/about",
     },
     {
         name: "service",
