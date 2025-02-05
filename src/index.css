@@ -22,6 +22,48 @@ body {
   margin: 0px auto;
 }
 
+.mobileApp {
+  background-image: url("../public/images/layer\ 2.png"), url("../public/images/layer\ 4.png");
+  background-repeat: no-repeat;
+  background-size: 10%, 40%;
+  background-position: left top, right bottom;
+}
+
+.AI {
+  background-image: url("../public/images/layer\ 5.png"), url("../public/images/layer\ 4.png");
+  background-repeat: no-repeat;
+  background-size: 10%, 32%;
+  background-position: left top, right bottom;
+}
+
+.Website {
+  background-image: url("../public/images/layer\ 3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
+
+.teams {
+  background-image: url("../public/images/teambg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.junior {
+  background-image: url("../public/images/member.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.cards {
+  background-image: url("../public/images/map.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
 @media (max-width: 767.98px) {
   .inline {
     display: none;
