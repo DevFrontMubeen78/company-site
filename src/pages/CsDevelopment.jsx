@@ -4,6 +4,10 @@ import PageLastSec from "../components/PageLastSec";
 import TeamEx from "/images/cs-development/team-ex.png";
 import productive from "/images/cs-development/productive=team.png";
 import collab from "/images/cs-development/collab.png";
+import BenefitsDTechKrew from "../components/BenefitsDTechKrew";
+import StageOfDev from "../components/StageOfDev";
+import IndWeWork from "../components/IndWeWork";
+import Technology from "../components/Technology";
 
 const CsDevelopments = {
   logos: [
@@ -153,7 +157,7 @@ const CsDevelopments = {
 const CsDevelopment = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <div
         style={{
           backgroundImage:
@@ -227,44 +231,7 @@ const CsDevelopment = () => {
       </div>
 
       {/* Benefits of DTechKrew */}
-      <div className="DTechKrewBen padTop">
-        <div className="container">
-          <div className="main flex flex-col gap-16">
-            <div className="section_title text-center">
-              <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
-                Benefits of DTechKrew Custom
-                <span className="text-[#FF0066]">
-                  {" "}
-                  Software <br className="inline" />
-                  Development Services{" "}
-                </span>
-              </h1>
-            </div>
-            <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
-                {CsDevelopments.DTechKrewBen.map((items, index) => {
-                  return (
-                    <div key={index} className="innertext flex flex-col gap-2">
-                      <h6 className="font-bold text-2xl">{items.title}</h6>
-                      <p className="text-base text">{items.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="flex flex-col gap-20">
-                {CsDevelopments.DTechKrewBen1.map((items, index) => {
-                  return (
-                    <div key={index} className="innertext flex flex-col gap-2">
-                      <h6 className="font-bold text-2xl">{items.title}</h6>
-                      <p className="text-base text">{items.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BenefitsDTechKrew />
 
       {/* // collaboration  */}
       <div className="collaboration padTop">
@@ -331,40 +298,7 @@ const CsDevelopment = () => {
       </div>
 
       {/* stages of development */}
-      <div className="corporate padTop">
-        <div className="container">
-          <div className="main flex flex-col gap-16">
-            <div className="section_title text-center">
-              <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
-                Stages of
-                <span className="text-[#FF0066]"> Development</span>
-              </h1>
-            </div>
-            <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
-                {CsDevelopments.stages.map((items, index) => {
-                  return (
-                    <div key={index} className="innertext flex flex-col gap-2">
-                      <h6 className="font-bold text-2xl">{items.title}</h6>
-                      <p className="text-base text">{items.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="flex flex-col gap-20">
-                {CsDevelopments.stages1.map((items, index) => {
-                  return (
-                    <div key={index} className="innertext flex flex-col gap-2">
-                      <h6 className="font-bold text-2xl">{items.title}</h6>
-                      <p className="text-base text">{items.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <StageOfDev />
 
       {/* Technology */}
       <div className="trust padTop">
@@ -376,60 +310,14 @@ const CsDevelopment = () => {
                 <span className="text-[#FF0066]"> Technology stack</span>
               </h1>
             </div>
-            <div className="logos grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
-              {CsDevelopments.logos.map((items, index) => (
-                <div
-                  key={index}
-                  className="bg-white shadow-md rounded-lg md:p-5 p-3 flex flex-col gap-5 justify-center items-center"
-                >
-                  <img
-                    src={items.logo1}
-                    alt={items.alt}
-                    className="w-full max-w-[120px] h-auto"
-                  />
-                  <h6 className="text text-base">{items.title}</h6>
-                </div>
-              ))}
-            </div>
+            {/* <>Technology</> */}
+            <Technology />
           </div>
         </div>
       </div>
 
       {/* intdustries We work */}
-      <div className="corporate padTop">
-        <div className="container">
-          <div className="main flex flex-col gap-16">
-            <div className="section_title text-center">
-              <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">
-                Industries
-                <span className="text-[#000]"> We Work With</span>
-              </h1>
-            </div>
-            <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
-                {CsDevelopments.IndWork.map((items, index) => {
-                  return (
-                    <div key={index} className="innertext flex flex-col gap-2">
-                      <h6 className="font-bold text-2xl">{items.title}</h6>
-                      <p className="text-base text">{items.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="flex flex-col gap-20">
-                {CsDevelopments.IndWork1.map((items, index) => {
-                  return (
-                    <div key={index} className="innertext flex flex-col gap-2">
-                      <h6 className="font-bold text-2xl">{items.title}</h6>
-                      <p className="text-base text">{items.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <IndWeWork />
 
       {/* last section  */}
       <PageLastSec />

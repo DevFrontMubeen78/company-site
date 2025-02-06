@@ -1,11 +1,11 @@
 // complete page 
 import Header from "../components/Header";
 import GoogleLogo from "/images/about/Vector.png"
-import gallery from "/images/about/every.png"
-import map from "/images/about/maps.png"
 import ReactStars from "react-rating-stars-component";
 import PageLastSec from "../components/PageLastSec";
-import { Link } from "react-router-dom";
+import GetStarted from "../components/GetStarted";
+import Teams from "../components/Teams";
+import Recrutment from "../components/Recrutment";
 
 const aboutContent = {
     logos: [
@@ -180,46 +180,7 @@ const About = () => {
             </div>
 
             {/* get started */}
-            <div className="getStarted padTop">
-                <div className="container">
-                    <div className="main flex flex-col gap-18">
-                        <div className="content text-center flex flex-col gap-8">
-                            <div className="flex flex-col gap-1">
-                                <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">Get started
-                                    <span className="text-[#000]"> with us</span>
-                                </h1>
-                                <p className="md:text-lg text-base leading-normal text-center md:w-6/12 w-full heading_content text">
-                                    Start with us today—fill out the form, and our sales team will help tailor the perfect solution for you.
-                                </p>
-                            </div>
-                            <Link className="bg-[#fff] p-3 rounded-full w-max block mx-auto px-10" to="#">Contact sales</Link>
-                        </div>
-                        <div className="grid grid-cols-12 md:gap-10 gap-5">
-                            {/* Left Side Box */}
-                            <div className="md:col-span-4 col-span-12 rounded-lg bg-white md:p-8 p-5">
-                                <h6 className="xl:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">
-                                    Innovative Solutions
-                                    <span className="text-black"> for Business Growth</span>
-                                </h6>
-                            </div>
-
-                            {/* Right Side Box */}
-                            <div className="md:col-span-8 col-span-12 rounded-lg bg-white md:p-8 p-5 flex flex-col md:gap-5 gap-3">
-                                <p className="md:text-lg text-base leading-relaxed text-gray-700">
-                                    DTechKrew is a dynamic software solutions company dedicated to empowering businesses worldwide.
-                                </p>
-                                <p className="md:text-lg text-base leading-relaxed text-gray-700">
-                                    With innovative technology, we transform challenges into lasting value, operational efficiency, and revenue growth.
-                                </p>
-                                <p className="md:text-lg text-base leading-relaxed text-gray-700">
-                                    Our tailored engineering services and advanced solutions drive business success, enabling our clients to thrive in a rapidly evolving digital landscape.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <GetStarted/>
 
             {/* trust us  */}
             <div className="trust padTop">
@@ -282,18 +243,7 @@ const About = () => {
             </div>
 
             {/* team  */}
-            <div className="team padTop">
-                <div className="main flex flex-col gap-20">
-                    <div className="section_title text-center">
-                        <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">Team that makes
-                            <span className="text-[#000]"> everything possible</span>
-                        </h1>
-                    </div>
-                    <div className="gallery">
-                        <img src={gallery} alt="gallery" />
-                    </div>
-                </div>
-            </div>
+            <Teams/>
 
             {/* corportate stage */}
             <div className="corporate padTop">
@@ -337,32 +287,7 @@ const About = () => {
                     </div>
 
                     {/* // second section  */}
-                    <div className="contentMap grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-                        <div className="flex flex-col gap-5">
-                            <p className="md:text-lg text-base leading-normal w-full heading_content text">
-                                Our international offices work in unison to serve clients across the globe, ensuring seamless collaboration across regions and time zones to deliver tailored support and solutions that meet each client’s specific requirements.
-                            </p>
-                            <div className="btns flex gap-5">
-                                {
-                                    aboutContent.btns.map((items, index) => {
-                                        return (
-                                            <Link
-                                                key={index}
-                                                className="bg-[#fff] py-2 px-10 rounded-full text"
-                                                to={items.path}
-                                            >
-                                                {items.btnName}
-                                            </Link>
-                                        );
-                                    })
-                                }
-
-                            </div>
-                        </div>
-                        <div className="map">
-                            <img src={map} alt="map" />
-                        </div>
-                    </div>
+                    <Recrutment/>
                 </div>
             </div>
 

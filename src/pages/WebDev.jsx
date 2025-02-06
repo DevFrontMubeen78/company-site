@@ -112,7 +112,7 @@ const WebDevs = {
 const WebDev = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <div
         style={{
           backgroundImage:
@@ -308,11 +308,11 @@ const WebDev = () => {
           <div className="main flex flex-col gap-16">
             <div className="content text-center flex flex-col gap-3">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
-              Why
+                Why
                 <span className="text-[#FF0066]"> DTeckrew?</span>
               </h1>
               <p className="md:text-lg text-base leading-normal text-center heading_content text">
-              Web app developer hires in DTechKrew are a worthwhile investment because we are:
+                Web app developer hires in DTechKrew are a worthwhile investment because we are:
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">

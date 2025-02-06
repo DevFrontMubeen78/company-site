@@ -17,8 +17,19 @@ const navMenu = [
             { name: "Custom Software Development", path: "/custom-software-development" },
         ],
     },
+    {
+        name: "Hire Developers",
+        path: "#",
+        subMenu: [
+            { name: "Hire Mobile App Developers", path: "/hire-mobile-app-developers" },
+            { name: "Hire IOS developers", path: "/hire-ios-developers" },
+            { name: "Hire Android developers", path: "/hire-android-developers" },
+            { name: "Hire Data Scientists", path: "/hire-data-scientists" },
+            { name: "Hire UI/UX Designers", path: "/hire-uiux" }
+        ],
+    },
     { name: "Case Studies", path: "#" },
-    { name: "Contact", path: "#" },
+    { name: "Contact", path: "/Contact-us" },
 ];
 
 const Header = () => {
@@ -36,7 +47,7 @@ const Header = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="lg:hidden text-gray-700 text-[#000] text-2xl"
+                        className="lg:hidden text-gray-700 font-bold text-[#fff] text-2xl"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         {isMobileMenuOpen ? <RiCloseLine /> : <RiMenu3Line />}
@@ -94,14 +105,14 @@ const Header = () => {
                                 {item.path !== "#" ? (
                                     <Link
                                         to={item.path}
-                                        className="block py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 px-4"
+                                        className="block py-2 px-4"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         {item.name}
                                     </Link>
                                 ) : (
                                     <button
-                                        className="flex justify-between w-full py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 px-4"
+                                        className="flex justify-between w-full py-2 font-bold text-[#fff] px-4"
                                         onClick={() => setDropdown(dropdown === index ? null : index)}
                                     >
                                         {item.name}
@@ -118,7 +129,7 @@ const Header = () => {
                                             <li key={subIndex}>
                                                 <Link
                                                     to={subItem.path}
-                                                    className="block px-6 py-2 text-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600"
+                                                    className="block px-6 py-2 font-bold text-[#fff]"
                                                     onClick={() => setIsMobileMenuOpen(false)}
                                                 >
                                                     {subItem.name}

@@ -1,31 +1,43 @@
 
 import PageLastSec from "../components/PageLastSec";
 import Header from "../components/Header";
+import BenefitsDTechKrew from "../components/BenefitsDTechKrew";
+import StageOfDev from "../components/StageOfDev";
+import IndWeWork from "../components/IndWeWork";
+
 const DataSciences = {
 
-    corporate: [
+    DScience: [
         {
-            title: "Blood Donation Advocacy:",
-            desc: "We actively engage in blood donation drives, emphasizing the significance of this vital contribution. Many of our team members are dedicated, regular donors, playing a part in supporting the health and welfare of our local and global communities."
+            title: "AI-Powered Business Solutions",
+            desc: "Harness the power of AI to drive innovation and efficiency across your business. Our AI solutions automate routine tasks, streamline operations, and empower your team to focus on strategic goals."
         },
         {
-            title: "Employee Learning Initiatives:",
-            desc: "Investing in our workforce's growth, we provide diverse learning programs, including skill enhancement workshops and educational sponsorships. This empowers our team to excel both personally and professionally."
+            title: "Advanced Data Analytics",
+            desc: "Unlock the full potential of your data with advanced analytics. We help you identify trends, discover opportunities, and make informed decisions using state-of-the-art tools and techniques."
+        },
+        {
+            title: "Natural Language Processing (NLP)",
+            desc: "Enhance user interactions and automate text-based processes with NLP solutions. From chatbots to sentiment analysis, we help you create systems that understand and respond to human language effectively."
         },
     ],
-    corporate1: [
+    DScience1: [
         {
-            title: "Stands with Ukraine:",
-            desc: "Supporting Our Armed Forces: We proudly support our armed forces by donating funds and resources to meet their essential needs and initiatives, ensuring they receive the best possible assistance."
+            title: "Custom Machine Learning Models",
+            desc: "We develop machine learning models tailored to your specific business requirements. From recommendation engines to fraud detection, our solutions deliver data-driven insights and optimize performance."
         },
         {
-            title: "Community Engagement:",
-            desc: "We enrich our local communities through outreach programs, supporting local events, sponsoring educational initiatives, and volunteering our time. Our commitment is to make a positive impact and strengthen our connections close to home."
+            title: "Predictive Analytics & Forecasting",
+            desc: "Stay ahead of the competition with predictive analytics. Our models forecast trends, predict customer behavior, and optimize resource allocation, giving you a data-driven edge."
+        },
+        {
+            title: "AI Integration & Automation",
+            desc: "Streamline your operations with AI-driven automation. We integrate intelligent systems into your workflows, reducing manual effort, increasing accuracy, and enhancing overall productivity."
         },
     ],
     stages: [
         {
-            title: "Defining needs and requirements",
+            title: "Predictive Analytics & Forecasting",
             desc: "Defining the necessary skills, qualifications, and criteria needed for a candidate to excel in a specific role."
         },
         {
@@ -80,14 +92,14 @@ const DataScience = () => {
 
                         <div className="corporate flex flex-col gap-16">
                             <div className="content text-center">
-                                <h1 className="md:text-3xl text-2xl font-bold leading-snug text-[#fff]">Data Science & 
+                                <h1 className="md:text-3xl text-2xl font-bold leading-snug text-[#fff]">Data Science &
                                     <span className="text-[#FF0066]">  AI Development</span>
                                 </h1>
                             </div>
                             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
                                 <div className="flex flex-col gap-20">
                                     {
-                                        DataSciences.corporate.map((items, index) => {
+                                        DataSciences.DScience.map((items, index) => {
                                             return (
                                                 <div key={index} className="innertext flex flex-col gap-2">
                                                     <h6 className="font-bold text-2xl text-[#fff]">{items.title}</h6>
@@ -100,7 +112,7 @@ const DataScience = () => {
                                 </div>
                                 <div className="flex flex-col gap-20">
                                     {
-                                        DataSciences.corporate1.map((items, index) => {
+                                        DataSciences.DScience1.map((items, index) => {
                                             return (
                                                 <div key={index} className="innertext flex flex-col gap-2">
                                                     <h6 className="font-bold text-2xl text-[#fff]">{items.title}</h6>
@@ -116,125 +128,14 @@ const DataScience = () => {
                 </div>
             </div>
 
-            {/* corportate stage */}
-            <div className="corporate padTop">
-                <div className="container">
-                    <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
-                            <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">Types of Applications Our
-                                <span className="text-[#FF0066]"> Developers Build</span>
-                            </h1>
-                        </div>
-                        <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
-                                {
-                                    DataSciences.corporate.map((items, index) => {
-                                        return (
-                                            <div key={index} className="innertext flex flex-col gap-2">
-                                                <h6 className="font-bold text-2xl">{items.title}</h6>
-                                                <p className="text-base text">{items.desc}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
+            {/* Benefits of DTechKrew */}
+            <BenefitsDTechKrew />
 
-                            </div>
-                            <div className="flex flex-col gap-20">
-                                {
-                                    DataSciences.corporate1.map((items, index) => {
-                                        return (
-                                            <div key={index} className="innertext flex flex-col gap-2">
-                                                <h6 className="font-bold text-2xl">{items.title}</h6>
-                                                <p className="text-base text">{items.desc}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/* stages of development */}
+            <StageOfDev />
 
-            {/* corportate stage */}
-            <div className="corporate padTop">
-                <div className="container">
-                    <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
-                            <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]"> Our Process of Hiring
-                                <span className="text-[#FF0066]"> Mobile App Developers</span>
-                            </h1>
-                        </div>
-                        <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
-                                {
-                                    DataSciences.corporate.map((items, index) => {
-                                        return (
-                                            <div key={index} className="innertext flex flex-col gap-2">
-                                                <h6 className="font-bold text-2xl">{items.title}</h6>
-                                                <p className="text-base text">{items.desc}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
-
-                            </div>
-                            <div className="flex flex-col gap-20">
-                                {
-                                    DataSciences.corporate1.map((items, index) => {
-                                        return (
-                                            <div key={index} className="innertext flex flex-col gap-2">
-                                                <h6 className="font-bold text-2xl">{items.title}</h6>
-                                                <p className="text-base text">{items.desc}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* corportate stage */}
-            <div className="corporate padTop">
-                <div className="container">
-                    <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
-                            <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">Why
-                                <span className="text-[#FF0066]"> Why DTeckrew?</span>
-                            </h1>
-                        </div>
-                        <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
-                                {
-                                    DataSciences.corporate.map((items, index) => {
-                                        return (
-                                            <div key={index} className="innertext flex flex-col gap-2">
-                                                <h6 className="font-bold text-2xl">{items.title}</h6>
-                                                <p className="text-base text">{items.desc}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
-
-                            </div>
-                            <div className="flex flex-col gap-20">
-                                {
-                                    DataSciences.corporate1.map((items, index) => {
-                                        return (
-                                            <div key={index} className="innertext flex flex-col gap-2">
-                                                <h6 className="font-bold text-2xl">{items.title}</h6>
-                                                <p className="text-base text">{items.desc}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/* intdustries We work */}
+            <IndWeWork />
 
 
             {/* last section  */}

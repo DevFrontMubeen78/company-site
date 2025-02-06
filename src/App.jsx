@@ -6,6 +6,13 @@ import WebDev from "./pages/WebDev";
 import DataScience from "./pages/DataScience";
 import CsDevelopment from "./pages/CsDevelopment";
 import DesignUiUX from "./pages/DesignUiUX";
+import ContactUs from "./pages/ContactUs";
+import HireMobileApp from "./pages/HireMobileApp";
+import IosDeveloper from "./pages/IosDeveloper";
+import HireAndroid from "./pages/HireAndroid";
+import HireDataScientists from "./pages/HireDataScientists";
+import HireUiUX from "./pages/HireUiUX";
+
 
 const App = () => {
   return (
@@ -20,6 +27,12 @@ const App = () => {
             <Route path="/data-science-and-ai-development" element={<DataScience />} />
             <Route path="/custom-software-development" element={<CsDevelopment />} />
             <Route path="/uiux-design-consult" element={<DesignUiUX />} />
+            <Route path="/Contact-us" element={<ContactUs />} />
+            <Route path="/hire-mobile-app-developers" element={<HireMobileApp />} />
+            <Route path="/ios-developers" element={<IosDeveloper />} />
+            <Route path="/hire-android-developers" element={<HireAndroid />} />
+            <Route path="/hire-data-scientists" element={<HireDataScientists />} />
+            <Route path="/hire-uiux" element={<HireUiUX />} />
           </Route>
         </Routes>
       </BrowserRouter>
