@@ -20,10 +20,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+import { Helmet } from "react-helmet-async";
+
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>DTK</title>
+      </Helmet>
+
       <Header />
+      
       {/* home */}
       <div className="hero_section text-center padTop">
         <div className="container">

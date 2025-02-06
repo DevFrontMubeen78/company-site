@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import BenefitsDTechKrew from "../components/BenefitsDTechKrew";
 import StageOfDev from "../components/StageOfDev";
 import IndWeWork from "../components/IndWeWork";
+import { Helmet } from "react-helmet-async";
 
 const DataSciences = {
 
@@ -68,6 +69,9 @@ const DataSciences = {
 const DataScience = () => {
     return (
         <div>
+             <Helmet>
+                    <title>DTK - Data Science And Ai Development</title>
+                  </Helmet>
             <Header />
             <div
                 style={{

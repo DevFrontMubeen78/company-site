@@ -12,12 +12,14 @@ import IosDeveloper from "./pages/IosDeveloper";
 import HireAndroid from "./pages/HireAndroid";
 import HireDataScientists from "./pages/HireDataScientists";
 import HireUiUX from "./pages/HireUiUX";
+import { HelmetProvider } from "react-helmet-async";
 
 
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+         <HelmetProvider>
+         <BrowserRouter>
         <Routes>
           <Route>
             <Route path="/" element={<Home />} />
@@ -36,6 +38,8 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
+    </HelmetProvider>
+     
     </div>
   )
 }

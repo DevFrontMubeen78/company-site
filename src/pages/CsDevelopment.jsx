@@ -8,6 +8,7 @@ import BenefitsDTechKrew from "../components/BenefitsDTechKrew";
 import StageOfDev from "../components/StageOfDev";
 import IndWeWork from "../components/IndWeWork";
 import Technology from "../components/Technology";
+import { Helmet } from "react-helmet-async";
 
 const CsDevelopments = {
   logos: [
@@ -157,6 +158,9 @@ const CsDevelopments = {
 const CsDevelopment = () => {
   return (
     <div>
+       <Helmet>
+        <title>DTK - Custom Software Development</title>
+      </Helmet>
       <Header />
       <div
         style={{
