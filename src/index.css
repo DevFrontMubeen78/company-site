@@ -9,7 +9,7 @@
   padding: 50px 0px;
 }
 
-body {
+body, .header {
   background: linear-gradient(to right, #c3e3fa, #e7c7cd);
 }
 

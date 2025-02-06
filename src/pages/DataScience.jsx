@@ -1,6 +1,6 @@
 
 import PageLastSec from "../components/PageLastSec";
-
+import Header from "../components/Header";
 const DataSciences = {
 
     corporate: [
@@ -56,9 +56,10 @@ const DataSciences = {
 const DataScience = () => {
     return (
         <div>
+            <Header />
             <div
                 style={{
-                    backgroundImage: "url('/images/about/digital-product-design-bg-scaled.png')",
+                    backgroundImage: "url('/images/cs-development/custom-software-development-services-bg-1-scaled.png')",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
                     backgroundSize: "cover",
@@ -69,15 +70,20 @@ const DataScience = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="content text-center flex flex-col gap-3">
-                            <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#fff]">Data Science & AI
+                            <h1 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-[#fff]">Data Science & AI
                                 <span className="text-[#FF0066]">  Development Services</span>
                             </h1>
                             <p className="md:text-lg text-base leading-normal text-center w-full heading_content text-[#fff]">
-                                Entrepreneurs looking to hire mobile app developers seek versatile professionals capable of handling a wide range of tasks. The top-tier mobile app developers at DTechKrew go beyond basic development, offering expertise in user-centric design, performance optimization, cross-platform solutions, and seamless integrations.
+                                We are dedicated to creating end-to-end solutions for you. Partner with DTechKrews Data Science & AI development services to enjoy tailor-made products that perfectly fit your needs and goals.
                             </p>
                         </div>
 
-                        <div className="corporate">
+                        <div className="corporate flex flex-col gap-16">
+                            <div className="content text-center">
+                                <h1 className="md:text-3xl text-2xl font-bold leading-snug text-[#fff]">Data Science & 
+                                    <span className="text-[#FF0066]">  AI Development</span>
+                                </h1>
+                            </div>
                             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
                                 <div className="flex flex-col gap-20">
                                     {

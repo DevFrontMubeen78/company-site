@@ -1,4 +1,5 @@
 // complete page 
+import Header from "../components/Header";
 import PageLastSec from "../components/PageLastSec";
 import python from "../../public/images/mobile/python.png";
 
@@ -111,6 +112,7 @@ const WebDevs = {
 const WebDev = () => {
   return (
     <div>
+      <Header/>
       <div
         style={{
           backgroundImage:
@@ -246,7 +248,7 @@ const WebDev = () => {
                 your project requires. Clearly defined business goals are
                 crucial for effective strategic planning. Our experts provide
                 support at every stage of formulating a development strategy,
-                whether you're building web applications from the ground up or
+                whether you are building web applications from the ground up or
                 optimizing existing software for better performance.
               </p>
             </div>
@@ -300,7 +302,7 @@ const WebDev = () => {
         </div>
       </div>
 
-      {/* Why DTeckrew? */}
+      {/* Why DTeckrew? */}
       <div className="DTeckrew padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">

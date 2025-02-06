@@ -1,4 +1,5 @@
 // remain ul li 
+import Header from "../components/Header";
 import PageLastSec from "../components/PageLastSec";
 import TeamEx from "/images/cs-development/team-ex.png";
 import productive from "/images/cs-development/productive=team.png";
@@ -152,6 +153,7 @@ const CsDevelopments = {
 const CsDevelopment = () => {
   return (
     <div>
+      <Header/>
       <div
         style={{
           backgroundImage:
@@ -230,7 +232,7 @@ const CsDevelopment = () => {
           <div className="main flex flex-col gap-16">
             <div className="section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
-                Benefits of DTechKrew Custom
+                Benefits of DTechKrew Custom
                 <span className="text-[#FF0066]">
                   {" "}
                   Software <br className="inline" />
@@ -271,7 +273,7 @@ const CsDevelopment = () => {
             <div className="section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Collaboration
-                <span className="text-[#FF0066]"> models</span>
+                <span className="text-[#FF0066]"> models</span>
               </h1>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
@@ -286,7 +288,7 @@ const CsDevelopment = () => {
                   Need a team of specialists focused entirely on your project?
                   Our dedicated development team will be with you every step of
                   the way, from initial architecture to post-release support,
-                  ensuring your project's success.
+                  ensuring your projects success.
                 </p>
               </div>
             </div>
@@ -317,7 +319,7 @@ const CsDevelopment = () => {
                 </h1>
                 <p className="md:text-lg text-base leading-normal w-full heading_content text">
                   Ready to bring your idea to life? With DTechKrew, we can
-                  develop a custom product from scratch. Whether you're looking
+                  develop a custom product from scratch. Whether you are looking
                   for a fully functional product or an MVP, we tailor the
                   solution to your vision and budget, with room for future
                   refinement and expansion.

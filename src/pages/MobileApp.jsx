@@ -1,4 +1,5 @@
 // complete page 
+import Header from "../components/Header";
 import PageLastSec from "../components/PageLastSec";
 import python from "../../public/images/mobile/python.png";
 
@@ -91,6 +92,7 @@ const mobileApp = {
 const MobileApp = () => {
   return (
     <div>
+      <Header/>
       <div
         style={{
           backgroundImage:
@@ -283,7 +285,7 @@ const MobileApp = () => {
         </div>
       </div>
 
-      {/* Why DTeckrew? */}
+      {/* Why DTeckrew? */}
       <div className="whyDTeckrew padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
