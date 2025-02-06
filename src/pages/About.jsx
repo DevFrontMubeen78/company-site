@@ -1,3 +1,4 @@
+// complete page 
 import Header from "../components/Header";
 import GoogleLogo from "/images/about/Vector.png"
 import gallery from "/images/about/every.png"
