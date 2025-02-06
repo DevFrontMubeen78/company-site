@@ -12,6 +12,7 @@ import IosDeveloper from "./pages/IosDeveloper";
 import HireAndroid from "./pages/HireAndroid";
 import HireDataScientists from "./pages/HireDataScientists";
 import HireUiUX from "./pages/HireUiUX";
+import CaseStudies from "./pages/CaseStudies";
 import { HelmetProvider } from "react-helmet-async";
 
 
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/hire-android-developers" element={<HireAndroid />} />
             <Route path="/hire-data-scientists" element={<HireDataScientists />} />
             <Route path="/hire-uiux" element={<HireUiUX />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
           </Route>
         </Routes>
       </BrowserRouter>

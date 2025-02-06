@@ -28,7 +28,7 @@ const navMenu = [
             { name: "Hire UI/UX Designers", path: "/hire-uiux" }
         ],
     },
-    { name: "Case Studies", path: "#" },
+    { name: "Case Studies", path: "/case-studies" },
     { name: "Contact", path: "/Contact-us" },
 ];
 

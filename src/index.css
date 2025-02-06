@@ -9,7 +9,8 @@
   padding: 50px 0px;
 }
 
-body, .header {
+body,
+.header {
   background: linear-gradient(to right, #c3e3fa, #e7c7cd);
 }
 
@@ -73,9 +74,20 @@ body, .header {
 
 
 /* /// about  */
-.cardAbout{
+.cardAbout {
   display: block;
   margin: 0px auto;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 20px;
+  top: 24px;
+  bottom: 0px;
+  height: 1px;
+  left: 12px;
 }
 
 @media (max-width: 767.98px) {
