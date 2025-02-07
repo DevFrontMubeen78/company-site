@@ -6,53 +6,6 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 const HireMobileApps = {
-  logos: [
-    {
-      title: "React Js",
-      logo1: "/images/cs-development/react.png",
-      alt: "React Js",
-    },
-    {
-      title: "Python",
-      logo1: "/images/cs-development/python.png",
-      alt: "Python",
-    },
-    {
-      title: ".Net",
-      logo1: "/images/cs-development/net.png",
-      alt: ".Net",
-    },
-    {
-      title: "Node Js",
-      logo1: "/images/cs-development/node.js.png",
-      alt: "Node Js",
-    },
-    {
-      title: "C++",
-      logo1: "/images/cs-development/c++.png",
-      alt: "C++",
-    },
-    {
-      title: "Php",
-      logo1: "/images/cs-development/php.png",
-      alt: "Php",
-    },
-    {
-      title: "Javascript",
-      logo1: "/images/cs-development/JS.png",
-      alt: "Javascript",
-    },
-    {
-      title: "Sales Force",
-      logo1: "/images/cs-development/salesforce.png",
-      alt: "Sales Force",
-    },
-    {
-      title: "Dev Oop",
-      logo1: "/images/cs-development/devop.png",
-      alt: "Dev Oop",
-    },
-  ],
   DesSer: [
     {
       title: "Strong programming skills",

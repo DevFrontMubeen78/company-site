@@ -8,7 +8,7 @@ import CsDevelopment from "./pages/CsDevelopment";
 import DesignUiUX from "./pages/DesignUiUX";
 import ContactUs from "./pages/ContactUs";
 import HireMobileApp from "./pages/HireMobileApp";
-import IosDeveloper from "./pages/IosDeveloper";
+import IosDeveloper from "./pages/HireIOSDeveloper";
 import HireAndroid from "./pages/HireAndroid";
 import HireDataScientists from "./pages/HireDataScientists";
 import HireUiUX from "./pages/HireUiUX";

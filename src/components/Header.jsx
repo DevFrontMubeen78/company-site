@@ -37,7 +37,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="header px-4 lg:px-6 py-5 bg-white shadow-md">
+    <header className="header z-10 sticky top-0 px-4 lg:px-6 py-5 bg-white shadow-md">
       <div className="container mx-auto max-w-screen-xl flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-xl font-semibold text-black">
