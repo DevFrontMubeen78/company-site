@@ -69,9 +69,9 @@ const DataSciences = {
 const DataScience = () => {
     return (
         <div>
-             <Helmet>
-                    <title>DTK - Data Science And Ai Development</title>
-                  </Helmet>
+            <Helmet>
+                <title>DTK - Data Science & Ai Development</title>
+            </Helmet>
             <Header />
             <div
                 style={{

@@ -3,6 +3,7 @@ import PageLastSec from "../components/PageLastSec";
 import WhyDTechKrew from "../components/WhyDTechKrew"
 import EmpYouTeam from "../components/EmpYouTeam";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const HireMobileApps = {
   logos: [
@@ -120,6 +121,9 @@ const HireMobileApps = {
 const HireMobileApp = () => {
   return (
     <div>
+      <Helmet>
+        <title>DTK - Hire Mobile App Developer</title>
+      </Helmet>
       <Header />
       <div
         style={{

@@ -3,6 +3,8 @@ import PageLastSec from "../components/PageLastSec";
 import WhyDTechKrew from "../components/WhyDTechKrew"
 import EmpYouTeam from "../components/EmpYouTeam";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
 
 const HireDataScientistss = {
     logos: [
@@ -124,6 +126,9 @@ const HireDataScientistss = {
 const HireDataScientists = () => {
     return (
         <div>
+            <Helmet>
+                <title>DTK - Hire Data Scientists</title>
+            </Helmet>
             <Header />
             <div
                 style={{

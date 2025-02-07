@@ -2,6 +2,7 @@
 import Header from "../components/Header";
 import PageLastSec from "../components/PageLastSec";
 import python from "../../public/images/mobile/python.png";
+import { Helmet } from "react-helmet-async";
 
 const mobileApp = {
   customMobile: [
@@ -92,7 +93,10 @@ const mobileApp = {
 const MobileApp = () => {
   return (
     <div>
-      <Header/>
+      <Helmet>
+        <title>DTK - Mobile App Development</title>
+      </Helmet>
+      <Header />
       <div
         style={{
           backgroundImage:
@@ -295,7 +299,7 @@ const MobileApp = () => {
                 <span className="text-[#FF0066]"> DTeckrew?</span>
               </h1>
               <p className="md:text-lg text-base leading-normal w-full heading_content text ">
-              Python developer hires in DTechKrew are a worthwhile investment because we are:
+                Python developer hires in DTechKrew are a worthwhile investment because we are:
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">

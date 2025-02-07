@@ -3,6 +3,7 @@ import PageLastSec from "../components/PageLastSec";
 import WhyDTechKrew from "../components/WhyDTechKrew"
 import EmpYouTeam from "../components/EmpYouTeam";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const HireAndroids = {
     logos: [
@@ -120,6 +121,9 @@ const HireAndroids = {
 const HireAndroid = () => {
     return (
         <div>
+            <Helmet>
+                <title>DTK - Hire Android Developers</title>
+            </Helmet>
             <Header />
             <div
                 style={{
@@ -238,7 +242,7 @@ const HireAndroid = () => {
                     <div className="flex flex-col md:gap-30 gap-20">
                         <div className="flex flex-col">
                             <h1 className="md:text-4xl text-2xl font-bold leading-snug text-black">
-                            Need skilled Android developers? <br className="inline" /> Turn to DTechKrew to get the best talents.
+                                Need skilled Android developers? <br className="inline" /> Turn to DTechKrew to get the best talents.
                             </h1>
                         </div>
                         <Link className="text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="#"> Contact Us</Link>

@@ -135,7 +135,7 @@ const About = () => {
   return (
     <div>
       <Helmet>
-        <title>DTK-about</title>
+        <title>DTK - About</title>
       </Helmet>
       <Header />
       {/* About Hero Section */}

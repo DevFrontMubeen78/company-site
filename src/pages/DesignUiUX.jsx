@@ -5,6 +5,7 @@ import TeamEx from "/images/cs-development/team-ex.png";
 import productive from "/images/cs-development/productive=team.png";
 import collab from "/images/cs-development/collab.png";
 // import uix from "../../public/images/ux-ui/uix.png";
+import { Helmet } from "react-helmet-async";
 
 const DesignUiUXs = {
   clients: [
@@ -127,12 +128,15 @@ const DesignUiUXs = {
       title: "Increasing conversions",
     },
   ],
- 
+
 };
 const DesignUiUX = () => {
   return (
     <div>
-      <Header/>
+      <Helmet>
+        <title>DTK - UI/UX Design Consult</title>
+      </Helmet>
+      <Header />
       <div
         style={{
           backgroundImage:
@@ -148,12 +152,12 @@ const DesignUiUX = () => {
             <div className="content text-center flex flex-col gap-20">
               <div className="content text-center flex flex-col gap-3">
                 <h1 className="md:text-5xl sm:text-4xl text-2xl font-bold leading-snug text-[#fff]">
-                We’re a digital
+                  We’re a digital
                   <span className="text-[#FF0066]"> <br className="inline" /> Product Design Agency</span>
                 </h1>
                 <p className="md:text-lg text-base leading-normal text-center w-full heading_content text-[#fff]">
-                Hire Objective-C Developers
-                Want to create an efficient iOS app that works fast and is easy to use for your target audience? DTechKrew will help. Objective-C is an object-oriented programming language intended for building top iOS applications. Pick our staff augmentation services and get quality custom web projects
+                  Hire Objective-C Developers
+                  Want to create an efficient iOS app that works fast and is easy to use for your target audience? DTechKrew will help. Objective-C is an object-oriented programming language intended for building top iOS applications. Pick our staff augmentation services and get quality custom web projects
                 </p>
               </div>
               {/* clients */}

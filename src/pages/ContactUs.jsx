@@ -12,7 +12,7 @@ const ContactUs = () => {
   return (
     <div>
       <Helmet>
-        <title>DTK - contact us</title>
+        <title>DTK - Contact Us</title>
       </Helmet>
       <Header />
       {/* About Hero Section */}
