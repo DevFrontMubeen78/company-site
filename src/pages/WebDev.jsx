@@ -1,5 +1,6 @@
 // complete page 
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import PageLastSec from "../components/PageLastSec";
 import python from "../../public/images/mobile/python.png";
 import { Helmet } from "react-helmet-async";
@@ -347,6 +348,9 @@ const WebDev = () => {
 
       {/* last section  */}
       <PageLastSec />
+
+      {/* footer  */}
+      <Footer />
     </div>
   );
 };

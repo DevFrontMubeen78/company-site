@@ -25,7 +25,7 @@ const navMenu = [
       { name: "Hire IOS developers", path: "/hire-ios-developers" },
       { name: "Hire Android developers", path: "/hire-android-developers" },
       { name: "Hire Data Scientists", path: "/hire-data-scientists" },
-      { name: "Hire UI/UX Designers", path: "/hire-uiux" },
+      { name: "Hire UI/UX Designers", path: "/hire-uiux-designer" },
     ],
   },
   { name: "Case Studies", path: "/case-studies" },

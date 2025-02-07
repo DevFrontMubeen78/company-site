@@ -6,6 +6,7 @@ import PageLastSec from "../components/PageLastSec";
 import GetStarted from "../components/GetStarted";
 import Teams from "../components/Teams";
 import Recrutment from "../components/Recrutment";
+import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
 
 const aboutContent = {
@@ -298,6 +299,9 @@ const About = () => {
 
       {/* last section  */}
       <PageLastSec />
+
+      {/* footer  */}
+      <Footer />
     </div>
   );
 };

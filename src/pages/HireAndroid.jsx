@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import PageLastSec from "../components/PageLastSec";
 import WhyDTechKrew from "../components/WhyDTechKrew"
 import EmpYouTeam from "../components/EmpYouTeam";
@@ -247,6 +248,9 @@ const HireAndroid = () => {
 
             {/* last section  */}
             <PageLastSec />
+
+            {/* footer  */}
+            <Footer />
         </div>
     );
 };

@@ -2,9 +2,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageLastSec from "../components/PageLastSec";
 import mobile from "../../public/images/Group 70 1.png";
-import website from "../../public/images/website.png";
-import iPhone from "../../public/images/iPhone.png";
-import ai from "../../public/images/ai.png";
+import caseONe from "/images/case-studies/Group 1686555501.png"
+import caseTwo from "/images/case-studies/website.jpg"
+import caseThree from "/images/case-studies/ai.png"
 import about from "../../public/images/about.png";
 // import layer1 from "../../public/images/Layer 1.png";
 // import layer2 from "../../public/images/Layer 2.png";
@@ -12,6 +12,8 @@ import clint from "../../public/images/WhatsApp Image 2024-11-17 at 4.21.18 PM.p
 import clint2 from "../../public/images/Rectangle 7.png";
 import video from "../../public/images/videos.png";
 import quotes from "../../public/images/Quotes.png";
+import { Link } from "react-router-dom";
+// import homebg from "../../public/images/home/teambg.jpg"
 
 import { Navigation, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,6 +21,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
 
 import { Helmet } from "react-helmet-async";
 
@@ -30,7 +33,7 @@ const Home = () => {
       </Helmet>
 
       <Header />
-      
+
       {/* home */}
       <div className="hero_section text-center padTop">
         <div className="container">
@@ -65,75 +68,82 @@ const Home = () => {
                 development.
               </p>
             </div>
-            <div className="mobileApp grid md:grid-cols-2 bg-[#EDF0F9] rounded-3xl p-10 gap-5">
-              <div className="flex flex-col gap-5 justify-center bg-[url('../../public/images/Layer 1.png')] bg-containr bg-center h-screen w-ful">
-                <h5 className="md:text-4xl sm:text-2xl text-lg font-bold uppercase leading-snug">
-                  MOBILE APP DEVELOPMENT
-                </h5>
-                <ul className="md:text-2xl sm:text-lg text-sm flex flex-col gap-3 text list-disc ms-7">
-                  <li>Custom iOS and Android app development</li>
-                  <li>Cross-platform solutions (Flutter, React Native)</li>
-                  <li>Native app development</li>
-                  <li>App prototyping and testing</li>
-                </ul>
-                <div className="button relative">
-                  <a href="#">
-                    <span>View More</span>
-                  </a>
+            {/* case 1 */}
+            <div style={{
+              backgroundImage:
+                "url('/images/case-studies/Pattern(1).png'), url('/images/case-studies/Pattern1234.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "top left, bottom right",
+              backgroundSize: "8.5%, 19.5%",
+            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#edf0f9] md:px-20 px-5 md:py-0 rounded-3xl">
+              <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
+                <div className="content flex flex-col gap-3">
+                  <div className="flex flex-col gap-2">
+                    <h6 className='font-bold xl:text-3xl text-lg'>MOBILE APP DEVELOPMENT</h6>
+                  </div>
+                  <ul className="text md:text-lg text-base list-disc ms-8">
+                    <li>Custom iOS and Android app development</li>
+                    <li>Cross-platform solutions (Flutter, React Native)</li>
+                    <li>Native app development</li>
+                    <li>App prototyping and testing</li>
+                  </ul>
                 </div>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="#"><span className='lines'>View More</span></Link>
               </div>
-              <div className="col">
-                <img
-                  src={iPhone}
-                  alt="Mobile App Development"
-                  className="w-full h-auto"
-                />
+              <div className="flex justify-end">
+                <img className='xl:w-80 w-96' src={caseONe} alt="" />
               </div>
             </div>
-            <div className="Website grid md:grid-cols-2 bg-[#EDF0F9] rounded-3xl p-10 gap-25">
-              <div className="col sss">
-                <img src={website} alt="" className="w-full h-auto" />
+            {/* case 2 */}
+            <div style={{
+              backgroundImage:
+                "url('/images/case-studies/webs.png'), url('/images/case-studies/Pattern456.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "top right, bottom right",
+              backgroundSize: "8.5%, 27%",
+            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#f4f7ff] md:px-20 md:pt-10 px-5 md:py-0 rounded-3xl">
+              <div className="flex justify-end">
+                <img className='xl:w-80 w-96' src={caseTwo} alt="" />
               </div>
-              <div className="flex flex-col gap-5 justify-center">
-                <h5 className="md:text-4xl sm:text-2xl text-lg font-bold uppercase leading-snug">
-                  WEB DEVELOPMENT
-                </h5>
-                <ul className="md:text-2xl sm:text-lg text-sm flex flex-col gap-3 text list-disc ms-7">
-                  <li>Responsive web applications</li>
-                  <li>Progressive Web Apps (PWAs)</li>
-                  <li>Frontend and backend development</li>
-                  <li>API integration and development</li>
-                </ul>
-                <div className="button relative">
-                  <a href="#">
-                    <span>View More</span>
-                  </a>
+              <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
+                <div className="content flex flex-col gap-3">
+                  <div className="flex flex-col gap-2">
+                    <h6 className='font-bold xl:text-3xl text-lg'>WEB DEVELOPMENT</h6>
+                  </div>
+                  <ul className="text md:text-lg text-base list-disc ms-8">
+                    <li>Responsive web applications</li>
+                    <li>Progressive Web Apps (PWAs)</li>
+                    <li>Frontend and backend development</li>
+                    <li>API integration and development</li>
+                  </ul>
                 </div>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="#"><span className='lines'>View More</span></Link>
               </div>
             </div>
-            <div className="AI grid md:grid-cols-2 bg-[#C7EBE4] rounded-3xl p-10 gap-5">
-              <div className="flex flex-col gap-5 justify-center">
-                <h5 className="md:text-4xl sm:text-2xl text-lg font-bold uppercase leading-snug">
-                  DATA SCIENCE & AI DEVELOPMENT
-                </h5>
-                <ul className="md:text-2xl sm:text-lg text-sm flex flex-col gap-3 text list-disc ms-7">
-                  <li>Data analysis and visualization</li>
-                  <li>Machine learning model development</li>
-                  <li>Natural Language Processing (NLP) applications</li>
-                  <li>Predictive analytics and decision-making systems</li>
-                </ul>
-                <div className="button relative">
-                  <a href="#">
-                    <span>View More</span>
-                  </a>
+            {/* case 3 */}
+            <div style={{
+              backgroundImage:
+                "url('/images/case-studies/Pattern(5).png'), url('/images/case-studies/Pattern789.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "top left, bottom right",
+              backgroundSize: "8.5%, 28%",
+            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#abebff] md:px-20 px-5 md:py-0 rounded-3xl">
+              <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
+                <div className="content flex flex-col gap-3">
+                  <div className="flex flex-col gap-2">
+                    <h6 className='font-bold xl:text-3xl text-lg'>DATA SCIENCE & AI DEVELOPMENT</h6>
+                  </div>
+                  <ul className="text md:text-lg text-base list-disc ms-8">
+                    <li>Data analysis and visualization</li>
+                    <li>Machine learning model development</li>
+                    <li>Natural Language Processing (NLP) applications</li>
+                    <li>Predictive analytics and decision-making systems</li>
+                  </ul>
                 </div>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="#"><span className='lines'>View More</span></Link>
               </div>
-              <div className="col">
-                <img
-                  src={ai}
-                  alt="Mobile App Development"
-                  className="w-full h-auto"
-                />
+              <div className="flex justify-end">
+                <img className='w-full' src={caseThree} alt="" />
               </div>
             </div>
           </div>
@@ -141,25 +151,113 @@ const Home = () => {
       </div>
 
       {/* team */}
-      <div className="outTeam padTop">
+
+      <div className="team">
         <div className="flex flex-col gap-20">
-          <div className="section_content">
-            <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
-              Our <span className="text-[#FF0066]"> Team</span>
-            </h5>
-            <p className="text-lg text leading-normal text-center md:w-6/12 heading_content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Sed lobortis orci elementum egestas
-              lobortis.
-            </p>
+          <div className="main">
+            <div className="flex flex-col gap-20">
+              <div className="section_content">
+                <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
+                  Our <span className="text-[#FF0066]"> Team</span>
+                </h5>
+                <p className="text-lg text leading-normal text-center md:w-8/12 heading_content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Sed lobortis orci elementum egestas
+                  lobortis.
+                </p>
+              </div>
+              {/* team member  */}
+              <div style={{
+                backgroundImage: "url('/images/home/teambg.jpg')",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }} className="padTop">
+                <div className="container">
+                  <div className="grid grid-cols-12 md:gap-10 gap-5">
+                    {/* own  */}
+                    <div className="own md:col-span-5 col-span-12 flex flex-col gap-5">
+                      <img className="w-full h-auto" src={clint2} alt="" />
+                      <div className="client_content text-center flex flex-col gap-3">
+                        <div className="stat">
+                          <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                          <span className="status text-sm text-[#FF0066]">
+                            Co and co-founder
+                          </span>
+                        </div>
+                        <p className="text-base">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                      </div>
+                    </div>
+                    {/* member  */}
+                    <div className="member md:col-span-7 col-span-12 flex flex-col gap-5">
+                      <div className="mem_content flex flex-col gap-2">
+                        <h5 className="md:text-4xl sm:text-3xl text-2xl font-bold uppercase">
+                          meet{" "}
+                          <span className="text-[#FF0066]"> our expertise</span>
+                        </h5>
+                        <p className="md:text-md text-base text leading-snug">
+                          Meet the experts at Dtechkrew, where innovation and
+                          expertise drive exceptional results. Our team combines
+                          years of experience with cutting-edge technology to
+                          deliver top-tier solutions. From AI to app development,
+                          we’re here to turn your ideas into reality
+                        </p>
+                      </div>
+                      <div className="members grid md:grid-cols-2 gap-10">
+                        <div className="mem1">
+                          <div className="own flex flex-col gap-5">
+                            <img className="w-full h-auto" src={clint2} alt="" />
+                            <div className="client_content text-center flex flex-col gap-3">
+                              <div className="stat">
+                                <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                                <span className="status text-sm text-[#FF0066]">
+                                  Co and co-founder
+                                </span>
+                              </div>
+                              <p className="text-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mem2">
+                          <div className="own flex flex-col gap-5">
+                            <img className="w-full h-auto" src={clint2} alt="" />
+                            <div className="client_content text-center flex flex-col gap-3">
+                              <div className="stat">
+                                <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                                <span className="status text-sm text-[#FF0066]">
+                                  Co and co-founder
+                                </span>
+                              </div>
+                              <p className="text-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="">
-            <div className="teams padTop">
-              <div className="container grid grid-cols-12 flex gap-15">
-                <div className="col-span-12 md:col-span-4 ">
-                  <div className="clineInfo  flex flex-col gap-5">
+          {/* second member section  */}
+          <div style={{
+            backgroundImage: "url('/images/home/member.jpg')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }} className="allMembers padTop">
+            <div className="container">
+              <div className="grid md:grid-cols-4 grid-cols-1 gap-10">
+                <div className="mem1">
+                  <div className="own flex flex-col gap-5">
                     <img className="w-full h-auto" src={clint2} alt="" />
                     <div className="client_content text-center flex flex-col gap-3">
                       <div className="stat">
@@ -174,125 +272,52 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="col-span-12 md:col-span-8 flex flex-col gap-5">
-                  <div className="">
-                    <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug">
-                      meet{" "}
-                      <span className="text-[#FF0066]"> our expertise</span>
-                    </h5>
-                    <p className="md:text-lg text-base text leading-snug">
-                      Meet the experts at Dtechkrew, where innovation and
-                      expertise drive exceptional results. Our team combines
-                      years of experience with cutting-edge technology to
-                      deliver top-tier solutions. From AI to app development,
-                      we’re here to turn your ideas into reality
-                    </p>
-                  </div>
-                  <div className="member grid xl:grid-cols-2 sm:grid-cols-12 gap-20">
-                    <div className="clineInfo  flex flex-col gap-5">
-                      <img className="w-full h-auto" src={clint} alt="" />
-                      <div className="client_content text-center flex flex-col gap-3">
-                        <div className="stat">
-                          <h6 className="font-bold lg:text-3xl text-2xl">
-                            Dilshad Raza
-                          </h6>
-                          <span className="status text-sm text-[#FF0066]">
-                            Co and co-founder
-                          </span>
-                        </div>
-                        <p className="text-lg">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit.
-                        </p>
+                <div className="mem2">
+                  <div className="own flex flex-col gap-5">
+                    <img className="w-full h-auto" src={clint2} alt="" />
+                    <div className="client_content text-center flex flex-col gap-3">
+                      <div className="stat">
+                        <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                        <span className="status text-sm text-[#FF0066]">
+                          Co and co-founder
+                        </span>
                       </div>
+                      <p className="text-base">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
                     </div>
-                    <div className="clineInfo  flex flex-col gap-5">
-                      <img className="w-full h-auto" src={clint} alt="" />
-                      <div className="client_content text-center flex flex-col gap-3">
-                        <div className="stat">
-                          <h6 className="font-bold lg:text-3xl text-2xl">
-                            Dilshad Raza
-                          </h6>
-                          <span className="status text-sm text-[#FF0066]">
-                            Co and co-founder
-                          </span>
-                        </div>
-                        <p className="text-lg">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit.
-                        </p>
+                  </div>
+                </div>
+                <div className="mem3">
+                  <div className="own flex flex-col gap-5">
+                    <img className="w-full h-auto" src={clint2} alt="" />
+                    <div className="client_content text-center flex flex-col gap-3">
+                      <div className="stat">
+                        <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                        <span className="status text-sm text-[#FF0066]">
+                          Co and co-founder
+                        </span>
                       </div>
+                      <p className="text-base">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="junior padTop">
-              <div className="container  grid md:grid-cols-4 xs:grid-cols-12 lg:gap-20 gap-10">
-                <div className="clineInfo  flex flex-col gap-5">
-                  <img src={clint} alt="" />
-                  <div className="client_content text-center flex flex-col gap-3">
-                    <div className="stat">
-                      <h6 className="font-bold lg:text-3xl text-2xl">
-                        Dilshad Raza
-                      </h6>
-                      <span className="status text-sm text-[#FF0066]">
-                        Co and co-founder
-                      </span>
+                <div className="mem4">
+                  <div className="own flex flex-col gap-5">
+                    <img className="w-full h-auto" src={clint2} alt="" />
+                    <div className="client_content text-center flex flex-col gap-3">
+                      <div className="stat">
+                        <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                        <span className="status text-sm text-[#FF0066]">
+                          Co and co-founder
+                        </span>
+                      </div>
+                      <p className="text-base">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
                     </div>
-                    <p className="text-lg">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div className="clineInfo  flex flex-col gap-5">
-                  <img src={clint} alt="" />
-                  <div className="client_content text-center flex flex-col gap-3">
-                    <div className="stat">
-                      <h6 className="font-bold lg:text-3xl text-2xl">
-                        Dilshad Raza
-                      </h6>
-                      <span className="status text-sm text-[#FF0066]">
-                        Co and co-founder
-                      </span>
-                    </div>
-                    <p className="text-lg">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div className="clineInfo  flex flex-col gap-5">
-                  <img src={clint} alt="" />
-                  <div className="client_content text-center flex flex-col gap-3">
-                    <div className="stat">
-                      <h6 className="font-bold lg:text-3xl text-2xl">
-                        Dilshad Raza
-                      </h6>
-                      <span className="status text-sm text-[#FF0066]">
-                        Co and co-founder
-                      </span>
-                    </div>
-                    <p className="text-lg">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div className="clineInfo  flex flex-col gap-5">
-                  <img src={clint} alt="" />
-                  <div className="client_content text-center flex flex-col gap-3">
-                    <div className="stat">
-                      <h6 className="font-bold lg:text-3xl text-2xl">
-                        Dilshad Raza
-                      </h6>
-                      <span className="status text-sm text-[#FF0066]">
-                        Co and co-founder
-                      </span>
-                    </div>
-                    <p className="text-base">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -495,7 +520,7 @@ const Home = () => {
       {/* last section  */}
       <PageLastSec />
       <Footer />
-    </div>
+    </div >
   );
 };
 

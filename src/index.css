@@ -91,6 +91,17 @@ body,
   left: 12px;
 }
 
+.lines::before {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 20px;
+  top: 30px;
+  bottom: 0px;
+  height: 1px;
+  left: 12px;
+}
+
 .titleCase::after {
   content: "";
   position: absolute;

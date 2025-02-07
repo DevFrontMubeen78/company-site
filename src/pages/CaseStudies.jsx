@@ -1,4 +1,6 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import PageLastSec from "../components/PageLastSec";
 import { Link } from 'react-router-dom';
 import { FaPencilAlt } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
@@ -282,6 +284,22 @@ const CaseStudies = () => {
                     </div>
                 </div>
             </div>
+
+            {/* last section  */}
+            <PageLastSec />
+
+            {/* check portfolio */}
+            <div className="portfolio flex justify-center items-center">
+                <div className="container flex justify-center">
+                    <Link className="bg-[#fff] text-[#79BCCF] py-3 uppercase rounded-full px-10 flex justify-center max-w-max" to="#">
+                        check our portfolio
+                    </Link>
+                </div>
+            </div>
+
+
+            {/* footer  */}
+            <Footer />
         </div>
     )
 }

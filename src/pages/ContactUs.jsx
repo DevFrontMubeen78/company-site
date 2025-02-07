@@ -2,6 +2,7 @@ import GetStarted from "../components/GetStarted";
 import Recrutment from "../components/Recrutment";
 import Teams from "../components/Teams";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { MdOutlineFacebook } from "react-icons/md";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
@@ -117,6 +118,9 @@ const ContactUs = () => {
 
       {/* get started */}
       <Recrutment />
+
+         {/* footer  */}
+         <Footer />
     </div>
   );
 };

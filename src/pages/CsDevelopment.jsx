@@ -1,5 +1,6 @@
 // remain ul li 
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import PageLastSec from "../components/PageLastSec";
 import TeamEx from "/images/cs-development/team-ex.png";
 import productive from "/images/cs-development/productive=team.png";
@@ -325,6 +326,9 @@ const CsDevelopment = () => {
 
       {/* last section  */}
       <PageLastSec />
+
+         {/* footer  */}
+         <Footer />
     </div>
   );
 };

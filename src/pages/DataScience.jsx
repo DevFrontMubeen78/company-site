@@ -1,6 +1,7 @@
 
 import PageLastSec from "../components/PageLastSec";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import BenefitsDTechKrew from "../components/BenefitsDTechKrew";
 import StageOfDev from "../components/StageOfDev";
 import IndWeWork from "../components/IndWeWork";
@@ -144,6 +145,9 @@ const DataScience = () => {
 
             {/* last section  */}
             <PageLastSec />
+
+            {/* footer  */}
+            <Footer />
         </div>
     )
 }
