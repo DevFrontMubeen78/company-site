@@ -117,10 +117,12 @@ const ContactUs = () => {
       <Teams />
 
       {/* get started */}
-      <Recrutment />
+      <div className="container">
+        <Recrutment />
+      </div>
 
-         {/* footer  */}
-         <Footer />
+      {/* footer  */}
+      <Footer />
     </div>
   );
 };

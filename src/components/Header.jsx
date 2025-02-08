@@ -40,13 +40,13 @@ const Header = () => {
     <header className="header z-10 sticky top-0 px-4 lg:px-6 py-5 bg-white shadow-md">
       <div className="container mx-auto max-w-screen-xl flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-xl font-semibold text-black">
+        <Link to="/" className="text-xl font-medium text-black">
           <img className="w-32" src={logo} alt="logo" />
         </Link>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-black text-2xl"
+          className="lg:hidden text-black text-2xl cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <RiCloseLine /> : <RiMenu3Line />}
@@ -59,13 +59,13 @@ const Header = () => {
               {item.path !== "#" ? (
                 <Link
                   to={item.path}
-                  className="py-2 px-4 font-bold text-lg hover:text-[#ff0066]"
+                  className="py-2 px-4 font-medium text-lg hover:text-[#ff0066]"
                 >
                   {item.name}
                 </Link>
               ) : (
                 <button
-                  className="flex items-center font-bold text-lg hover:text-[#ff0066]"
+                  className="flex items-center font-medium text-lg hover:text-[#ff0066]"
                   onClick={() => setDropdown(dropdown === index ? null : index)}
                 >
                   {item.name}
@@ -82,7 +82,7 @@ const Header = () => {
                     <li key={subIndex}>
                       <Link
                         to={subItem.path}
-                        className="block px-4 py-2 font-bold text-lg hover:text-[#ff0066]"
+                        className="block px-4 py-2 font-medium text-lg hover:text-[#ff0066]"
                       >
                         {subItem.name}
                       </Link>
@@ -104,14 +104,14 @@ const Header = () => {
                 {item.path !== "#" ? (
                   <Link
                     to={item.path}
-                    className="block py-2 px-4 font-bold text-white hover:text-[#ff0066]"
+                    className="block py-2 px-4 font-medium text-white hover:text-[#ff0066]"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
                 ) : (
                   <button
-                    className="flex justify-between w-full py-2 px-4 font-bold text-white hover:text-[#ff0066]"
+                    className="flex justify-between w-full py-2 px-4 font-medium text-white hover:text-[#ff0066] cursor-pointer"
                     onClick={() => setDropdown(dropdown === index ? null : index)}
                   >
                     {item.name}
@@ -128,7 +128,7 @@ const Header = () => {
                       <li key={subIndex}>
                         <Link
                           to={subItem.path}
-                          className="block px-6 py-2 font-bold text-white hover:text-[#ff0066]"
+                          className="block px-6 py-2 font-medium text-white hover:text-[#ff0066]"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {subItem.name}

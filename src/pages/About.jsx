@@ -163,7 +163,7 @@ const About = () => {
               </p>
             </div>
             <div className="cardAbout">
-              <div className="flex flex-col gap-5 bg-[#fff] items-center text-center rounded-xl p-10 w-80">
+              <div className="flex flex-col gap-5 bg-[#fff] items-center text-center rounded-xl p-10 w-98">
                 <img className="w-32" src={GoogleLogo} alt="GoogleLogo" />
                 <div className="cardContent">
                   <h2>Average Referral Rating 4.9/5</h2>

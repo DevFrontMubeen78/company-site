@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageLastSec from "../components/PageLastSec";
 import python from "../../public/images/mobile/python.png";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 const WebDevs = {
@@ -299,6 +300,7 @@ const WebDev = () => {
                 team to work more efficiently, innovate faster, and achieve
                 greater success.
               </p>
+              <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="#">Contact Us</Link>
             </div>
             <div className="map">
               <img src={python} alt="python" />

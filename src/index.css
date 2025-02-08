@@ -9,11 +9,23 @@
   padding: 50px 0px;
 }
 
-body,
-.header {
-  background: linear-gradient(to right, #c3e3fa, #e7c7cd);
+
+
+@keyframes colorChange {
+  0% {
+    background-color: #c3e3fa;
+  }
+  50% {
+    background-color: #e7c7cd;
+  }
+  100% {
+    background-color: #c3e3fa;
+  }
 }
 
+body, .header {
+  animation: colorChange 7s infinite linear;
+}
 
 .text {
   color: #858591;
@@ -22,55 +34,6 @@ body,
 .heading_content {
   display: block;
   margin: 0px auto;
-}
-
-.mobileApp {
-  background-image: url("../public/images/layer\ 2.png"), url("../public/images/layer\ 4.png");
-  background-repeat: no-repeat;
-  background-size: 10%, 40%;
-  background-position: left top, right bottom;
-}
-
-.AI {
-  background-image: url("../public/images/layer\ 5.png"), url("../public/images/layer\ 4.png");
-  background-repeat: no-repeat;
-  background-size: 10%, 32%;
-  background-position: left top, right bottom;
-}
-
-.Website {
-  background-image: url("../public/images/layer\ 3.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top;
-}
-
-.teams {
-  background-image: url("../public/images/teambg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-
-.junior {
-  background-image: url("../public/images/member.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
-}
-
-.cards {
-  background-image: url("../public/images/map.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-}
-
-.LsContent {
-  background-image: url("../public/images/last.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom right;
 }
 
 
@@ -112,6 +75,88 @@ body,
   z-index: -1;
 }
 
+/* // testimonial  */
+.PicTestimonial .swiper-slide.swiper-slide-next {
+  transform: scale(1.3);
+}
+
+.PicTestimonial .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+  padding: 80px 0px;
+}
+
+.PicTestimonial .testSlider {
+  overflow: hidden;
+  height: 210px;
+  border-radius: 30px;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Default Mobile: Show 1 item */
+.animate-marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  animation: marquee-reverse 15s linear infinite;
+}
+
+.testimonial-box {
+  min-width: 300px;
+}
+
+/* Tablet (≥ 641px & ≤ 1024px) → Show 2 items */
+@media (min-width: 641px) {
+  .testimonial-box {
+    min-width: 400px;
+  }
+
+  .animate-marquee {
+    animation-duration: 20s;
+  }
+
+  .animate-marquee-reverse {
+    animation-duration: 20s;
+  }
+}
+
+/* Desktop (≥ 1025px) → Show 3 items */
+@media (min-width: 1025px) {
+  .testimonial-box {
+    min-width: 500px;
+  }
+
+  .animate-marquee {
+    animation-duration: 25s;
+  }
+
+  .animate-marquee-reverse {
+    animation-duration: 25s;
+  }
+}
+
+
 @media (max-width: 767.98px) {
   .inline {
     display: none;
@@ -121,3 +166,4 @@ body,
     width: 90%;
   }
 }
+

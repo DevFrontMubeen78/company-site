@@ -1,29 +1,46 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Testimonials from "../components/Testimonials";
 import PageLastSec from "../components/PageLastSec";
 import mobile from "../../public/images/Group 70 1.png";
 import caseONe from "/images/case-studies/Group 1686555501.png"
 import caseTwo from "/images/case-studies/website.jpg"
 import caseThree from "/images/case-studies/ai.png"
 import about from "../../public/images/about.png";
-// import layer1 from "../../public/images/Layer 1.png";
-// import layer2 from "../../public/images/Layer 2.png";
-import clint from "../../public/images/WhatsApp Image 2024-11-17 at 4.21.18 PM.png";
-import clint2 from "../../public/images/Rectangle 7.png";
-import video from "../../public/images/videos.png";
-import quotes from "../../public/images/Quotes.png";
+import hamza from "../../public/images/home/ali-hamza.png";
+import awais from "../../public/images/home/awais.png";
+import ownersss from "../../public/images/home/ownersss.png";
+import augmentation from "../../public/images/home/staff augmentation.png";
+import MapResult from "../../public/images/home/Frame 343.png";
+import Calendar from "../components/Calendar";
 import { Link } from "react-router-dom";
-// import homebg from "../../public/images/home/teambg.jpg"
-
-import { Navigation, A11y } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-
-
+import PicTestimonial from "../components/PicTestimonial";
 import { Helmet } from "react-helmet-async";
+
+
+const TeamMember = [
+  {
+    memName: "Muhammad Raheel",
+    status: "Product Manager",
+    profile: "/images/home/m.raheel.png"
+  },
+  {
+    memName: "Muhammad Ramzan",
+    status: "Senior UI UX Designer",
+    profile: "/images/home/ramzan.png"
+  },
+  {
+    memName: "Ali Hassan",
+    status: "Business  Development ",
+    profile: "/images/home/ali-hasan.png"
+  },
+  {
+    memName: "Anum Noor",
+    status: "Data Science project Manager",
+    profile: "/images/home/anam.png"
+  },
+]
+
 
 const Home = () => {
   return (
@@ -35,21 +52,26 @@ const Home = () => {
       <Header />
 
       {/* home */}
-      <div className="hero_section text-center padTop">
+      <div className="hero_section padTop">
         <div className="container">
-          <div className="content flex flex-col gap-8">
-            <h1 className="md:text-6xl sm:text-4xl text-2xl font-bold uppercase leading-snug">
-              Software <br />
-              <span className="text-[#FF0066]"> Development Company</span>
-            </h1>
-            <p className="text-lg text leading-normal text-center md:w-4/5 heading_content">
-              At DTechKrew, we specialize in crafting innovative software
-              solutions tailored to meet the unique needs of your business. Our
-              team of expert developers and designers is dedicated to
-              transforming your ideas into cutting-edge applications that drive
-              growth and efficiency.
-            </p>
-            <img src={mobile} alt="Group 70 1.png" />
+          <div className="main grid md:grid-cols-2 grid-cols-1 gap-20">
+            <div className="content flex flex-col justify-center gap-8">
+              <h1 className="md:text-6xl sm:text-5xl text-3xl font-bold uppercase">
+                Software <br />
+                <span className="text-[#FF0066] md:text-4xl sm:text-3xl text-2xl"> Development Company</span>
+              </h1>
+              <p className="text-lg text leading-normal">
+                At DTechKrew, we specialize in crafting innovative software
+                solutions tailored to meet the unique needs of your business. Our
+                team of expert developers and designers is dedicated to
+                transforming your ideas into cutting-edge applications that drive
+                growth and efficiency.
+              </p>
+              <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="#">Contact Us</Link>
+            </div>
+            <div className="img">
+              <img src={mobile} alt="Group 70 1.png" />
+            </div>
           </div>
         </div>
       </div>
@@ -156,17 +178,16 @@ const Home = () => {
         <div className="flex flex-col gap-20">
           <div className="main">
             <div className="flex flex-col gap-20">
-              <div className="section_content">
+              <div className="section_content flex flex-col gap-5">
                 <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
                   Our <span className="text-[#FF0066]"> Team</span>
                 </h5>
-                <p className="text-lg text leading-normal text-center md:w-8/12 heading_content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Sed lobortis orci elementum egestas
-                  lobortis.
+                <p className="text-lg text leading-normal text-center xl:w-8/12 heading_content">
+                  We are a dedicated team of experts specializing in mobile app design, development, and AI solutions. Our goal is to deliver innovative and high-quality digital experiences that drive success for businesses.
                 </p>
               </div>
+
+
               {/* team member  */}
               <div style={{
                 backgroundImage: "url('/images/home/teambg.jpg')",
@@ -177,22 +198,22 @@ const Home = () => {
                 <div className="container">
                   <div className="grid grid-cols-12 md:gap-10 gap-5">
                     {/* own  */}
-                    <div className="own md:col-span-5 col-span-12 flex flex-col gap-5">
-                      <img className="w-full h-auto" src={clint2} alt="" />
+                    <div className="own md:col-span-4 col-span-12 flex flex-col gap-5">
+                      <img className="w-full h-auto" src={ownersss} alt="" />
                       <div className="client_content text-center flex flex-col gap-3">
                         <div className="stat">
                           <h6 className="font-bold text-3xl">Dilshad Raza</h6>
                           <span className="status text-sm text-[#FF0066]">
-                            Co and co-founder
+                            Co-Founder & CEO
                           </span>
                         </div>
                         <p className="text-base">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Meet our talented CEO & Co-Founder, leading innovation and excellence at Dtechkrew.
                         </p>
                       </div>
                     </div>
                     {/* member  */}
-                    <div className="member md:col-span-7 col-span-12 flex flex-col gap-5">
+                    <div className="member md:col-span-8 col-span-12 flex flex-col gap-5">
                       <div className="mem_content flex flex-col gap-2">
                         <h5 className="md:text-4xl sm:text-3xl text-2xl font-bold uppercase">
                           meet{" "}
@@ -209,32 +230,32 @@ const Home = () => {
                       <div className="members grid md:grid-cols-2 gap-10">
                         <div className="mem1">
                           <div className="own flex flex-col gap-5">
-                            <img className="w-full h-auto" src={clint2} alt="" />
+                            <img className="w-full h-auto" src={awais} alt="" />
                             <div className="client_content text-center flex flex-col gap-3">
                               <div className="stat">
-                                <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                                <h6 className="font-bold text-3xl">M Awais</h6>
                                 <span className="status text-sm text-[#FF0066]">
-                                  Co and co-founder
+                                  Project Manager
                                 </span>
                               </div>
                               <p className="text-base">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Meet our Project Manager, expertly guiding teams to deliver projects on time, within scope, and beyond expectations
                               </p>
                             </div>
                           </div>
                         </div>
                         <div className="mem2">
                           <div className="own flex flex-col gap-5">
-                            <img className="w-full h-auto" src={clint2} alt="" />
+                            <img className="w-full h-auto" src={hamza} alt="" />
                             <div className="client_content text-center flex flex-col gap-3">
                               <div className="stat">
-                                <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                                <h6 className="font-bold text-3xl">Ali Hamza</h6>
                                 <span className="status text-sm text-[#FF0066]">
-                                  Co and co-founder
+                                  Sole Manager
                                 </span>
                               </div>
                               <p className="text-base">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Meet our Senior Developer, crafting robust and scalable solutions with advanced coding expertise and innovative problem-solving
                               </p>
                             </div>
                           </div>
@@ -256,70 +277,23 @@ const Home = () => {
           }} className="allMembers padTop">
             <div className="container">
               <div className="grid md:grid-cols-4 grid-cols-1 gap-10">
-                <div className="mem1">
-                  <div className="own flex flex-col gap-5">
-                    <img className="w-full h-auto" src={clint2} alt="" />
-                    <div className="client_content text-center flex flex-col gap-3">
-                      <div className="stat">
-                        <h6 className="font-bold text-3xl">Dilshad Raza</h6>
-                        <span className="status text-sm text-[#FF0066]">
-                          Co and co-founder
-                        </span>
+                {
+                  TeamMember.map((items, index) => {
+                    return (
+                      <div key={index} className="mem1">
+                        <div className="own flex flex-col gap-5">
+                          <img className="w-full h-auto" src={items.profile} alt="" />
+                          <div className="client_content text-center flex flex-col gap-1">
+                            <h6 className="font-bold text-2xl">{items.memName}</h6>
+                            <span className="status text-sm text-[#000]">
+                              {items.status}
+                            </span>
+                          </div>
+                        </div>
                       </div>
-                      <p className="text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="mem2">
-                  <div className="own flex flex-col gap-5">
-                    <img className="w-full h-auto" src={clint2} alt="" />
-                    <div className="client_content text-center flex flex-col gap-3">
-                      <div className="stat">
-                        <h6 className="font-bold text-3xl">Dilshad Raza</h6>
-                        <span className="status text-sm text-[#FF0066]">
-                          Co and co-founder
-                        </span>
-                      </div>
-                      <p className="text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="mem3">
-                  <div className="own flex flex-col gap-5">
-                    <img className="w-full h-auto" src={clint2} alt="" />
-                    <div className="client_content text-center flex flex-col gap-3">
-                      <div className="stat">
-                        <h6 className="font-bold text-3xl">Dilshad Raza</h6>
-                        <span className="status text-sm text-[#FF0066]">
-                          Co and co-founder
-                        </span>
-                      </div>
-                      <p className="text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="mem4">
-                  <div className="own flex flex-col gap-5">
-                    <img className="w-full h-auto" src={clint2} alt="" />
-                    <div className="client_content text-center flex flex-col gap-3">
-                      <div className="stat">
-                        <h6 className="font-bold text-3xl">Dilshad Raza</h6>
-                        <span className="status text-sm text-[#FF0066]">
-                          Co and co-founder
-                        </span>
-                      </div>
-                      <p className="text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                    )
+                  })
+                }
               </div>
             </div>
           </div>
@@ -327,192 +301,128 @@ const Home = () => {
       </div>
 
       {/* about us */}
-      <div className="aboutUs padTop">
-        <div className="container flex flex-col gap-20">
-          <div className="section_content">
-            <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
-              About <span className="text-[#FF0066]"> Us</span>
-            </h5>
-            <p className="text-lg text leading-normal text-center xl:w-6/12 heading_content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              voluptas ducimus tempore iste beatae dicta, dolore eligendi et
-              blanditiis aspernatur aliquam illum voluptatem dolores accusamus
-              voluptate, porro, amet provident voluptatum!
-            </p>
-          </div>
-          <div className="aboutUsCols grid xl:grid-cols-2 gap-20">
-            <div className="flex flex-col gap-5">
-              <p className="text-2xl">About Our Company</p>
-              <h6 className="text-4xl font-medium">How We Can Help You</h6>
-              <div className="detail flex flex-col gap-10">
-                <p className="md:text-2xl text-lg text xl:w-9/12 xs:w-full">
-                  DTechKrew is a dynamic software solutions company dedicated to
-                  empowering businesses worldwide.
-                </p>
-                <p className="md:text-2xl text-lg text xl:w-9/12 xs:w-full">
-                  With innovative technology, we transform challenges into
-                  lasting value, operational efficiency, and revenue growth.
-                </p>
-                <p className="md:text-2xl text-lg text xl:w-9/12 xs:w-full">
-                  Our tailored engineering services and advanced solutions drive
-                  business success, enabling our clients to thrive in a rapidly
-                  evolving digital landscape.
-                </p>
-              </div>
+      <div className="about padTop">
+        <div className="container">
+          <div className="main flex flex-col gap-20">
+            <div className="section_content flex flex-col gap-5">
+              <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
+                About <span className="text-[#FF0066]"> Us</span>
+              </h5>
+              <p className="text-lg text leading-normal text-center xl:w-8/12 heading_content">
+                At Dtechkrew, we transform ideas into reality with cutting-edge technology. Specializing in mobile app development, AI solutions, and UI/UX design, we help businesses innovate and grow. From custom software to AI-powered applications, our expert team is dedicated to delivering high-quality digital solutions. Let’s build something extraordinary together
+              </p>
             </div>
-            <div className="flex justify-end">
-              <img src={about} alt="" className="w-full h-auto" />
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+              {/* //content  */}
+              <div className="aboutCon flex flex-col md:gap-10 gap-3">
+                <p className="text-2xl">About Our Company</p>
+                <h6 className="text-4xl font-bold">How We Can Help You</h6>
+                <div className="detail flex flex-col gap-10">
+                  <p className="md:text-lg text-base text xl:w-9/12 xs:w-full">
+                    DTechKrew is a dynamic software solutions company dedicated to
+                    empowering businesses worldwide.
+                  </p>
+                  <p className="md:text-lg text-base text xl:w-9/12 xs:w-full">
+                    With innovative technology, we transform challenges into
+                    lasting value, operational efficiency, and revenue growth.
+                  </p>
+                  <p className="md:text-lg text-base text xl:w-9/12 xs:w-full">
+                    Our tailored engineering services and advanced solutions drive
+                    business success, enabling our clients to thrive in a rapidly
+                    evolving digital landscape.
+                  </p>
+                  <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="#">Contact Us</Link>
+                </div>
+              </div>
+              {/* // about img  */}
+              <div className="aboutIMg">
+                <img src={about} alt="" className="w-full h-auto" />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* testimonials */}
-      <div className="testimonial padTop">
+      <PicTestimonial />
+
+      {/* testimonials two */}
+      <Testimonials />
+
+      {/* Speak to Our Results */}
+      <div className="Results padTop md:block hidden">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="section_content flex flex-col gap-5">
-              <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
-                Testimonials That <br className="inline" /> Speak to{" "}
-                <span className="text-[#FF0066]"> Our Results</span>
-              </h5>
-              <p className="text-lg text leading-normal text-center xl:w-6/12 heading_content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                voluptas ducimus tempore iste beatae dicta, dolore eligendi et
-                blanditiis aspernatur aliquam illum voluptatem dolores accusamus
-                voluptate, porro, amet provident voluptatum!
-              </p>
+              <div className="content">
+                <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
+                  Our <span className="text-[#FF0066]"> Clients</span>
+                </h5>
+                <p className="text-lg text leading-normal text-center xl:w-8/12 heading_content">
+                  See what our customer say about us
+                </p>
+              </div>
+              <div className="btns flex gap-10 flex justify-center">
+                <div className="flex gap-1 items-center bg-[#fff] max-w-max p-2 rounded-full">
+                  <span className="bg-[#000] rounded-full">hel</span>
+                  <p className="text-[#000] text-lg">Satisfied customers</p>
+                </div>
+                <div className="flex gap-1 items-center bg-[#fff] max-w-max p-2 rounded-full">
+                  <span className="bg-[#FF4C70] text-[#FF4C70] rounded-full">hel</span>
+                  <p className="text-[#000] text-lg">customers reviews</p>
+                </div>
+              </div>
             </div>
-            <div className="tests">
-              <Swiper
-                // install Swiper modules
-                modules={[Navigation, A11y]}
-                spaceBetween={50}
-                slidesPerView={3}
-                navigation={{ clickable: true }}
-                breakpoints={{
-                  // Small Screens (Mobile)
-                  320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                  },
-                  // Medium Screens (Tablets)
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-                  // Large Screens (Laptops)
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                  },
-                  // Extra Large Screens (Desktops)
-                  1280: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                  },
-                }}
-              >
-                <SwiperSlide>
-                  <img src={video} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={video} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={video} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={video} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={video} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={video} alt="" />
-                </SwiperSlide>
-              </Swiper>
-            </div>
+            <img src={MapResult} alt="MapResult" />
           </div>
         </div>
       </div>
 
-      {/* our clients */}
-      <div className="Outclients padTop">
+      {/* Staff Augmentation */}
+      <div className="Augmentation padTop">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="section_content flex flex-col gap-5">
-              <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
-                Testimonials That <br className="inline" /> Speak to{" "}
-                <span className="text-[#FF0066]"> Our Results</span>
-              </h5>
-              <p className="text-lg text leading-normal text-center xl:w-6/12 heading_content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                voluptas ducimus tempore iste beatae dicta, dolore eligendi et
-                blanditiis aspernatur aliquam illum voluptatem dolores accusamus
-                voluptate, porro, amet provident voluptatum!
-              </p>
-            </div>
-            <div className="cards grid grid-cols-2 gap-144">
-              <div className="bg-[#FF0066] p-5 rounded flex flex-col gap-5">
-                <img className="w-12" src={quotes} alt="" />
-                <p>
-                  I am very proud of the team at DevDimensions, they are a very
-                  smart group of people and I highly recommend them.
-                </p>
-                <div className="footer flex gap-5">
-                  <img className="w-12 rounded-full" src={clint} alt="" />
-                  <div className="footr_content">
-                    <h6 className="font-bold">Paul McGruire</h6>
-                    <p>Co-fonder & CEO, Tru.id</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-[#FF0066] p-5 rounded flex flex-col gap-5">
-                <img className="w-12" src={quotes} alt="" />
-                <p>
-                  I am very proud of the team at DevDimensions, they are a very
-                  smart group of people and I highly recommend them.
-                </p>
-                <div className="footer flex gap-5">
-                  <img className="w-12 rounded-full" src={clint} alt="" />
-                  <div className="footr_content">
-                    <h6 className="font-bold">Paul McGruire</h6>
-                    <p>Co-fonder & CEO, Tru.id</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* our clients */}
-      <div className="Outclients padTop">
-        <div className="container">
-          <div className="main flex flex-col gap-20">
-            <div className="section_content flex flex-col gap-5">
-              <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
+              <h5 className="md:text-5xl sm:text-4xl text-3xl font-bold uppercase leading-snug text-center">
                 Staff <span className="text-[#FF0066]"> Augmentation</span>
               </h5>
             </div>
-            <div className="grid grid-cols-2">
-              <div className="">
-                <p>S T A F F A U G E M E N T A T I O N</p>
-                <h6>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
+              <div className="flex flex-col gap-5">
+                <p className="md:text-2xl text-lg">S T A F F A U G E M E N T A T I O N</p>
+                <h6 className="md:text-4xl sm:text-3xl text-2xl font-bold uppercase">
                   IT Staff augmentation
                   <span className="text-[#FF0066]"> services</span>
                 </h6>
-                <p>
+                <p className="md:text-lg text-base text">
                   Expand your technology team with the top Latin American
                   Talent, Boost your productivity, reduce timeframes, or
                   implemont a specific skillset for a limited time.
                 </p>
+                <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="#">Contact Us</Link>
               </div>
               <div className="">
-                <img src={clint} alt="" />
+                <img src={augmentation} alt="augmentation" />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* // calendar */}
+      <div className="calendar">
+        <div className="container">
+          <div className="main flex flex-col gap-20">
+            <div className="content flex flex-col gap-5">
+              <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug">
+                READY TO FIND OUT IF <span className="text-[#FF0066]"> <br className="inline" /> WE’RE THE ONES FOR YOU?</span>
+              </h5>
+              <p className="text-lg text leading-normal">
+                Schedule your FREE, 20 minutes strategy <br className="inline" />
+                session with our founder, Dilshad Raza
+              </p>
+            </div>
+            <Calendar />
           </div>
         </div>
       </div>
