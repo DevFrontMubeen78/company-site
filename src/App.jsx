@@ -15,6 +15,8 @@ import HireUiUX from "./pages/HireUiUX";
 import CaseStudies from "./pages/CaseStudies";
 import PageNotFound from "./pages/PageNotFound";
 import Glaze from "./pages/Glaze";
+import OyrqPage from "./pages/OyrqPage";
+import Fitsician from "./pages/Fitsician";
 import { HelmetProvider } from "react-helmet-async";
 
 
@@ -41,6 +43,8 @@ const App = () => {
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="*" element={<PageNotFound />} />
             <Route path="/glaze" element={<Glaze />} />
+            <Route path="/oyrq" element={<OyrqPage />} />
+            <Route path="/fitsician" element={<Fitsician />} />
           </Route>
         </Routes>
       </BrowserRouter>

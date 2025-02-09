@@ -193,35 +193,46 @@ const Glaze = () => {
             </div>
 
             {/* // User Persona */}
-            <div className="UserPersona padTop py-10">
-                <div className="container mx-auto px-5">
-                    <div className="main flex flex-col gap-10 md:gap-18">
-                        <h6 className="font-bold text-[#6A67D2] border-b-2 text-4xl max-w-max pb-3">
+            <div className="UserPersona py-10">
+                <div className="container">
+                    <div className="main flex flex-col gap-10 md:gap-16">
+                        {/* Heading */}
+                        <h6 className="font-bold text-[#6A67D2] border-b-2 border-[#6A67D2] text-4xl max-w-max pb-3">
                             User Persona
                         </h6>
-                        <div className="main grid grid-cols-1 md:grid-cols-12 gap-10">
+
+                        {/* Main Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
                             {/* Image Section */}
-                            <div className="md:col-span-4 col-span-12 flex justify-center">
-                                <img src={girl} alt="User Persona" className="w-full max-w-xs md:max-w-full rounded-lg" />
+                            <div className="md:col-span-4">
+                                <img className="w-full h-auto rounded-lg shadow-lg" src={girl} alt="User Persona" />
                             </div>
+
                             {/* Text Content Section */}
-                            <div className="md:col-span-8 col-span-12 flex flex-col gap-10">
+                            <div className="md:col-span-8 flex flex-col gap-10 text-white">
+                                {/* Bio Section */}
                                 <div className="flex flex-col gap-5">
-                                    <h6 className="font-bold text-white text-2xl md:text-3xl">Bio</h6>
-                                    <p className="text-base md:text-lg text-white">
-                                        Sarah is a busy young professional who values self-care and staying up-to-date with the latest beauty trends. She leads a hectic lifestyle, juggling her career, social life, and personal wellness. Sarah is tech-savvy and relies on her smartphone for various aspects of her life, including shopping, entertainment, and health.
+                                    <h6 className="font-bold text-2xl md:text-3xl">Bio</h6>
+                                    <p className="text-base md:text-lg">
+                                        Sarah is a busy young professional who values self-care and staying up-to-date with the latest beauty trends.
+                                        She leads a hectic lifestyle, juggling her career, social life, and personal wellness.
+                                        Sarah is tech-savvy and relies on her smartphone for various aspects of her life, including shopping, entertainment, and health.
                                     </p>
                                 </div>
-                                {/* Pain Points and Goals Section */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
+
+                                {/* Pain Points & Goals Section */}
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                    {/* Pain Points */}
                                     <div className="flex flex-col gap-4">
                                         <h6 className="font-bold text-2xl md:text-3xl">Pain Points</h6>
                                         <ul className="list-disc pl-5 flex flex-col gap-3 text-base md:text-lg">
                                             <li>Limited time for extensive beauty routines or browsing through numerous products.</li>
                                             <li>Sarah may have specific skin concerns or sensitivities, making it challenging to find suitable products.</li>
-                                            <li>The beauty market is saturated, and Sarah may feel overwhelmed with the multitude of products available. She needs guidance on what will work best for her.</li>
+                                            <li>The beauty market is saturated, and Sarah may feel overwhelmed with the multitude of products available.</li>
                                         </ul>
                                     </div>
+
+                                    {/* Goals */}
                                     <div className="flex flex-col gap-4">
                                         <h6 className="font-bold text-2xl md:text-3xl">Goals</h6>
                                         <ul className="list-disc pl-5 flex flex-col gap-3 text-base md:text-lg">
