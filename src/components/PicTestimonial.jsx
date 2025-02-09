@@ -7,9 +7,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import video1 from '../../public/images/home/video1.jpg';
-import video2 from '../../public/images/home/video2.png';
-import video3 from '../../public/images/home/video3.png';
+
+const swiperSlider = [
+    "/images/home/video1.jpg",
+    "/images/home/video2.png",
+    "/images/home/video3.png",
+    "/images/home/video3.png",
+]
 
 const PicTestimonial = () => {
     return (
@@ -32,36 +36,24 @@ const PicTestimonial = () => {
                         navigation={{ clickable: true }}
                         breakpoints={{
                             320: { slidesPerView: 1 },
-                            640: { slidesPerView: 2},
-                            1024: { slidesPerView: 3},
-                            1280: { slidesPerView: 3},
+                            640: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                            1280: { slidesPerView: 3 },
                         }}
                     >
-                        <SwiperSlide>
-                            <div className="testSlider">
-                                <img src={video1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testSlider">
-                                <img src={video2} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testSlider">
-                                <img src={video3} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testSlider">
-                                <img src={video1} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testSlider">
-                                <img src={video2} alt="" />
-                            </div>
-                        </SwiperSlide>
+                        {
+                            swiperSlider.map((items, index) => {
+                                return (
+                                    <SwiperSlide key={index} >
+                                        <div className="testSlider">
+                                            <img className='object-cover' src={items} alt="" />
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+
+                        
                     </Swiper>
                 </div>
             </div>
