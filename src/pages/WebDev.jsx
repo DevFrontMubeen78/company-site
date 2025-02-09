@@ -300,7 +300,7 @@ const WebDev = () => {
                 team to work more efficiently, innovate faster, and achieve
                 greater success.
               </p>
-              <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="#">Contact Us</Link>
+              <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
             </div>
             <div className="map">
               <img src={python} alt="python" />

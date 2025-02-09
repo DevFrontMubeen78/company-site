@@ -200,7 +200,7 @@ const IosDeveloper = () => {
                                 Need skilled iOS developers? <br className="inline" /> Turn to DTechKrew to get the best talents.
                             </h1>
                         </div>
-                        <Link className="text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="#"> Contact Us</Link>
+                        <Link className="text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="/Contact-us"> Contact Us</Link>
                     </div>
                 </div>
             </div>

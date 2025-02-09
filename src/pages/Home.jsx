@@ -67,7 +67,7 @@ const Home = () => {
                 transforming your ideas into cutting-edge applications that drive
                 growth and efficiency.
               </p>
-              <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="#">Contact Us</Link>
+              <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
             </div>
             <div className="img">
               <img src={mobile} alt="Group 70 1.png" />
@@ -110,7 +110,7 @@ const Home = () => {
                     <li>App prototyping and testing</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="#"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/mobile-app-development"><span className='lines'>View More</span></Link>
               </div>
               <div className="flex justify-end">
                 <img className='xl:w-80 w-96' src={caseONe} alt="" />
@@ -122,7 +122,7 @@ const Home = () => {
                 "url('/images/case-studies/webs.png'), url('/images/case-studies/Pattern456.png')",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top right, bottom right",
-              backgroundSize: "8.5%, 25%",
+              backgroundSize: "8.5%, 23%",
             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#f4f7ff] md:px-20 md:pt-10 px-5 md:py-0 rounded-3xl">
               <div className="flex justify-end">
                 <img className='xl:w-80 w-96' src={caseTwo} alt="" />
@@ -139,7 +139,7 @@ const Home = () => {
                     <li>API integration and development</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="#"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/web-development"><span className='lines'>View More</span></Link>
               </div>
             </div>
             {/* case 3 */}
@@ -162,7 +162,7 @@ const Home = () => {
                     <li>Predictive analytics and decision-making systems</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="#"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development"><span className='lines'>View More</span></Link>
               </div>
               <div className="flex justify-end">
                 <img className='w-full' src={caseThree} alt="" />
@@ -331,7 +331,7 @@ const Home = () => {
                     business success, enabling our clients to thrive in a rapidly
                     evolving digital landscape.
                   </p>
-                  <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="#">Contact Us</Link>
+                  <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
                 </div>
               </div>
               {/* // about img  */}
@@ -399,7 +399,7 @@ const Home = () => {
                   Talent, Boost your productivity, reduce timeframes, or
                   implemont a specific skillset for a limited time.
                 </p>
-                <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="#">Contact Us</Link>
+                <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
               </div>
               <div className="">
                 <img src={augmentation} alt="augmentation" />

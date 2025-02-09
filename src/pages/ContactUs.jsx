@@ -3,10 +3,7 @@ import Recrutment from "../components/Recrutment";
 import Teams from "../components/Teams";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { MdOutlineFacebook } from "react-icons/md";
-import { IoLogoInstagram } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import SocialIcon from "../components/SocialIcon";
 import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
@@ -93,17 +90,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </div>
-                <div className="socialMedia flex gap-5">
-                  <Link to="#">
-                    <MdOutlineFacebook className="text-[#fff] text-3xl" />
-                  </Link>
-                  <Link to="#">
-                    <IoLogoInstagram className="text-[#fff] text-3xl" />
-                  </Link>
-                  <Link to="#">
-                    <FaLinkedin className="text-[#fff] text-3xl" />
-                  </Link>
-                </div>
+                <SocialIcon/>
               </div>
             </div>
           </div>
