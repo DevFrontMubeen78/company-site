@@ -96,7 +96,7 @@ const Home = () => {
                 "url('/images/case-studies/Pattern(1).png'), url('/images/case-studies/Pattern1234.png')",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top left, bottom right",
-              backgroundSize: "8.5%, 19.5%",
+              backgroundSize: "8.5%, 17%",
             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#edf0f9] md:px-20 px-5 md:py-0 rounded-3xl">
               <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
                 <div className="content flex flex-col gap-3">
@@ -122,7 +122,7 @@ const Home = () => {
                 "url('/images/case-studies/webs.png'), url('/images/case-studies/Pattern456.png')",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top right, bottom right",
-              backgroundSize: "8.5%, 27%",
+              backgroundSize: "8.5%, 25%",
             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#f4f7ff] md:px-20 md:pt-10 px-5 md:py-0 rounded-3xl">
               <div className="flex justify-end">
                 <img className='xl:w-80 w-96' src={caseTwo} alt="" />
@@ -148,7 +148,7 @@ const Home = () => {
                 "url('/images/case-studies/Pattern(5).png'), url('/images/case-studies/Pattern789.png')",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top left, bottom right",
-              backgroundSize: "8.5%, 28%",
+              backgroundSize: "8.5%, 24%",
             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#abebff] md:px-20 px-5 md:py-0 rounded-3xl">
               <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
                 <div className="content flex flex-col gap-3">

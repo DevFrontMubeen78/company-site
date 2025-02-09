@@ -31,10 +31,10 @@ const PicTestimonial = () => {
                         slidesPerView={3}
                         navigation={{ clickable: true }}
                         breakpoints={{
-                            320: { slidesPerView: 1, spaceBetween: 20 },
-                            640: { slidesPerView: 2, spaceBetween: 30 },
-                            1024: { slidesPerView: 3, spaceBetween: 40 },
-                            1280: { slidesPerView: 3, spaceBetween: 50 },
+                            320: { slidesPerView: 1 },
+                            640: { slidesPerView: 2},
+                            1024: { slidesPerView: 3},
+                            1280: { slidesPerView: 3},
                         }}
                     >
                         <SwiperSlide>
