@@ -18,6 +18,7 @@ import PicTestimonial from "../components/PicTestimonial";
 import { Helmet } from "react-helmet-async";
 
 
+
 const TeamMember = [
   {
     memName: "Muhammad Raheel",
@@ -43,6 +44,12 @@ const TeamMember = [
 
 
 const Home = () => {
+  const scrollToSection = () => {
+    const section = document.getElementById("booking");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div>
       <Helmet>
@@ -67,7 +74,7 @@ const Home = () => {
                 transforming your ideas into cutting-edge applications that drive
                 growth and efficiency.
               </p>
-              <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
+              <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max" to="#booking">Booking a Free Consultant</Link>
             </div>
             <div className="img">
               <img src={mobile} alt="Group 70 1.png" />
@@ -251,7 +258,7 @@ const Home = () => {
                               <div className="stat">
                                 <h6 className="font-bold text-3xl">Ali Hamza</h6>
                                 <span className="status text-sm text-[#FF0066]">
-                                  Sole Manager
+                                  Senior Developer
                                 </span>
                               </div>
                               <p className="text-base">
@@ -314,10 +321,10 @@ const Home = () => {
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
               {/* //content  */}
-              <div className="aboutCon flex flex-col md:gap-10 gap-3">
+              <div className="aboutCon flex flex-col md:gap-5 gap-3">
                 <p className="text-2xl">About Our Company</p>
                 <h6 className="text-4xl font-bold">How We Can Help You</h6>
-                <div className="detail flex flex-col gap-10">
+                <div className="detail flex flex-col gap-5">
                   <p className="md:text-lg text-base text xl:w-9/12 xs:w-full">
                     DTechKrew is a dynamic software solutions company dedicated to
                     empowering businesses worldwide.
@@ -331,7 +338,7 @@ const Home = () => {
                     business success, enabling our clients to thrive in a rapidly
                     evolving digital landscape.
                   </p>
-                  <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
+                  <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max" to="#booking">Booking a Free Consultant</Link>
                 </div>
               </div>
               {/* // about img  */}
@@ -399,7 +406,7 @@ const Home = () => {
                   Talent, Boost your productivity, reduce timeframes, or
                   implemont a specific skillset for a limited time.
                 </p>
-                <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
+                <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">View More</Link>
               </div>
               <div className="">
                 <img src={augmentation} alt="augmentation" />
@@ -410,7 +417,7 @@ const Home = () => {
       </div>
 
       {/* // calendar */}
-      <div className="calendar">
+      <div id="booking" className="calendar">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="content flex flex-col gap-5">

@@ -1,11 +1,10 @@
-import React from "react";
 import ReactStars from "react-rating-stars-component";
 
 const testimonialsFirst = [
   {
     ClientName: "Michael Johnson",
     country: "United States",
-    rating: 4.8,
+    rating: 5.0,
     review:
       "Exceptional service! The team at Dtechkrew exceeded my expectations. They delivered a high-quality product with excellent attention to detail. Highly recommended!",
     images: "/images/home/cl2.png",
@@ -21,7 +20,7 @@ const testimonialsFirst = [
   {
     ClientName: "Daniel O'Connor",
     country: "Ireland",
-    rating: 4.9,
+    rating: 4.1,
     review:
       "Amazing work! They took my project to the next level with their skills and dedication. The team was highly responsive and always available to address any concerns.",
     images: "/images/home/cl3.png",
@@ -40,7 +39,7 @@ const testimonialsSecond = [
   {
     ClientName: "Rajesh Kumar",
     country: "India",
-    rating: 4.6,
+    rating: 5.0,
     review:
       "Dtechkrew provided outstanding service! Their communication was top-notch, and they understood exactly what I needed. Will definitely work with them again.",
     images: "/images/home/cl1.png",

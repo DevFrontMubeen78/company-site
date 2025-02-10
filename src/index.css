@@ -13,15 +13,16 @@
 
 @keyframes colorChange {
   0% {
-    background-color: #c3e3fa;
+    background-color: #eaf4fc;
   }
   50% {
-    background-color: #e7c7cd;
+    background-color: #f9e5e8;
   }
   100% {
-    background-color: #c3e3fa;
+    background-color: #eaf4fc;
   }
 }
+
 
 body, .header {
   animation: colorChange 7s infinite linear;
@@ -95,7 +96,6 @@ body, .header {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -105,7 +105,6 @@ body, .header {
   0% {
     transform: translateX(-100%);
   }
-
   100% {
     transform: translateX(0);
   }
@@ -114,12 +113,12 @@ body, .header {
 /* Default Mobile: Show 1 item */
 .animate-marquee {
   display: flex;
-  animation: marquee 15s linear infinite;
+  animation: marquee 25s linear infinite;
 }
 
 .animate-marquee-reverse {
   display: flex;
-  animation: marquee-reverse 15s linear infinite;
+  animation: marquee-reverse 25s linear infinite;
 }
 
 .testimonial-box {
@@ -133,11 +132,11 @@ body, .header {
   }
 
   .animate-marquee {
-    animation-duration: 20s;
+    animation-duration: 30s;
   }
 
   .animate-marquee-reverse {
-    animation-duration: 20s;
+    animation-duration: 30s;
   }
 }
 
@@ -148,14 +147,13 @@ body, .header {
   }
 
   .animate-marquee {
-    animation-duration: 25s;
+    animation-duration: 45s;
   }
 
   .animate-marquee-reverse {
-    animation-duration: 25s;
+    animation-duration: 45s;
   }
 }
-
 
 @media (max-width: 767.98px) {
   .inline {
@@ -166,4 +164,3 @@ body, .header {
     width: 90%;
   }
 }
-
