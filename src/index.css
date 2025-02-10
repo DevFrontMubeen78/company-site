@@ -9,6 +9,9 @@
   padding: 50px 0px;
 }
 
+body {
+  background: linear-gradient(to right, #eaf4fc, #f9e5e8);
+}
 
 
 @keyframes colorChange {
@@ -24,7 +27,7 @@
 }
 
 
-body, .header {
+.hero_section, .header {
   animation: colorChange 7s infinite linear;
 }
 
@@ -132,11 +135,11 @@ body, .header {
   }
 
   .animate-marquee {
-    animation-duration: 30s;
+    animation-duration: 0s;
   }
 
   .animate-marquee-reverse {
-    animation-duration: 30s;
+    animation-duration: 0s;
   }
 }
 
@@ -147,11 +150,11 @@ body, .header {
   }
 
   .animate-marquee {
-    animation-duration: 45s;
+    animation-duration: 0s;
   }
 
   .animate-marquee-reverse {
-    animation-duration: 45s;
+    animation-duration: 0s;
   }
 }
 
