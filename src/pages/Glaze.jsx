@@ -1,4 +1,3 @@
-import React from 'react'
 import glazeTitle from "../../public/images/glaze/gl-title.png"
 import photoshop from "../../public/images/glaze/ps.png"
 import mobile from "../../public/images/glaze/heroglaze.png"
