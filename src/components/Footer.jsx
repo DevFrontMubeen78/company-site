@@ -42,7 +42,7 @@ const Footer = () => {
                         <div>
                             <h3 className="font-bold text-gray-900 text-lg mb-3">SERVICES</h3>
                             <ul className="text-gray-600 space-y-2">
-                                <li><Link to="#">Staff Augmentation</Link></li>
+                                <li><Link to="/staff-augmentation">Staff Augmentation</Link></li>
                                 <li><Link to="/mobile-app-development">App Development </Link></li>
                                 <li><Link to="/data-science-and-ai-development"></Link>AI & Data Science Development</li>
                                 <li><Link to="#"></Link>Digital Product Design</li>

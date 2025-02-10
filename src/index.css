@@ -9,12 +9,12 @@
   padding: 50px 0px;
 }
 
-body {
+body, .header {
   background: linear-gradient(to right, #eaf4fc, #f9e5e8);
 }
 
 
-@keyframes colorChange {
+/* @keyframes colorChange {
   0% {
     background-color: #eaf4fc;
   }
@@ -29,7 +29,7 @@ body {
 
 .hero_section, .header {
   animation: colorChange 7s infinite linear;
-}
+} */
 
 .text {
   color: #858591;
@@ -135,11 +135,11 @@ body {
   }
 
   .animate-marquee {
-    animation-duration: 0s;
+    animation-duration: 30s;
   }
 
   .animate-marquee-reverse {
-    animation-duration: 0s;
+    animation-duration: 30s;
   }
 }
 
@@ -150,11 +150,11 @@ body {
   }
 
   .animate-marquee {
-    animation-duration: 0s;
+    animation-duration: 45s;
   }
 
   .animate-marquee-reverse {
-    animation-duration: 0s;
+    animation-duration: 45s;
   }
 }
 

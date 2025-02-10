@@ -406,7 +406,7 @@ const Home = () => {
                   Talent, Boost your productivity, reduce timeframes, or
                   implemont a specific skillset for a limited time.
                 </p>
-                <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">View More</Link>
+                <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/staff-augmentation">View More</Link>
               </div>
               <div className="">
                 <img src={augmentation} alt="augmentation" />
