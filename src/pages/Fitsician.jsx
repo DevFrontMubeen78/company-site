@@ -4,6 +4,11 @@ import figma from "../../public/images/fitsician/Group 1597883730.png"
 import mobiles from "../../public/images/fitsician/Group 1686555516.png"
 import desktop from "../../public/images/fitsician/Desktop - 2.png"
 import primary from "../../public/images/fitsician/primary.png"
+import girl from "../../public/images/glaze/girl.png"
+import flow from "../../public/images/fitsician/vlow.png"
+import bold from "../../public/images/fitsician/Bold.png"
+import light from "../../public/images/fitsician/Light - (Border).png"
+import TwoTone from "../../public/images/fitsician/Two tone.png"
 import Thanks from '../components/Thanks'
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
@@ -391,7 +396,7 @@ const colors = {
             code: "#607D8B",
         },
     ],
-    background : [
+    background: [
         {
             img: "/images/colors/Rectangle(35).png",
             name: "Blue",
@@ -423,7 +428,7 @@ const colors = {
             code: "#800080",
         },
     ],
-    transparent : [
+    transparent: [
         {
             img: "/images/colors/Rectangle(41).png",
             name: "Blue",
@@ -461,6 +466,29 @@ const colors = {
         },
     ]
 };
+
+const HighFidelity = [
+    {
+        img: "/images/fitsician/flow1.png",
+        desc: "Our app's splash screen introduces users to our brand, while onboarding seamlessly guides them through features. The login screen ensures secure access to personalized profiles, prioritizing user data protection. In 50 words, our app's initial screens offer a smooth, secure, and informative entry into the health and fitness journey.",
+    },
+    {
+        img: "/images/fitsician/flow2.png",
+        desc: "The home screen of our app serves as the central hub for users' health and fitness journey. It features personalized recommendations for workouts and meal plans based on individual goals and preferences. Users can easily access their progress tracking, community feed, expert advice, and explore new content for continuous inspiration and motivation.",
+    },
+    {
+        img: "/images/fitsician/flow3.png",
+        desc: "Our progress tracker is a comprehensive tool designed to monitor and visualize users' fitness journey. It allows users to input and track various metrics such as weight, body measurements, and performance data over time. Graphical representations and trend analysis provide insights into progress and areas for improvement, empowering users to stay motivated and informed on their path to achieving their health and fitness goals.",
+    },
+    {
+        img: "/images/fitsician/flow4.png",
+        desc: "Our subscription model offers users exclusive access to premium features and content within the app. Subscribers enjoy benefits such as personalized workout plans, advanced analytics, ad-free experience, and priority support. With flexible pricing options, users can choose a subscription plan that best suits their needs, ensuring a tailored and enhanced health and fitness experience.",
+    },
+    {
+        img: "/images/fitsician/flow5.png",
+        desc: "Our app integrates profile management, a vibrant community space, and insightful blogs to create a holistic user experience. Profiles enable personalized tracking, while the community fosters support and motivation. Expertly curated blogs offer valuable insights, enriching users' journey towards improved health and fitness.",
+    }
+]
 
 
 const Fitsician = () => {
@@ -722,8 +750,8 @@ const Fitsician = () => {
 
                         {/* // other  */}
                         <div className="flex flex-col gap-10">
-                            <h6 className="font-bold text-[#000] text-left text-2xl">Dark Colors</h6>
-                            <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-1 gap-10">
+                            <h6 className="font-bold text-[#000] text-left text-2xl">Others</h6>
+                            <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-10">
                                 {colors.other.map((items, index) => (
                                     <div key={index} className="flex flex-col gap-5">
                                         <div className="flex justify-between">
@@ -739,7 +767,7 @@ const Fitsician = () => {
                         {/* // Background  */}
                         <div className="flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Background</h6>
-                            <div className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-1 gap-10">
+                            <div className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-10">
                                 {colors.background.map((items, index) => (
                                     <div key={index} className="flex flex-col gap-5">
                                         <div className="flex justify-between">
@@ -755,7 +783,7 @@ const Fitsician = () => {
                         {/* // Transparent  */}
                         <div className="flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Transparent</h6>
-                            <div className="grid md:grid-cols-7 sm:grid-cols-3 grid-cols-1 gap-10">
+                            <div className="grid md:grid-cols-7 sm:grid-cols-3 grid-cols-2 gap-10">
                                 {colors.transparent.map((items, index) => (
                                     <div key={index} className="flex flex-col gap-5">
                                         <div className="flex justify-between">
@@ -765,6 +793,172 @@ const Fitsician = () => {
                                         <img src={items.img} alt={items.img} />
                                     </div>
                                 ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* // Iconography & Components  */}
+            <div className="Iconography padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-18">
+                        <div className="flex justify-center text-center">
+                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Iconography & Components</h6>
+                        </div>
+
+                        <div className="main flex flex-col gap-20">
+                            <img src={bold} alt={bold} />
+                            <img src={light} alt={light} />
+                            <img src={TwoTone} alt={TwoTone} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* // User Persona */}
+            <div className="UserPersona padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-10 md:gap-16">
+                        {/* Heading */}
+                        <div className="flex justify-center">
+                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>User Persona</h6>
+                        </div>
+
+                        {/* Main Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+                            {/* Image Section */}
+                            <div className="md:col-span-4">
+                                <img className="w-full h-auto rounded-lg shadow-lg" src={girl} alt="User Persona" />
+                            </div>
+
+                            {/* Text Content Section */}
+                            <div className="md:col-span-8 flex flex-col gap-10">
+                                {/* Bio Section */}
+                                <div className="flex flex-col gap-5">
+                                    <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">Bio</h6>
+                                    <p className="text-base md:text-lg">
+                                        Sarah is a busy young professional who values self-care and staying up-to-date with the latest beauty trends.
+                                        She leads a hectic lifestyle, juggling her career, social life, and personal wellness.
+                                        Sarah is tech-savvy and relies on her smartphone for various aspects of her life, including shopping, entertainment, and health.
+                                    </p>
+                                </div>
+
+                                {/* Pain Points & Goals Section */}
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                    {/* Pain Points */}
+                                    <div className="flex flex-col gap-4">
+                                        <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">Pain Points</h6>
+                                        <ul className="list-disc pl-5 flex flex-col gap-3 text-base md:text-lg">
+                                            <li>Limited time for extensive beauty routines or browsing through numerous products.</li>
+                                            <li>Sarah may have specific skin concerns or sensitivities, making it challenging to find suitable products.</li>
+                                            <li>The beauty market is saturated, and Sarah may feel overwhelmed with the multitude of products available. She needs guidance on what will work best for her.</li>
+                                        </ul>
+                                    </div>
+
+                                    {/* Goals */}
+                                    <div className="flex flex-col gap-4">
+                                        <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">Goals</h6>
+                                        <ul className="list-disc pl-5 flex flex-col gap-3 text-base md:text-lg">
+                                            <li>Sarah is looking for a beauty app that streamlines her beauty routine.</li>
+                                            <li>She wants to stay current with beauty trends and discover new products or techniques easily.</li>
+                                            <li>Sarah appreciates personalized recommendations based on her skin type, tone, and preferences.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* // User flow */}
+            <div className="UserFlow padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-10 md:gap-16">
+                        {/* Heading */}
+                        <div className="flex justify-center">
+                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>User Flow</h6>
+                        </div>
+                        <img src={flow} alt={flow} />
+                    </div>
+                </div>
+            </div>
+
+            {/* // High Fidelity Designs */}
+            <div className="HighFidelity padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-10 md:gap-16">
+                        {/* Heading */}
+                        <div className="flex justify-center">
+                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>High Fidelity Designs</h6>
+                        </div>
+                        {
+                            HighFidelity.map((items, index) => {
+                                return (
+                                    <div key={index} className="main flex flex-col gap-10">
+                                        <img src={items.img} alt={items.img} />
+                                        <p className="text-lg leading-snug text-center">{items.desc}</p>
+                                    </div>
+                                )
+                            })
+                        }
+
+                    </div>
+                </div>
+            </div>
+
+            {/* // Take Aways */}
+            <div className="TakeAways padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-10 md:gap-16">
+                        {/* Heading */}
+                        <div className="flex justify-center">
+                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Take Aways</h6>
+                        </div>
+                        <div className="main grid md:grid-cols-2 grid-cols-1 gap-18">
+                            <div className="flex flex-col gap-5">
+                                <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">Impact</h6>
+                                <p className="text-base md:text-lg">
+                                    The health and fitness platform empowers users with personalized guidance, community support, and expert insights. It revolutionizes wellness journeys by fostering motivation, accountability, and knowledge sharing for transformative lifestyle changes.
+                                </p>
+                            </div>
+                            <div className="flex flex-col gap-5">
+                                <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">Feedback from a peer</h6>
+                                <p className="text-base md:text-lg text-[#008080]">
+                                    Your app's interface is sleek and user-friendly, making it easy to navigate. I particularly appreciate the personalized recommendations and progress tracking features, which have helped me stay motivated on my fitness journey. The community aspect is fantastic; it's inspiring to connect with others and share experiences. However, I'd love to see more diverse content in the blogs section, covering a broader range of topics. Overall, great job!"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col gap-5">
+                            <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">What I learned </h6>
+                            <p className="text-base md:text-lg">
+                                Through using the health and fitness platform, I learned the importance of personalized guidance and community support in achieving my wellness goals. Tracking my progress and accessing expert insights have empowered me to make informed decisions and stay motivated on my journey to better health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* // Next Step */}
+            <div className="NextStep padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-10 md:gap-16">
+                        {/* Heading */}
+                        <div className="flex justify-center">
+                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Next Step</h6>
+                        </div>
+                        <div className="flex flex-col gap-5">
+                            <p className="text-base md:text-lg">
+                                There are a few next steps that will  be taken after the development of the  B. Mental Health app  is finished to keep the product getting better include :
+                            </p>
+                            <div className="flex flex-col gap-4">
+                                <ul className="list-disc pl-5 flex flex-col gap-3 text-base md:text-lg ml-5">
+                                    <li><strong className='text-[#008080]'>Tests with users:</strong> Using user testing to get feedback from real users and figure out where improvements can be made.</li>
+                                    <li><strong className='text-[#008080]'>Implementing feedback from users: </strong> Incorporating user requests into the design of the app, such as by adding new features or modifying existing ones.</li>
+                                    <li><strong className='text-[#008080]'>Continuous advancement:</strong> Collecting data and feedback on a regular basis and utilizing this information to continuously enhance the app.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>

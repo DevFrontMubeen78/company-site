@@ -17,6 +17,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Glaze from "./pages/Glaze";
 import OyrqPage from "./pages/OyrqPage";
 import Fitsician from "./pages/Fitsician";
+import Siply from "./pages/Siply";
 import { HelmetProvider } from "react-helmet-async";
 
 
@@ -45,6 +46,7 @@ const App = () => {
             <Route path="/glaze" element={<Glaze />} />
             <Route path="/oyrq" element={<OyrqPage />} />
             <Route path="/fitsician" element={<Fitsician />} />
+            <Route path="/siply" element={<Siply />} />
           </Route>
         </Routes>
       </BrowserRouter>

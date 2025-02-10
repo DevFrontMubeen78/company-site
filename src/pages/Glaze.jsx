@@ -228,7 +228,7 @@ const Glaze = () => {
                                         <ul className="list-disc pl-5 flex flex-col gap-3 text-base md:text-lg">
                                             <li>Limited time for extensive beauty routines or browsing through numerous products.</li>
                                             <li>Sarah may have specific skin concerns or sensitivities, making it challenging to find suitable products.</li>
-                                            <li>The beauty market is saturated, and Sarah may feel overwhelmed with the multitude of products available.</li>
+                                            <li>The beauty market is saturated, and Sarah may feel overwhelmed with the multitude of products available. She needs guidance on what will work best for her.</li>
                                         </ul>
                                     </div>
 

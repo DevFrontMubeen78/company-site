@@ -164,7 +164,7 @@ const CaseStudies = () => {
                                         </div>
                                         <p className="text text-base leading-snug">Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients.</p>
                                     </div>
-                                    <Link className='bg-[#eb9539] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="#"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
+                                    <Link className='bg-[#eb9539] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/siply"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
                                 </div>
                                 <div className="flex justify-end">
                                     <img className='w-full' src={caseThree} alt="" />
