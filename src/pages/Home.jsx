@@ -15,6 +15,8 @@ import MapResult from "../../public/images/home/Frame 343.png";
 import Calendar from "../components/Calendar";
 import { Link } from "react-router-dom";
 import PicTestimonial from "../components/PicTestimonial";
+import MapComponent from "../components/MapComponent";
+import CountUp from 'react-countup';
 import { Helmet } from "react-helmet-async";
 
 
@@ -41,6 +43,29 @@ const TeamMember = [
     profile: "/images/home/anam.png"
   },
 ]
+
+const counter = [
+  {
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={125} suffix="+" />,
+    text: "Mobile Application"
+  },
+  {
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={45} suffix="+" />,
+    text: "Web Applications"
+  },
+  {
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={101} suffix="+" />,
+    text: "Logos & Branding"
+  },
+  {
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={11} suffix="+" />,
+    text: "AI Systems"
+  },
+  {
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={20} suffix="+" />,
+    text: "Staff Augmentation"
+  },
+];
 
 
 const Home = () => {
@@ -134,7 +159,7 @@ const Home = () => {
               <div className="">
                 <img className='xl:w-80 w-96' src={caseTwo} alt="" />
               </div>
-              <div className="flex flex-col md:gap-20 gap-0 justify-center items-end py-15">
+              <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
                 <div className="content flex flex-col gap-3">
                   <div className="flex flex-col gap-2">
                     <h6 className='font-bold xl:text-3xl text-lg'>WEB DEVELOPMENT</h6>
@@ -180,7 +205,6 @@ const Home = () => {
       </div>
 
       {/* team */}
-
       <div className="team">
         <div className="flex flex-col gap-20">
           <div className="main">
@@ -189,7 +213,7 @@ const Home = () => {
                 <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
                   Our <span className="text-[#FF0066]"> Team</span>
                 </h5>
-                <p className="text-lg text leading-normal text-center xl:w-8/12 heading_content">
+                <p className="text-lg leading-normal text-center xl:w-8/12 heading_content">
                   We are a dedicated team of experts specializing in mobile app design, development, and AI solutions. Our goal is to deliver innovative and high-quality digital experiences that drive success for businesses.
                 </p>
               </div>
@@ -226,7 +250,7 @@ const Home = () => {
                           meet{" "}
                           <span className="text-[#FF0066]"> our expertise</span>
                         </h5>
-                        <p className="md:text-md text-base text leading-snug">
+                        <p className="md:text-md text-base leading-snug text-[#000]">
                           Meet the experts at Dtechkrew, where innovation and
                           expertise drive exceptional results. Our team combines
                           years of experience with cutting-edge technology to
@@ -350,6 +374,25 @@ const Home = () => {
         </div>
       </div>
 
+      {/* counter */}
+      <div className="counter padTop bg-[#e8c6d7] p-5">
+        <div className="container">
+          <div className="main grid md:grid-cols-5 grid-cols-2 md:gap-20 gap-10">
+            {
+              counter.map((items, index) => {
+                return (
+                  <div key={index} className="flex flex-col gap-5 items-center text-[#FF0066]">
+                    {items.counter}
+                    <p className="text-[#000] text-lg">{items.text}</p>
+                  </div>
+                )
+              })
+            }
+
+          </div>
+        </div>
+      </div>
+
       {/* testimonials */}
       <PicTestimonial />
 
@@ -380,7 +423,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <img src={MapResult} alt="MapResult" />
+            {/* <img src={MapResult} alt="MapResult" /> */}
+            <MapComponent />
           </div>
         </div>
       </div>
@@ -406,7 +450,7 @@ const Home = () => {
                   Talent, Boost your productivity, reduce timeframes, or
                   implemont a specific skillset for a limited time.
                 </p>
-                <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/staff-augmentation">View More</Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines'>View More</span></Link>
               </div>
               <div className="">
                 <img src={augmentation} alt="augmentation" />
