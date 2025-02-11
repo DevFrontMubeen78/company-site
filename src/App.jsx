@@ -15,7 +15,9 @@ import HireAndroid from "./pages/HireAndroid";
 import HireDataScientists from "./pages/HireDataScientists";
 import HireUiUX from "./pages/HireUiUX";
 import CaseStudies from "./pages/CaseStudies";
+import GymSport from "./pages/GymSport";
 import PageNotFound from "./pages/PageNotFound";
+import Career from "./pages/Career";
 import Glaze from "./pages/Glaze";
 import OyrqPage from "./pages/OyrqPage";
 import Fitsician from "./pages/Fitsician";
@@ -58,6 +60,8 @@ const App = () => {
           <Route path="/oyrq" element={<OyrqPage />} />
           <Route path="/fitsician" element={<Fitsician />} />
           <Route path="/siply" element={<Siply />} />
+          <Route path="/gym-support" element={<GymSport />} />
+          <Route path="/career" element={<Career />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

@@ -14,7 +14,7 @@ const Footer = () => {
                             <Link to="/"><img src={logo} alt="Logo" className="w-24 mb-6" /></Link>
                             <ul className="space-y-4 text-gray-700">
                                 <li className="flex items-center gap-3 text-lg"><FaInfoCircle className="text-pink-500" /><Link to="/about">About</Link></li>
-                                <li className="flex items-center gap-3 text-lg"><FaBriefcase className="text-pink-500" /><Link to="#">Careers</Link></li>
+                                <li className="flex items-center gap-3 text-lg"><FaBriefcase className="text-pink-500" /><Link to="/career">Careers</Link></li>
                                 <li className="flex items-center gap-3 text-lg"><FaPenNib className="text-pink-500" /> <Link to="#">Works</Link></li>
                                 <li className="flex items-center gap-3 text-lg"><FaUsers className="text-pink-500" /> <Link to="#">Clients</Link></li>
                             </ul>
@@ -44,7 +44,7 @@ const Footer = () => {
                             <ul className="text-gray-600 space-y-2">
                                 <li><Link to="/staff-augmentation">Staff Augmentation</Link></li>
                                 <li><Link to="/mobile-app-development">App Development </Link></li>
-                                <li><Link to="/data-science-and-ai-development"></Link>AI & Data Science Development</li>
+                                <li><Link to="/data-science-and-ai-development">AI & Data Science Development</Link></li>
                                 <li><Link to="#"></Link>Digital Product Design</li>
                             </ul>
                         </div>

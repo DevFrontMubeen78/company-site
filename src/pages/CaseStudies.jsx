@@ -186,7 +186,7 @@ const CaseStudies = () => {
                                         </div>
                                         <p className="text text-base leading-snug">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                     </div>
-                                    <Link className='bg-[#ff5252] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="#"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
+                                    <Link className='bg-[#ff5252] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/gym-support"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
                                 </div>
                                 <div className="flex justify-end">
                                     <img className='w-full' src={caseSix} alt="" />
