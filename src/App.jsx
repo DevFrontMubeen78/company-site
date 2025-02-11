@@ -23,6 +23,8 @@ import OyrqPage from "./pages/OyrqPage";
 import Fitsician from "./pages/Fitsician";
 import Augmentation from "./pages/Augmentation";
 import Siply from "./pages/Siply";
+import CauseWay from "./pages/CauseWay";
+
 import { HelmetProvider } from "react-helmet-async";
 
 const ScrollToTop = () => {
@@ -62,6 +64,7 @@ const App = () => {
           <Route path="/siply" element={<Siply />} />
           <Route path="/gym-support" element={<GymSport />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/causeway" element={<CauseWay />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
