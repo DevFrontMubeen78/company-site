@@ -5,13 +5,12 @@ import PageLastSec from "../components/PageLastSec";
 import mobile from "../../public/images/Group 70 1.png";
 import caseONe from "/images/case-studies/Group 1686555501.png"
 import caseTwo from "/images/case-studies/website.jpg"
-import caseThree from "/images/case-studies/ai.png"
+import caseThree from "../../public/images/case-studies/ai.png"
 import about from "../../public/images/about.png";
 import hamza from "../../public/images/home/ali-hamza.png";
 import awais from "../../public/images/home/awais.png";
 import ownersss from "../../public/images/home/ownersss.png";
 import augmentation from "../../public/images/home/staff augmentation.png";
-import MapResult from "../../public/images/home/Frame 343.png";
 import Calendar from "../components/Calendar";
 import { Link } from "react-router-dom";
 import PicTestimonial from "../components/PicTestimonial";
@@ -197,7 +196,7 @@ const Home = () => {
                 <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development"><span className='lines'>View More</span></Link>
               </div>
               <div className="flex justify-end">
-                <img className='w-full' src={caseThree} alt="" />
+                <img className='md:w-9/12 w-full' src={caseThree} alt={caseThree}  />
               </div>
             </div>
           </div>
