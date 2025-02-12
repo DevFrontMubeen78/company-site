@@ -12,13 +12,6 @@ import DProcess from "../../public/images/causeway/Group 1597884009.png"
 import DProcess2 from "../../public/images/causeway/Group 1597883757.png"
 import projectTimeline from "../../public/images/causeway/Group 1597883758.png"
 import projectTimeline2 from "../../public/images/causeway/Group 1597884010.png"
-// import gsupport from "../../public/images/gym/860shots_so 1.png"
-// import frameVL from "../../public/images/gym/Frame 33317.png"
-// import probleums from "../../public/images/gym/image 691.png"
-// import aaaa from "../../public/images/gym/A a 1...png"
-// import highFidelty from "../../public/images/gym/HIGH Fidelity Wireframe.png"
-// import mobiless from "../../public/images/gym/Group 1597884427.png"
-// import icon from "../../public/images/gym/Star Struck.png"
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";

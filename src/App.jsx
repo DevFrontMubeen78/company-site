@@ -25,6 +25,7 @@ const OyrqPage = lazy(() => import("./pages/OyrqPage"));
 const Fitsician = lazy(() => import("./pages/Fitsician"));
 const Augmentation = lazy(() => import("./pages/Augmentation"));
 const Siply = lazy(() => import("./pages/Siply"));
+const Unitree = lazy(() => import("./pages/Unitree"));
 const CauseWay = lazy(() => import("./pages/CauseWay"));
 
 const ScrollToTop = () => {
@@ -72,6 +73,7 @@ const App = () => {
             <Route path="/gym-support" element={<GymSport />} />
             <Route path="/career" element={<Career />} />
             <Route path="/causeway" element={<CauseWay />} />
+            <Route path="/unitree" element={<Unitree />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Suspense>

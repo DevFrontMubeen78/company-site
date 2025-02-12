@@ -11,9 +11,11 @@ import Exclude3 from "../../public/images/glaze/Exclude3.png"
 import ICONOGRAPHY from "../../public/images/glaze/icong.png"
 import virtual from "../../public/images/glaze/vitual.png"
 import Thanks from '../components/Thanks'
+import MyRole from "../components/MyRole"
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
+
 
 const designProcess = [
     {
@@ -62,38 +64,7 @@ const designProcess = [
         ]
     },
 ]
-const role = [
-    {
-        img: "/images/glaze/role1.png",
-        title: "UI Documentation",
-        desc: "creation of ui documentation so that developers can code well."
-    },
-    {
-        img: "/images/glaze/role2.png",
-        title: "Provide Assets ",
-        desc: "ensure Assets contained in the UI are usable and provide in multiple sizes."
-    },
-    {
-        img: "/images/glaze/role3.png",
-        title: "User testing",
-        desc: "User testing using UT and AB testing, so that the App can be well received by the user."
-    },
-    {
-        img: "/images/glaze/role4.png",
-        title: "UI Audit",
-        desc: "Perform UI audits. make sure nothing goes wrong when the App is made."
-    },
-    {
-        img: "/images/glaze/role5.png",
-        title: "Flow Documentation",
-        desc: "when the application is continued, it can be easily carried out."
-    },
-    {
-        img: "/images/glaze/role6.png",
-        title: "Research",
-        desc: "This process is made so that the requirements and problems obtained meet the target market."
-    },
-]
+
 const screen = [
     "/images/glaze/virtual1.png",
     "/images/glaze/virtual2.png",
@@ -305,22 +276,7 @@ const Glaze = () => {
                             <h6 className='font-bold text-[#6A67D2] border-b-2 text-4xl max-w-max pb-3'>My Role</h6>
                             <p className='text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can be implemented by developers.</p>
                         </div>
-                        <div className="grid md:grid-cols-3 grid-cols-2 gap-18">
-                            {
-                                role.map((items, index) => {
-                                    return (
-                                        <div key={index} className="text-[#fff] flex flex-col gap-10 items-center text-center">
-                                            <img className='w-16' src={items.img} alt="" />
-                                            <div className="flex flex-col gap-4">
-                                                <h6 className="text-2xl font-bold">{items.title}</h6>
-                                                <p className='text-lg'>{items.desc}</p>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
-
-                        </div>
+                        <MyRole />
                     </div>
                 </div>
             </div>
