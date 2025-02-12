@@ -195,13 +195,9 @@ const Home = () => {
                 </div>
                 <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development"><span className='lines'>View More</span></Link>
               </div>
-<<<<<<< HEAD
+
               <div className="flex justify-end items-center">
                 <img className='w-full h-56' src={caseThree} alt="" />
-=======
-              <div className="flex justify-end">
-                <img className='md:w-9/12 w-full' src={caseThree} alt={caseThree}  />
->>>>>>> f66cdc68a545f37861a4027ff2f5452ea04723c2
               </div>
             </div>
           </div>
@@ -392,7 +388,6 @@ const Home = () => {
                 )
               })
             }
-
           </div>
         </div>
       </div>
