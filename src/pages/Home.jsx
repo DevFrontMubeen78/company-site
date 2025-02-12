@@ -171,8 +171,8 @@ const Home = () => {
                 </div>
                 <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development"><span className='lines'>View More</span></Link>
               </div>
-              <div className="flex justify-end">
-                <img className='w-full' src={caseThree} alt="" />
+              <div className="flex justify-end items-center">
+                <img className='w-full h-56' src={caseThree} alt="" />
               </div>
             </div>
           </div>
