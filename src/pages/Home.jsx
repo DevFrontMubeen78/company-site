@@ -98,7 +98,7 @@ const Home = () => {
                 transforming your ideas into cutting-edge applications that drive
                 growth and efficiency.
               </p>
-              <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max" to="#booking">Booking a Free Consultant</Link>
+              <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max" to="#booking">Book a free consultation</Link>
             </div>
             <div className="img">
               <img src={mobile} alt="Group 70 1.png" />
@@ -361,7 +361,7 @@ const Home = () => {
                     business success, enabling our clients to thrive in a rapidly
                     evolving digital landscape.
                   </p>
-                  <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max" to="#booking">Booking a Free Consultant</Link>
+                  <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max" to="#booking">Book a free consultation</Link>
                 </div>
               </div>
               {/* // about img  */}
