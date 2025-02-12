@@ -445,9 +445,7 @@ const Home = () => {
                   <span className="text-[#FF0066]"> services</span>
                 </h6>
                 <p className="md:text-lg text-base text">
-                  Expand your technology team with the top Latin American
-                  Talent, Boost your productivity, reduce timeframes, or
-                  implemont a specific skillset for a limited time.
+                  Expand your technology team with the top Latin American talent and take your business to the next level. Enhance productivity, streamline workflows, and accelerate project timelines with highly skilled professionals. Whether you need to bridge a talent gap, reduce development time, or implement a specialized skill set for a specific project, our experts are ready to deliver high-quality results tailored to your needs. Partner with us to access a diverse pool of top-tier talent and drive innovation effortlessly.
                 </p>
                 <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines'>View More</span></Link>
               </div>
