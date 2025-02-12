@@ -58,7 +58,7 @@ const testimonialsSecond = [
 
 const Testimonials = () => {
   return (
-    <div className="bg-[#FFB5CA] pt-16 overflow-hidden">
+    <div className="bg-[#FFB5CA] padTop overflow-hidden">
       <div className="mx-auto flex flex-col gap-10">
 
         {/* First Slider (Left to Right) */}
@@ -122,9 +122,9 @@ const Testimonials = () => {
         </div>
 
         {/* Frames Image */}
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <img className="w-full" src="/images/home/Framessss.png" alt="Frames" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
