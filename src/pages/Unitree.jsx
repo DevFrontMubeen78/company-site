@@ -7,8 +7,11 @@ import listIcon from "../../public/images/unitree/Frame 20.png"
 import listIcon1 from "../../public/images/unitree/Frame 21.png"
 import location from "../../public/images/unitree/image 3.png"
 import graph from "../../public/images/unitree/Frame 2258.png"
-import MyRole from "../components/MyRole"
 import quote from "../../public/images/unitree/Page 1.png"
+import QuoteMark from "../../public/images/unitree/Quote Mark.png"
+import research from "../../public/images/unitree/Group 93.png"
+import candidate from "../../public/images/unitree/candidate.png"
+import MyRole from "../components/MyRole"
 import { IoIosPhonePortrait } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
@@ -108,9 +111,60 @@ const timeline = [
     },
 ]
 
+const interview = [
+    {
+        mark: "/images/unitree/Quote Mark.png",
+        candidate: "/images/unitree/Picture1.png",
+        name: "Afiyatika Mufidati",
+        designation: "Housewife",
+        desc: "it would be very easy for me if I could check the inventory first, before going to the store to buy it.",
+    },
+    {
+        mark: "/images/unitree/Quote Mark.png",
+        candidate: "/images/unitree/Picture2.png",
+        name: "gustaf Martien",
+        designation: "Student",
+        desc: "I often use my smartphone for daily needs. it will be very easy if I can place an order using my cellphone from home.",
+    },
+    {
+        mark: "/images/unitree/Quote Mark.png",
+        candidate: "/images/unitree/Picture3.png",
+        name: "Lik Wati",
+        designation: "Grocery buyer",
+        desc: "I want my order to be delivered when I order the goods, so I don't have to leave the house, as much as possible free shipping.",
+    },
+    {
+        mark: "/images/unitree/Quote Mark.png",
+        candidate: "/images/unitree/Picture4.png",
+        name: "Pakdhe Suaman",
+        designation: "Grocery buyer",
+        desc: "when I buy things, usually a lot. It would be very nice if I could buy many items at once in one order.",
+    },
+    {
+        mark: "/images/unitree/Quote Mark.png",
+        candidate: "/images/unitree/Picture5.png",
+        name: "Koh Jason",
+        designation: "Chicken seller",
+        desc: "I often forget to record the orders that I have ordered before, it is very confusing for me to do a monthly recap.",
+    },
+    {
+        mark: "/images/unitree/Quote Mark.png",
+        candidate: "/images/unitree/Picture6.png",
+        name: "Lik Emy",
+        designation: "Food Seller",
+        desc: "I live in a village, so access to the city is also difficult. very disappointing if when you go to the city there is no purchased item.",
+    },
+]
+
 const Unitree = () => {
     return (
-        <div>
+        <div style={{
+            backgroundImage:
+                "url('/images/unitree/mockup3.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "bottom center",
+            backgroundSize: "cover",
+        }} >
             <Helmet>
                 <title> DTK - Unitree</title>
             </Helmet>
@@ -372,22 +426,25 @@ const Unitree = () => {
                         </div>
 
                         {/* design stratgy  */}
-                        <div className="main padTop">
+                        <div className="padTop relative">
                             <div style={{
-                                backgroundImage:
-                                    "url('/images/unitree/Vector 4.png')",
+                                backgroundImage: "url('/images/unitree/Vector 4.png')",
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center",
-                                backgroundSize: "120%",
-                            }} className="flex flex-col gap-5 text-center padTop">
-                                <div className="container">
+                                backgroundSize: "105%",
+                                position: "absolute",
+                                left: "0px",
+                                right: "0",
+                                height: "360px",
+                            }} className="padTop">
+                                <div className="container flex flex-col gap-5 text-center ">
                                     <h6 className='font-bold text-[#fff] text-4xl'>Design Strategy</h6>
                                     <p className='text-lg text-[#fff]'>A design strategy shows the value your product and services will bring to people and describes <br className="inline" /> this value to a goal. It also describes about the steps you will take to achieve the goal.</p>
                                 </div>
                             </div>
                             <div className="container">
-                                <div className="grid md:grid-cols-3 grid-cols-1 gap-14">
-                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 pt-10 flex flex-col gap-5">
+                                <div className="mainp md:pt-[75px] pt-[240px] pb-[50px]  grid md:grid-cols-3 grid-cols-1 gap-14">
+                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 md:pt-40 pt-5 flex flex-col gap-5">
                                         <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
                                         <div className="flex gap-2">
                                             <img className="w-3 h-3" src={quote} alt={quote} />
@@ -397,7 +454,7 @@ const Unitree = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 pt-30 flex flex-col gap-5">
+                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 md:pt-65 pt-5 flex flex-col gap-5">
                                         <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
                                         <div className="flex gap-2">
                                             <img className="w-3 h-3" src={quote} alt={quote} />
@@ -407,7 +464,29 @@ const Unitree = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 pt-10 flex flex-col gap-5">
+                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 md:pt-40 pt-5 flex flex-col gap-5">
+                                        <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
+                                        <div className="flex gap-2">
+                                            <img className="w-3 h-3" src={quote} alt={quote} />
+                                            <div className="flex flex-col gap-5">
+                                                <p className='text-base text-[#fff] text-left'>Creating an easy yet unique online platform for people who are searching for online goods to fullfill their needs. Give them an opportunity to share with the other friend when they finish using the app. </p>
+                                                <p className='text-lg text-[#fff] font-bold text-left'>Intention to detail transaction</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="mainm w-full md:flex gap-14 justify-center">
+                                    <div className="bg-[#383838] h-auto w-92 rounded-2xl p-5 flex flex-col gap-5">
+                                        <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
+                                        <div className="flex gap-2">
+                                            <img className="w-3 h-3" src={quote} alt={quote} />
+                                            <div className="flex flex-col gap-5">
+                                                <p className='text-base text-[#fff] text-left'>Creating an easy yet unique online platform for people who are searching for online goods to fullfill their needs. Give them an opportunity to share with the other friend when they finish using the app. </p>
+                                                <p className='text-lg text-[#fff] font-bold text-left'>Intention to detail transaction</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bg-[#383838] md:mt-0 mt-14 h-auto w-92 rounded-2xl p-5 flex flex-col gap-5">
                                         <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
                                         <div className="flex gap-2">
                                             <img className="w-3 h-3" src={quote} alt={quote} />
@@ -424,7 +503,75 @@ const Unitree = () => {
                 </div>
             </div>
 
-        </div>
+            {/* user reserch  */}
+            <div className="userReserch padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-20">
+                        <div className="flex flex-col gap-10">
+                            <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+                                <div className="flex flex-col gap-3">
+                                    <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">Preparation</p></div>
+                                    <h6 className="md:text-5xl text-3xl font-bold text-[#fff]">USER RESEARCH</h6>
+                                </div>
+                                <div className="grid grid-cols-2 md:gap-20 gap-10">
+                                    <div className="flex flex-col gap-2">
+                                        <h6 className="text-lg font-bold text-[#fff]">Research Plan</h6>
+                                        <ul className="text-[#fff]">
+                                            <li>Survey</li>
+                                            <li>Interview</li>
+                                            <li>Personas</li>
+                                        </ul>
+                                    </div>
+                                    <div className="flex flex-col gap-2">
+                                        <ul className="text-[#fff]">
+                                            <li>Empathy Map</li>
+                                            <li>User Journey</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className="text-lg text-[#fff]">User research is a proccess to find out the user point of view, their frustations and their struggle to get their understandig. I have two used methods which contributed hugely in aditio to my own findings</p>
+                        </div>
+                        <div className="flex flex-col md:gap-20 gap-10">
+                            <div className="flex flex-col gap-3">
+                                <h6 className="md:text-5xl text-3xl font-bold text-[#FECF29] border-l-8 pl-5">SURVEY</h6>
+                                <p className="text-lg text-[#fff]">I did survey with 55 potential users in combination with interviews from individual conversation to know their views, experience and to collect quantitive and qualitative data. the target audience were between the age 20-50 Yold</p>
+                            </div>
+                            <img className="w-full" src={research} alt={research} />
+                        </div>
+                        <div className="flex flex-col md:gap-20 gap-10">
+                            <div className="flex flex-col gap-3">
+                                <h6 className="md:text-5xl text-3xl font-bold text-[#00C48C] border-l-8 pl-5">INTERVIEW</h6>
+                                <p className="text-lg text-[#fff]">From the survey that I have done, I did filtering, and got 15 people for direct interview. I did online interviews using Zoom and invited them at different times.</p>
+                            </div>
+                            <img className="w-full" src={candidate} alt={candidate} />
+                        </div>
+                        <div className="mainp grid md:grid-cols-2 grid-cols-1 gap-5">
+                            {
+                                interview.map((items, index) => {
+                                    return (
+                                        <div key={index} className="bg-[#383838] rounded p-10 flex flex-col gap-5">
+                                            <img className="w-18 flex self-end" src={items.mark} alt={items.mark} />
+                                            <div className="flex gap-4 items-center">
+                                                <img className="w-16 flex self-end" src={items.candidate} alt={items.candidate} />
+                                                <div className="">
+                                                    <h6 className='font-bold text-[#fff] text-lg text-left'>{items.name}</h6>
+                                                    <p className='text-base text-[#fff] text-left'>{items.designation}</p>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-col gap-5">
+                                                <p className='text-base text-[#fff] text-left'>{items.desc}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div >
     )
 }
 
