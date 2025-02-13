@@ -8,9 +8,14 @@ import listIcon1 from "../../public/images/unitree/Frame 21.png"
 import location from "../../public/images/unitree/image 3.png"
 import graph from "../../public/images/unitree/Frame 2258.png"
 import quote from "../../public/images/unitree/Page 1.png"
-import QuoteMark from "../../public/images/unitree/Quote Mark.png"
+import persona from "../../public/images/unitree/unsplash_pUhxoSapPFA.png"
+import ICONOGRAPHY from "../../public/images/glaze/icong.png"
 import research from "../../public/images/unitree/Group 93.png"
 import candidate from "../../public/images/unitree/candidate.png"
+import feel from "../../public/images/unitree/feel.png"
+import colors from "../../public/images/unitree/colors.png"
+import info from "../../public/images/unitree/info-arch.png"
+import flow from "../../public/images/unitree/user flow.png"
 import MyRole from "../components/MyRole"
 import { IoIosPhonePortrait } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
@@ -153,6 +158,51 @@ const interview = [
         name: "Lik Emy",
         designation: "Food Seller",
         desc: "I live in a village, so access to the city is also difficult. very disappointing if when you go to the city there is no purchased item.",
+    },
+]
+
+const sayAnDo = [
+    {
+        mark: "/images/unitree/Quote Mark.png",
+        title: "Gain",
+        sub: [
+            "he wants to see the availability of the item and the price of the item.",
+            "he wants to see the progress of the goods that have been ordered.",
+            "he wants to get Receipt of order and proof of transaction.",
+        ],
+    },
+    {
+        mark: "/images/unitree/Quote Mark.png",
+        title: "Pain",
+        sub: [
+            "Disappointed that the prices of goods and supplies often fluctuate.",
+            "can't bargain.",
+            "can not see the delivery in detail and clearly.",
+            "bad signal and low device.",
+        ],
+    },
+]
+
+const icons = [
+    {
+        img: "images/causeway/icon1.png",
+        path: "#"
+    },
+    {
+        img: "images/causeway/icon2.png",
+        path: "#"
+    },
+    {
+        img: "images/causeway/icon3.png",
+        path: "#"
+    },
+    {
+        img: "images/causeway/icon4.png",
+        path: "#"
+    },
+    {
+        img: "images/causeway/icon5.png",
+        path: "#"
     },
 ]
 
@@ -427,16 +477,7 @@ const Unitree = () => {
 
                         {/* design stratgy  */}
                         <div className="padTop relative">
-                            <div style={{
-                                backgroundImage: "url('/images/unitree/Vector 4.png')",
-                                backgroundRepeat: "no-repeat",
-                                backgroundPosition: "center",
-                                backgroundSize: "105%",
-                                position: "absolute",
-                                left: "0px",
-                                right: "0",
-                                height: "360px",
-                            }} className="padTop">
+                            <div className="padTop">
                                 <div className="container flex flex-col gap-5 text-center ">
                                     <h6 className='font-bold text-[#fff] text-4xl'>Design Strategy</h6>
                                     <p className='text-lg text-[#fff]'>A design strategy shows the value your product and services will bring to people and describes <br className="inline" /> this value to a goal. It also describes about the steps you will take to achieve the goal.</p>
@@ -571,6 +612,327 @@ const Unitree = () => {
                 </div>
             </div>
 
+            {/* USER PERSONA  */}
+            <div className="userReserch padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-20">
+                        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+                            <div className="flex flex-col gap-3">
+                                <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">Define</p></div>
+                                <h6 className="md:text-5xl text-3xl font-bold text-[#fff]">USER PERSONA</h6>
+                            </div>
+                            <div className="grid grid-cols-2 md:gap-20 gap-10">
+                                <div className="flex flex-col gap-2">
+                                    <h6 className="text-lg font-bold text-[#fff]">Point Take away</h6>
+                                    <ul className="text-[#fff] list-disc ml-4">
+                                        <li>User background</li>
+                                        <li>Personality</li>
+                                        <li>Goal</li>
+                                    </ul>
+                                </div>
+                                <div className="flex flex-col gap-2">
+                                    <ul className="text-[#fff] list-disc">
+                                        <li>Frustation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="grid md:grid-cols-12 grid-cols-1 gap-5">
+                            <div className="md:col-span-4 col-span-12 bg-[#383838] rounded-2xl p-5 flex flex-col gap-5">
+                                <img className="w-full flex self-end" src={persona} alt={persona} />
+                                <ul className="text-[#fff] flex flex-col gap-3">
+                                    <li className="flex justify-between text-sm"><span className="font-bold">Full Name</span> David Lim Junior</li>
+                                    <li className="flex justify-between text-sm"><span className="font-bold">Date of birth</span> Mei, 10 1994</li>
+                                    <li className="flex justify-between text-sm"><span className="font-bold">Date of birth</span> Mei, 10 1994</li>
+                                    <li className="flex justify-between text-sm"><span className="font-bold">Age</span> 28 Years old</li>
+                                    <li className="flex justify-between text-sm"><span className="font-bold">Job</span> Food Seller</li>
+                                    <li className="flex justify-between text-sm"><span className="font-bold">Location</span> Jakarta, Indonesia</li>
+                                </ul>
+                                <div className="bg-[#383838] flex flex-col gap-3">
+                                    <h6 className='font-bold text-[#fff] text-2xl text-left'>Statement</h6>
+                                    <p className='text-base text-[#fff] text-left'>I want a simple and easy order. that way I dont have to manually buy what I want.</p>
+                                </div>
+                            </div>
+                            <div className="md:col-span-8 col-span-12 grid md:grid-cols-2 grid-cols-1 gap-5">
+                                <div className="bg-[#383838] rounded-2xl p-5 flex flex-col gap-3">
+                                    <h6 className='font-bold text-[#fff] text-2xl text-left'>About</h6>
+                                    <p className='text-base text-[#fff] text-left'>He is hadrdworking, a Seller from a small village who likes to use his smartphone for his daily needs. David Lim is a person who has a high school education background. he often spends his time shopping at the market and selling the goods he bought in the market to resell in stalls around his house. lack of access and poor road conditions make him rarely go to the city to look for necessities.</p>
+                                </div>
+                                <div className="bg-[#383838] rounded-2xl p-5 flex flex-col gap-3">
+                                    <h6 className='font-bold text-[#FECF29] text-2xl text-left'>Personality</h6>
+                                    <ul className="text-[#fff] list-disc ml-4">
+                                        {
+                                            ["Hardworking", "Smart", "Interested", "Thinking", "Agile", "Adapt"].map((items, index) => {
+                                                return (
+                                                    <li key={index}>{items}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="bg-[#383838] rounded-2xl p-5 flex flex-col gap-3">
+                                    <h6 className='font-bold text-[#00C48C] text-2xl text-left'>Personality</h6>
+                                    <ul className="text-[#fff] list-disc ml-4">
+                                        {
+                                            [
+                                                "Make an order without any hassle.",
+                                                "don't have to buy things manually in the city where he lives.",
+                                                "buy a lot of goods at one time",
+                                                "Get complete and clear order details.",
+                                                "Can see the price of the item he wants to buy and its availability."
+                                            ].map((items, index) => {
+                                                return (
+                                                    <li key={index}>{items}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                                <div className="bg-[#383838] rounded-2xl p-5 flex flex-col gap-3">
+                                    <h6 className='font-bold text-[#FF3D3D] text-2xl text-left'>Frustations</h6>
+                                    <ul className="text-[#fff] list-disc ml-4">
+                                        {
+                                            [
+                                                "Hassles, because you have to shop in the city every time.",
+                                                "Often disappointed, because when hehas come to the town and the goods purchased are not there.",
+                                                "prices fluctuate frequently so he is often short of cash when shopping.",
+                                            ].map((items, index) => {
+                                                return (
+                                                    <li key={index}>{items}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Empathy Map  */}
+            <div className="padTop relative">
+                <div style={{
+                    backgroundImage: "url('/images/unitree/Vector 4.png')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "105%",
+                    position: "absolute",
+                    left: "0px",
+                    right: "0",
+                    height: "360px",
+                }} className="padTop">
+                    <div className="container flex flex-col gap-5 text-center items-center">
+                        <h6 className='font-bold text-[#fff] text-4xl'>Empathy Map</h6>
+                        <p className='text-lg text-[#fff] md:w-8/12'>An empathy map is a collaborative visualization used to articulate what we know about a particular type of user. It helps to synthesize research data to bit assist to understand how people make decisions.</p>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="md:pt-[350px] pt-[300px]">
+                        <img className="w-full" src={feel} alt={feel} />
+                        <div className="flex flex-col gap-20">
+                            <div className="text-center  flex flex-col gap-3">
+                                <p className='text-lg text-[#fff]'>What does he</p>
+                                <h6 className='font-bold text-[#FECF29] text-4xl'>Say and Do</h6>
+                            </div>
+                            <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+                                {
+                                    sayAnDo.map((items, index) => {
+                                        return (
+                                            <div key={index} className="bg-[#383838] rounded p-10 flex flex-col gap-5">
+                                                <img className="w-18 flex self-end" src={items.mark} alt={items.mark} />
+                                                <div className="flex flex-col gap-3">
+                                                    <h6 className='font-bold text-[#fff] text-2xl text-center'>{items.title}</h6>
+                                                    <ul className="list-disc text-[#fff]">
+                                                        {
+                                                            items.sub.map((items, index) => {
+                                                                return (
+                                                                    <li key={index}>{items}</li>
+                                                                )
+                                                            })
+                                                        }
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* STYLE GUIDE  */}
+            <div className="STYLE padTop">
+                <div className="container">
+                    <div className="main flex flex-col gap-20">
+                        {/* //one  */}
+                        <div className="flex flex-col gap-10">
+                            <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+                                <div className="flex flex-col gap-3">
+                                    <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">UI Design</p></div>
+                                    <h6 className="md:text-5xl text-3xl font-bold text-[#fff]">STYLE GUIDE</h6>
+                                </div>
+                                <div className="flex flex-col gap-2">
+                                    <h6 className="text-lg font-bold text-[#fff]">Design system</h6>
+                                    <ul className="text-[#fff] list-disc ml-4">
+                                        <li>Typography</li>
+                                        <li>Color</li>
+                                        <li>Iconography</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <img className="w-full" src={colors} alt={colors} />
+                        </div>
+
+                        {/* Typography */}
+                        <div className="color flex flex-col gap-5">
+                            <div className="location flex gap-3 items-center">
+                                <img className='w-8' src={location} alt={location} />
+                                <h6 className='text-2xl text-[#fff]'>Typography</h6>
+                            </div>
+                            <div className="flex flex-col gap-20">
+                                <div className="typogrphy flex flex-col gap-8">
+                                    <h6 className='text-5xl font-bold text-[#fff]'>DM SANS</h6>
+                                    <div className="typo grid md:grid-cols-5 grid-cols-2 gap-18">
+                                        <div className="light flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-light'>Light</h6>
+                                            <p className="text-[#fff] text-lg font-light">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                        <div className="REGULER flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-normal'>REGULER</h6>
+                                            <p className="text-[#fff] text-lg font-normal">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                        <div className="MEDIUM flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-medium'>MEDIUM</h6>
+                                            <p className="text-[#fff] text-lg font-medium">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                        <div className="SEMIBOLD flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-semibold'>SEMI BOLD</h6>
+                                            <p className="text-[#fff] text-lg font-semibold">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                        <div className="BOLD flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-bold'>BOLD</h6>
+                                            <p className="text-[#fff] text-lg font-bold">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="typogrphy flex flex-col gap-8">
+                                    <h6 className='text-5xl font-bold text-[#fff]'>DM SANS</h6>
+                                    <div className="typo grid md:grid-cols-5 grid-cols-2 gap-18">
+                                        <div className="light flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-light'>Light</h6>
+                                            <p className="text-[#fff] text-lg font-light">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                        <div className="REGULER flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-normal'>REGULER</h6>
+                                            <p className="text-[#fff] text-lg font-normal">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                        <div className="MEDIUM flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-medium'>MEDIUM</h6>
+                                            <p className="text-[#fff] text-lg font-medium">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                        <div className="SEMIBOLD flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-semibold'>SEMI BOLD</h6>
+                                            <p className="text-[#fff] text-lg font-semibold">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                        <div className="BOLD flex flex-col gap-3">
+                                            <h6 className='text-2xl font-bold text-[#fff] font-bold'>BOLD</h6>
+                                            <p className="text-[#fff] text-lg font-bold">ABCDEFGHIJKLMNO <br className='inline' />PQRSTUVWXYX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* ICONOGRAPHY */}
+                        <div className="ICONOGRAPHY flex flex-col gap-5">
+                            <div className="location flex gap-3 items-center">
+                                <img className='w-8' src={location} alt={location} />
+                                <h6 className='text-2xl text-[#fff]'>ICONOGRAPHY</h6>
+                            </div>
+                            <div className="BASELINE flex flex-col gap-10">
+                                <h6 className='text-4xl font-bold text-[#fff]'>BASELINE / REGULAR</h6>
+                                <img className='w-full' src={ICONOGRAPHY} alt={ICONOGRAPHY} />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            {/* Information Architecture */}
+            <div className="InformationArchitecture relative">
+                <div className="padTop flex flex-col gap-20">
+                    <div className="container flex flex-col gap-5 text-center items-center">
+                        <h6 className='font-bold text-[#fff] text-4xl'>Information Architecture</h6>
+                        <p className='text-lg text-[#fff] md:w-8/12'>People often use the word “Information Architechture” to mean the meanus on website or apps, but thats not really correct. while menus are a part of IA. they’re relly only one part of it. Information architechture is all about organization of information in a clear and logical way. such organization follows a clear purpose helping users navigate complex sets of information</p>
+                    </div>
+                    <div className="container">
+                        <img className="w-9/12 mx-auto" src={info} alt={info} />
+                    </div>
+                </div>
+            </div>
+
+            {/* User Flow */}
+            <div className="shade InformationArchitecture relative">
+                <div className="padTop flex flex-col gap-20">
+                    <div className="container flex flex-col gap-5 text-center items-center">
+                        <h6 className='font-bold text-[#fff] text-4xl'>User Flow</h6>
+                        <p className='text-lg text-[#fff] md:w-8/12'>The user flow is consciously kept easy hence that the apps users can reach their desired to put it on without much effort.</p>
+                    </div>
+                    <div className="container">
+                        <img className="w-9/12 mx-auto" src={flow} alt={flow} />
+                    </div>
+                </div>
+            </div>
+
+            {/* Other Design */}
+            <div className="shade OtherDesign relative">
+                <div className="padTop flex flex-col gap-20">
+                    <div className="container flex flex-col gap-5 text-center items-center">
+                        <h6 className='font-bold text-[#fff] text-4xl'>Other Design</h6>
+                        <p className='text-lg text-[#fff] md:w-8/12'>The user flow is consciously kept easy hence that the apps users can reach their desired to put it on without much effort.</p>
+                    </div>
+                    <div className="container">
+                        {
+                            [
+                                "/images/unitree/mockup22.png",
+                                "/images/unitree/mockup23.png",
+                                "/images/unitree/mockup24.png",
+                                "/images/unitree/mockup25.png",
+                                "/images/unitree/mockup26.png",
+                                "/images/unitree/mockup27.png",
+                                "/images/unitree/mockup28.png",
+                            ].map((item, index) => {
+                                return (
+                                    <img key={index} className="w-9/12 mx-auto" src={item} alt={item} />
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+            </div>
+
+            {/* last section  */}
+            <div className="shade causeLast border border-t-[#474747] pt-[50px] pb-[10px]">
+                <div className="container">
+                    <div className="main flex flex-col gap-16">
+                        <h6 className="text-[#fff] md:text-4xl text-2xl text-center">THANKS FOR WATCHING</h6>
+                        <ul className="flex items-center justify-end gap-5">
+                            {
+                                icons.map((item, index) => {
+                                    return (
+                                        <li key={index}><Link to={item.path}><img className="w-6" src={item.img} alt={item.img} /></Link></li>
+                                    )
+                                })
+                            }
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div >
     )
 }

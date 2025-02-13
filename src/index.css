@@ -13,6 +13,28 @@ body, .header {
   background: linear-gradient(to right, #eaf4fc, #f9e5e8);
 }
 
+/* .shade {
+  background-image: url("/images/unitree/Vector 4.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 105%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 360px;
+} */
+
+/* style={{
+  backgroundImage: "url('/images/unitree/Vector 4.png')",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "105%",
+  position: "absolute",
+  left: "0px",
+  right: "0",
+  height: "360px",
+}}  */
+
 
 /* @keyframes colorChange {
   0% {
