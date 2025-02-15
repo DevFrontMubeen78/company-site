@@ -208,13 +208,7 @@ const icons = [
 
 const Unitree = () => {
     return (
-        <div style={{
-            backgroundImage:
-                "url('/images/unitree/mockup3.png')",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "bottom center",
-            backgroundSize: "cover",
-        }} >
+        <div className="bg-[#333333]">
             <Helmet>
                 <title> DTK - Unitree</title>
             </Helmet>
@@ -251,20 +245,13 @@ const Unitree = () => {
             </div>
 
             {/* // INTRODUCTION  */}
-            <div
-                style={{
-                    backgroundImage:
-                        "url('/images/unitree/mockup.png')",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "bottom center",
-                    backgroundSize: "cover",
-                }} className="introduction padTop">
+            <div className="introduction padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-6 text-center">
                             <div className="flex flex-col gap-2">
                                 <p className="text-base text-[#FECF29]">INTRODUCTION</p>
-                                <h1 className="text-4xl text-[#fff] font-bold">About This Project</h1>
+                                <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">About This Project</h1>
                             </div>
                             <div className="">
                                 <p className="text-base text-[#fff]">This project functional UX and UI Designer to overcome the immense <br className="inline" /> difficulty, broad minded and interactive and advanced UI Design.</p>
@@ -373,21 +360,14 @@ const Unitree = () => {
             </div>
 
             {/* design process  */}
-            <div
-                style={{
-                    backgroundImage:
-                        "url('/images/unitree/mockupss.png')",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "bottom center",
-                    backgroundSize: "cover",
-                }} className="designProcess padTop">
+            <div className="designProcess padTop">
                 <div className="container">
                     <div className="main flex flex-col md:gap-30 gap-20">
                         <div className="flex flex-col gap-10">
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                                 <div className="flex flex-col gap-3">
                                     <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">Preparation</p></div>
-                                    <h6 className="md:text-5xl text-3xl font-bold text-[#fff]">DESIGN PROCESS</h6>
+                                    <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">DESIGN PROCESS</h6>
                                 </div>
                                 <div className="grid grid-cols-2 md:gap-20 gap-10">
                                     <div className="flex flex-col gap-2">
@@ -426,7 +406,7 @@ const Unitree = () => {
                         </div>
                         <div className="flex flex-col md:gap-10 gap-5">
                             <div className="flex flex-col gap-3">
-                                <h6 className="md:text-5xl text-3xl font-bold text-[#fff]">Design Timeline</h6>
+                                <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">Design Timeline</h6>
                                 <p className="text-lg text-[#fff]">Our achievement in the journey depicted in numbers</p>
                             </div>
                             <img className="w-full" src={graph} alt={graph} />
@@ -457,34 +437,25 @@ const Unitree = () => {
             </div>
 
             {/* // Role */}
-            <div style={{
-                backgroundImage:
-                    "url('/images/unitree/mockup3.png')",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "bottom center",
-                backgroundSize: "cover",
-            }} className="Role padTop">
-
+            <div className="Role padTop">
                 <div className="flex flex-col gap-18">
                     <div className="main flex flex-col gap-18 text-center padTop">
                         <div className="container flex flex-col gap-20">
                             <div className="flex flex-col gap-5">
-                                <h6 className='font-bold text-[#fff] text-4xl'>My Role</h6>
+                                <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>My Role</h6>
                                 <p className='text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can <br className="inline" /> be implemented by developers.</p>
                             </div>
                             <MyRole />
                         </div>
 
                         {/* design stratgy  */}
-                        <div className="padTop relative">
-                            <div className="padTop">
-                                <div className="container flex flex-col gap-5 text-center ">
-                                    <h6 className='font-bold text-[#fff] text-4xl'>Design Strategy</h6>
-                                    <p className='text-lg text-[#fff]'>A design strategy shows the value your product and services will bring to people and describes <br className="inline" /> this value to a goal. It also describes about the steps you will take to achieve the goal.</p>
-                                </div>
+                        <div className="relative">
+                            <div className="container flex flex-col gap-5 text-center padTop">
+                                <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Design Strategy</h6>
+                                <p className='text-lg text-[#fff]'>A design strategy shows the value your product and services will bring to people and describes <br className="inline" /> this value to a goal. It also describes about the steps you will take to achieve the goal.</p>
                             </div>
                             <div className="container">
-                                <div className="mainp md:pt-[75px] pt-[240px] pb-[50px]  grid md:grid-cols-3 grid-cols-1 gap-14">
+                                <div className="main  grid md:grid-cols-3 grid-cols-1 gap-14">
                                     <div className="bg-[#383838] rounded-2xl px-5 pb-5 md:pt-40 pt-5 flex flex-col gap-5">
                                         <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
                                         <div className="flex gap-2">
@@ -544,15 +515,18 @@ const Unitree = () => {
                 </div>
             </div>
 
-            {/* user reserch  */}
-            <div className="userReserch padTop">
+            {/* User Research */}
+            <div className="userResearch padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-10">
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                                 <div className="flex flex-col gap-3">
-                                    <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">Preparation</p></div>
-                                    <h6 className="md:text-5xl text-3xl font-bold text-[#fff]">USER RESEARCH</h6>
+                                    <div className="flex items-center gap-3">
+                                        <img className="w-12" src={location} alt="Location Icon" />
+                                        <p className="text-2xl text-[#fff]">Preparation</p>
+                                    </div>
+                                    <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">USER RESEARCH</h6>
                                 </div>
                                 <div className="grid grid-cols-2 md:gap-20 gap-10">
                                     <div className="flex flex-col gap-2">
@@ -571,46 +545,49 @@ const Unitree = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-lg text-[#fff]">User research is a proccess to find out the user point of view, their frustations and their struggle to get their understandig. I have two used methods which contributed hugely in aditio to my own findings</p>
+                            <p className="text-lg text-[#fff]">
+                                User research is a process to understand the user's perspective, frustrations, and struggles. I have used two methods that significantly contributed to my findings.
+                            </p>
                         </div>
                         <div className="flex flex-col md:gap-20 gap-10">
                             <div className="flex flex-col gap-3">
                                 <h6 className="md:text-5xl text-3xl font-bold text-[#FECF29] border-l-8 pl-5">SURVEY</h6>
-                                <p className="text-lg text-[#fff]">I did survey with 55 potential users in combination with interviews from individual conversation to know their views, experience and to collect quantitive and qualitative data. the target audience were between the age 20-50 Yold</p>
+                                <p className="text-lg text-[#fff]">
+                                    I conducted a survey with 55 potential users, combined with individual interviews, to gather their views, experiences, and both quantitative and qualitative data. The target audience was between the ages of 20-50 years.
+                                </p>
                             </div>
-                            <img className="w-full" src={research} alt={research} />
+                            <img className="w-full" src={research} alt="Survey Research" />
                         </div>
                         <div className="flex flex-col md:gap-20 gap-10">
                             <div className="flex flex-col gap-3">
                                 <h6 className="md:text-5xl text-3xl font-bold text-[#00C48C] border-l-8 pl-5">INTERVIEW</h6>
-                                <p className="text-lg text-[#fff]">From the survey that I have done, I did filtering, and got 15 people for direct interview. I did online interviews using Zoom and invited them at different times.</p>
+                                <p className="text-lg text-[#fff]">
+                                    From the survey results, I filtered 15 people for direct interviews. These interviews were conducted online via Zoom at different times.
+                                </p>
                             </div>
-                            <img className="w-full" src={candidate} alt={candidate} />
+                            <img className="w-full" src={candidate} alt="Interview Process" />
                         </div>
-                        <div className="mainp grid md:grid-cols-2 grid-cols-1 gap-5">
-                            {
-                                interview.map((items, index) => {
-                                    return (
-                                        <div key={index} className="bg-[#383838] rounded p-10 flex flex-col gap-5">
-                                            <img className="w-18 flex self-end" src={items.mark} alt={items.mark} />
-                                            <div className="flex gap-4 items-center">
-                                                <img className="w-16 flex self-end" src={items.candidate} alt={items.candidate} />
-                                                <div className="">
-                                                    <h6 className='font-bold text-[#fff] text-lg text-left'>{items.name}</h6>
-                                                    <p className='text-base text-[#fff] text-left'>{items.designation}</p>
-                                                </div>
-                                            </div>
-                                            <div className="flex flex-col gap-5">
-                                                <p className='text-base text-[#fff] text-left'>{items.desc}</p>
-                                            </div>
+                        <div className="main grid md:grid-cols-2 grid-cols-1 gap-5">
+                            {interview.map((item, index) => (
+                                <div key={index} className="bg-[#383838] rounded p-10 flex flex-col gap-5">
+                                    <img className="w-18 self-end" src={item.mark} alt="Mark Icon" />
+                                    <div className="flex gap-4 items-center">
+                                        <img className="w-16" src={item.candidate} alt="Candidate" />
+                                        <div>
+                                            <h6 className="font-bold text-[#fff] text-lg">{item.name}</h6>
+                                            <p className="text-base text-[#fff]">{item.designation}</p>
                                         </div>
-                                    )
-                                })
-                            }
+                                    </div>
+                                    <div className="flex flex-col gap-5">
+                                        <p className="text-base text-[#fff]">{item.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
+
 
             {/* USER PERSONA  */}
             <div className="userReserch padTop">
@@ -619,7 +596,7 @@ const Unitree = () => {
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                             <div className="flex flex-col gap-3">
                                 <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">Define</p></div>
-                                <h6 className="md:text-5xl text-3xl font-bold text-[#fff]">USER PERSONA</h6>
+                                <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">USER PERSONA</h6>
                             </div>
                             <div className="grid grid-cols-2 md:gap-20 gap-10">
                                 <div className="flex flex-col gap-2">
@@ -712,18 +689,9 @@ const Unitree = () => {
 
             {/* Empathy Map  */}
             <div className="padTop relative">
-                <div style={{
-                    backgroundImage: "url('/images/unitree/Vector 4.png')",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    backgroundSize: "105%",
-                    position: "absolute",
-                    left: "0px",
-                    right: "0",
-                    height: "360px",
-                }} className="padTop">
+                <div className="padTop">
                     <div className="container flex flex-col gap-5 text-center items-center">
-                        <h6 className='font-bold text-[#fff] text-4xl'>Empathy Map</h6>
+                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Empathy Map</h6>
                         <p className='text-lg text-[#fff] md:w-8/12'>An empathy map is a collaborative visualization used to articulate what we know about a particular type of user. It helps to synthesize research data to bit assist to understand how people make decisions.</p>
                     </div>
                 </div>
@@ -772,7 +740,7 @@ const Unitree = () => {
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                                 <div className="flex flex-col gap-3">
                                     <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">UI Design</p></div>
-                                    <h6 className="md:text-5xl text-3xl font-bold text-[#fff]">STYLE GUIDE</h6>
+                                    <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">STYLE GUIDE</h6>
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <h6 className="text-lg font-bold text-[#fff]">Design system</h6>
@@ -866,7 +834,7 @@ const Unitree = () => {
             <div className="InformationArchitecture relative">
                 <div className="padTop flex flex-col gap-20">
                     <div className="container flex flex-col gap-5 text-center items-center">
-                        <h6 className='font-bold text-[#fff] text-4xl'>Information Architecture</h6>
+                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Information Architecture</h6>
                         <p className='text-lg text-[#fff] md:w-8/12'>People often use the word “Information Architechture” to mean the meanus on website or apps, but thats not really correct. while menus are a part of IA. they’re relly only one part of it. Information architechture is all about organization of information in a clear and logical way. such organization follows a clear purpose helping users navigate complex sets of information</p>
                     </div>
                     <div className="container">
@@ -879,7 +847,7 @@ const Unitree = () => {
             <div className="shade InformationArchitecture relative">
                 <div className="padTop flex flex-col gap-20">
                     <div className="container flex flex-col gap-5 text-center items-center">
-                        <h6 className='font-bold text-[#fff] text-4xl'>User Flow</h6>
+                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>User Flow</h6>
                         <p className='text-lg text-[#fff] md:w-8/12'>The user flow is consciously kept easy hence that the apps users can reach their desired to put it on without much effort.</p>
                     </div>
                     <div className="container">
@@ -892,10 +860,10 @@ const Unitree = () => {
             <div className="shade OtherDesign relative">
                 <div className="padTop flex flex-col gap-20">
                     <div className="container flex flex-col gap-5 text-center items-center">
-                        <h6 className='font-bold text-[#fff] text-4xl'>Other Design</h6>
+                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Other Design</h6>
                         <p className='text-lg text-[#fff] md:w-8/12'>The user flow is consciously kept easy hence that the apps users can reach their desired to put it on without much effort.</p>
                     </div>
-                    <div className="container">
+                    <div className="container flex flex-col gap-10">
                         {
                             [
                                 "/images/unitree/mockup22.png",
@@ -907,7 +875,7 @@ const Unitree = () => {
                                 "/images/unitree/mockup28.png",
                             ].map((item, index) => {
                                 return (
-                                    <img key={index} className="w-9/12 mx-auto" src={item} alt={item} />
+                                    <img key={index} className="w-full" src={item} alt={item} />
                                 )
                             })
                         }

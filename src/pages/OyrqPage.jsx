@@ -86,7 +86,7 @@ const OyrqPage = () => {
                             <div className="flex flex-col gap-5 text-[#271D46]">
                                 <h5 className='font-bold xl:text-8xl text-2xl'>OYRQ <br className='inline' /> UX</h5>
                                 <h6 className='xl:text-4xl text-3xl'>Case Study UX/UI </h6>
-                                <img src={Frame} className='w-14' alt={Frame} />
+                                <img src={Frame} className='w-20' alt={Frame} />
                             </div>
                             <div className="">
                                 <img src={Rectangle} className='w-full' alt={Rectangle} />
@@ -100,13 +100,13 @@ const OyrqPage = () => {
             <div className="ABOUTPROJECT padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-10">
-                        <h6 className='font-bold text-[#fff] text-4xl'>ABOUT PROJECT</h6>
+                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>ABOUT PROJECT</h6>
                         <div className="main grid md:grid-cols-2 grid-cols-1 gap-18">
                             <div className="flex flex-col gap-3">
-                                <h6 className='font-bold text-[#fff] text-2xl border-l-8 pl-3'>Introduction</h6>
+                                <h6 className='font-bold text-[#fff] text-3xl max-w-max pb-3'>Introduction</h6>
                                 <p className='text-lg text-base text-[#fff]'>we've embarked on a mission to revolutionize your online shopping experience. Whether you're browsing for the latest fashion trends, hunting for household essentials, or seeking unique gifts for loved ones, our app is your one-stop destination.With a curated selection of products sourced from top brands and independent sellers, we pride ourselves on offering a diverse array of items to suit every taste and need. From fashion-forward apparel to cutting-edge gadgets, from artisanal crafts to everyday necessities, we've got it all conveniently housed within our intuitive interface.</p>
                             </div>
-                            <div className="">
+                            <div className="flex justify-end">
                                 <img className='w-98' src={idea} alt={idea} />
                             </div>
                         </div>
@@ -135,7 +135,7 @@ const OyrqPage = () => {
             <div className="DesignProcess padTop bg-[#fff]">
                 <div className="main flex flex-col gap-10">
                     <div className="container">
-                        <h6 className='font-bold text-[#271D46] text-4xl'>Design  Process</h6>
+                        <h6 className='font-bold text-[#271D46] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Design  Process</h6>
                     </div>
                     <div style={{
                         backgroundImage:
@@ -177,7 +177,7 @@ const OyrqPage = () => {
             <div className="ProjectTimeline md:padTop bg-[#fff]">
                 <div className="main flex flex-col md:gap-10 gap-5">
                     <div className="container">
-                        <h6 className='font-bold text-[#271D46] text-4xl'>Project Timeline</h6>
+                        <h6 className='font-bold text-[#271D46] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Project Timeline</h6>
                     </div>
                     <div style={{
                         backgroundImage:
@@ -199,7 +199,7 @@ const OyrqPage = () => {
             <div className="StyleGuide padTop bg-[#fff]">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
-                        <h6 className='font-bold text-[#271D46] text-4xl'>Style Guide</h6>
+                        <h6 className='font-bold text-[#271D46] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Style Guide</h6>
                         <div className="grid grid-cols-1 md:grid-cols-12 md:gap-10 gap-20">
                             {/* First Image */}
                             <div className="md:col-span-4">
@@ -208,7 +208,7 @@ const OyrqPage = () => {
 
                             {/* Second Image */}
                             <div className="md:col-span-8">
-                                <img className="w-full max-w-lg md:max-w-full" src={Colors} alt="Colors Image" />
+                                <img className="w-10/12 max-w-lg md:max-w-full" src={Colors} alt="Colors Image" />
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ const OyrqPage = () => {
             <div className="padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
-                        <h6 className='font-bold text-[#fff] text-4xl'>Wireframe</h6>
+                        <h6 className='font-bold text-[#fff] md:text-8xl sm:text-6xl  text-3xl max-w-max pb-3'>Wireframe</h6>
                         <div className="img">
                             <img src={wireFrame} alt={wireFrame} />
                         </div>
@@ -237,7 +237,7 @@ const OyrqPage = () => {
             }} className="padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
-                        <h6 className='font-bold text-[#271D46] text-4xl'>UI Design</h6>
+                        <h6 className='font-bold text-[#271D46] md:text-8xl sm:text-6xl  text-3xl max-w-max pb-3'>UI Design</h6>
                         <div className="uiDesign flex flex-col gap-10">
                             {
                                 uiDesign.map((items, index) => {
@@ -258,3 +258,5 @@ const OyrqPage = () => {
 }
 
 export default OyrqPage
+
+//complete

@@ -37,7 +37,7 @@ const GymSport = () => {
                         <Link className='flex items-center gap-5 text-2xl text-[#fff]' to="/case-studies"><IoIosArrowBack /> <span>Back</span></Link>
                         <div className="main grid md:grid-cols-2 gap-10 grid-cols-1">
                             <div className="flex flex-col gap-10">
-                                <div className="flex flex-col gap-2">
+                                <div className="flex flex-col gap-5">
                                     <img src={mgs} className='w-46' alt={mgs} />
                                     <h6 className='xl:text-5xl text-4xl text-[#fff] font-bold'>My Gym Support</h6>
                                     <h6 className='xl:text-3xl text-2xl text-[#fff]'>UI/UX Case study design</h6>
@@ -83,7 +83,7 @@ const GymSport = () => {
                     <div className="main grid md:grid-cols-2 grid-cols-1 gap-20">
                         <div className="flex flex-col gap-18">
                             <div className="flex flex-col gap-5">
-                                <h1 className="md:text-4xl text-3xl text-[#FF5252]">WHAT IS My Gym Support</h1>
+                                <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#FF5252]">WHAT IS My Gym Support</h1>
                                 <p className="text text-lg">A revolutionary app designed to streamline your workout experience. As you download the app, a sleek and user-friendly interface welcomes you, providing easy navigation to various features. The onboarding process begins with a brief questionnaire, where you input essential information such as your fitness goals, current fitness level, and preferred workout duration. This sets the stage for the AI to work its magic in tailoring a personalized training program to suit your unique needs. The app ensures a seamless and ad-free experience, eliminating the frustrations of interruptions and time-consuming advertisements.</p>
                             </div>
                             <div className="flex flex-col gap-10">
@@ -111,7 +111,7 @@ const GymSport = () => {
                 className="PROBLEMSTATEMENT padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
-                        <h1 className="md:text-4xl text-3xl text-[#000] text-center font-bold leading-snug">Empowering Your Fitness Journey, One <br className="inline" /> Workout at a Time.</h1>
+                        <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#000] text-center font-bold leading-snug">Empowering Your Fitness Journey, One <br className="inline" /> Workout at a Time.</h1>
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
                             <div className="flex flex-col gap-14">
                                 <div className="flex flex-col gap-5">
@@ -145,7 +145,7 @@ const GymSport = () => {
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
                             <div className="flex flex-col gap-20">
                                 <div className="flex flex-col gap-5">
-                                    <h1 className="md:text-4xl text-3xl text-[#000] font-bold">DM Sans</h1>
+                                    <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#000] font-bold">DM Sans</h1>
                                     <ul className="flex gap-10">
                                         <li className="text-2xl">Regular</li>
                                         <li className="text-2xl font-semibold">Semi Bold</li>
@@ -219,3 +219,5 @@ const GymSport = () => {
 }
 
 export default GymSport
+
+//complete

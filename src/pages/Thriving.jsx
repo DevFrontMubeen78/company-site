@@ -103,7 +103,7 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex flex-col gap-5">
-                            <h6 className='font-bold text-[#fff] md:text-5xl text-3xl max-w-max pb-3'>My <span className="text-[#3C855A]">Role</span></h6>
+                            <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>My <span className="text-[#3C855A]">Role</span></h6>
                             <p className='text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can be implemented by developers.</p>
                         </div>
                         <MyRole />
@@ -123,14 +123,14 @@ const Thriving = () => {
                     <div className="main flex flex-col gap-20">
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
                             <div className="flex flex-col gap-10">
-                                <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Over <span className="text-[#3C855A]">view</span></h1>
+                                <h1 className="md:text-5xl sm:text-4xl  md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Over <span className="text-[#3C855A]">view</span></h1>
                                 <div>
                                     <h6 className='font-bold text-[#fff] text-3xl max-w-max pb-3'>About The Project</h6>
                                     <p className="text-base text-[#fff]">The project aims to create an innovative digital mentor application called MentorMind, providing users with personalized support and guidance for their personal growth journey. Leveraging advanced AI technology, MentorMind offers a unique holographic interface for engaging conversations, voice activation for seamless interaction, and insightful summaries of conversations for reflection and progress tracking.</p>
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <p className="text-base text-[#fff]">Platform</p>
-                                    <Link className="bg-[#3C855A] text-[#fff] py-2 rounded max-w-max rounded px-8 font-bold flex gap-3 items-center" to="#"><IoIosPhonePortrait className="text-lg" /> Mobile</Link>
+                                    <Link className="bg-[#3C855A] text-[#fff] py-2 rounded max-w-max rounded px-8 font-bold flex gap-3 items-center px-14 py-4" to="#"><IoIosPhonePortrait className="text-2xl" /> Mobile</Link>
                                 </div>
                             </div>
                             <div className="flex md:justify-end justify-center">
@@ -152,7 +152,7 @@ const Thriving = () => {
                     <div className="main flex flex-col gap-18">
                         <div className="flex flex-col gap-5">
                             <img className='w-24' src={dt} alt={dt} />
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Design <span className="text-[#3C855A]">Process</span></h1>
+                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Design <span className="text-[#3C855A]">Process</span></h1>
                         </div>
                         <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-30 gap-10">
                             {
@@ -178,7 +178,7 @@ const Thriving = () => {
                     <div className="main flex flex-col gap-18">
                         <div className="flex flex-col gap-5">
                             <img className='w-24' src={dt} alt={dt} />
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Design  <span className="text-[#3C855A]">Timeline</span></h1>
+                            <h1 className="md:text-5xl md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Design  <span className="text-[#3C855A]">Timeline</span></h1>
                         </div>
                         <img className='w-full' src={ddesign} alt={ddesign} />
                     </div>
@@ -195,7 +195,7 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main grid md:grid-cols-2 grid-cols-1">
                         <div className=" text-[#fff] flex flex-col gap-10 relative">
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Paint  <span className="text-[#3C855A]">points</span></h1>
+                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Paint  <span className="text-[#3C855A]">points</span></h1>
                             <div className="flex flex-col gap-5">
                                 <div className=' flex flex-col gap-2'>
                                     <h6 className='text-lg text-[#fff] font-bold'>Complexity <span className="text-[#3C855A]">of Work</span></h6>
@@ -227,7 +227,7 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className=" text-[#fff] flex flex-col gap-10">
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">User <span className="text-[#3C855A]">Personas</span></h1>
+                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">User <span className="text-[#3C855A]">Personas</span></h1>
                             <p className="text-[#fff] text-lg w-9/12">User personas are fictional characters created to represent different segments of a product or services target audience. They help teams understand and empathize with their users, guiding design, development, and marketing decisions.</p>
                         </div>
                         <img className='w-full' src={UserPersona} alt={UserPersona} />
@@ -245,7 +245,7 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className=" text-[#fff] flex flex-col gap-10">
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">User <span className="text-[#3C855A]">Flow</span></h1>
+                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">User <span className="text-[#3C855A]">Flow</span></h1>
                             <p className="text-[#fff] text-lg md:w-6/12">Users engage holographic interface, converse via voice, receive summaries, access journal integration, and receive personalized recommendations, ensuring seamless, personalized, and impactful mentorship experience.</p>
                         </div>
                         <img className='w-full' src={userFlow} alt={userFlow} />
@@ -257,7 +257,7 @@ const Thriving = () => {
             <div className="UserPersona padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-10">
-                        <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Typog<span className="text-[#3C855A]">raphy</span></h1>
+                        <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Typog<span className="text-[#3C855A]">raphy</span></h1>
                         <div className="bg-[#1A1A1E]  p-8 rounded flex flex-col gap-20">
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                                 <div className="flex flex-col gap-2">
@@ -287,7 +287,7 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-10">
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Icono<span className="text-[#3C855A]">graphy</span></h1>
+                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Icono<span className="text-[#3C855A]">graphy</span></h1>
                             <div className="bg-[#1A1A1E]  p-8 rounded">
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                                     <div className="flex flex-col gap-2">
@@ -308,7 +308,7 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-10">
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Lo<span className="text-[#3C855A]">go</span></h1>
+                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Lo<span className="text-[#3C855A]">go</span></h1>
                             <div className="bg-[#1A1A1E]  p-8 rounded">
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                                     <div className="flex flex-col gap-2">
@@ -332,7 +332,7 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-10">
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Col<span className="text-[#3C855A]">ors</span></h1>
+                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Col<span className="text-[#3C855A]">ors</span></h1>
                             <div className="bg-[#1A1A1E]  p-8 rounded">
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                                     <div className="flex flex-col gap-2">
@@ -352,7 +352,7 @@ const Thriving = () => {
             <div className="UserPersona padTop">
                 <div className="container">
                     <div className="main flex flex-col md:gap-20 gap-10">
-                        <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">High Fide<span className="text-[#3C855A]">lity Designs</span></h1>
+                        <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">High Fide<span className="text-[#3C855A]">lity Designs</span></h1>
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                             <img className='w-full' src={homeScreen} alt={homeScreen} />
                             <div className="flex flex-col gap-5">
@@ -376,7 +376,7 @@ const Thriving = () => {
             <div className="UserPersona padTop flex flex-col gap-20">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
-                        <h1 className="md:text-5xl text-3xl text-[#fff] font-bold border-l-3 border-[#3C855A] pl-5">Other <span className="text-[#3C855A]">Screens</span></h1>
+                        <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold border-l-3 border-[#3C855A] pl-5">Other <span className="text-[#3C855A]">Screens</span></h1>
                         <img className='w-full' src={otherScreen} alt={otherScreen} />
                     </div>
                 </div>
@@ -392,7 +392,7 @@ const Thriving = () => {
                 <div className="container">
                     <div className="flex flex-col gap-20">
                         <div className=" text-[#fff] flex flex-col gap-10">
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Accessibility <span className="text-[#3C855A]">Considerations</span></h1>
+                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Accessibility <span className="text-[#3C855A]">Considerations</span></h1>
                             <div className="flex flex-col gap-5">
                                 <div className=' flex flex-col gap-2'>
                                     <h6 className='text-3xl  text-[#fff] font-bold'>Text <span className="text-[#3C855A]">Alternative</span></h6>
@@ -484,3 +484,5 @@ const Thriving = () => {
 }
 
 export default Thriving
+
+// complete

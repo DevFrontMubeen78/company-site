@@ -78,7 +78,7 @@ const Siply = () => {
             }} className="AppIdea padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-5">
-                        <h6 className='font-bold text-[#E89F50] text-4xl max-w-max pb-3'>App Idea</h6>
+                        <h6 className='font-bold text-[#E89F50] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>App Idea</h6>
                         <p className='text-lg text-[#000]'>An app that will list daily deals for all bars/restaurants within a given area. For the app, we need to be able to create filters for different food and drink deals as well as the entertainment provided at each venue. We also want to have a social side to it where you can invite friends to the happy hour of your choice and give the option to post the bar/restaurant you will be on a given day. We want to link it to google maps for location services and yelp to see reviews.</p>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ const Siply = () => {
             }} className="AppIdea padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-5">
-                        <h6 className='font-bold text-[#E89F50] text-4xl max-w-max pb-3'>Design Process</h6>
+                        <h6 className='font-bold text-[#E89F50] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Design Process</h6>
                         <img src={designProcess} alt={designProcess} />
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const Siply = () => {
             }} className="Timeline padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-5">
-                        <h6 className='font-bold text-[#E89F50] text-4xl max-w-max pb-3'>Timeline</h6>
+                        <h6 className='font-bold text-[#E89F50] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Timeline</h6>
                         <img src={Timeline} alt={Timeline} />
                     </div>
                 </div>
@@ -126,7 +126,7 @@ const Siply = () => {
             }} className="UserFlow padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-5">
-                        <h6 className='font-bold text-[#E89F50] text-4xl max-w-max pb-3'>User Flow</h6>
+                        <h6 className='font-bold text-[#E89F50] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>User Flow</h6>
                         <img src={UserFlow} alt={UserFlow} />
                     </div>
                 </div>
@@ -145,7 +145,7 @@ const Siply = () => {
                         <div className="main grid md:grid-cols-2 grid-cols-1 gap-18">
                             <div className="flex flex-col gap-5">
                                 <img className='w-98' src={ag} alt={ag} />
-                                <h6 className='font-semibold text-[#E89F50] text-4xl max-w-max pb-3'>UI Design</h6>
+                                <h6 className='font-semibold text-[#E89F50] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>UI Design</h6>
                                 <p className="text text-lg">After understanding the users problems and behavior, it's time to design the interface. </p>
                             </div>
                             <div className="flex flex-col gap-5">
@@ -179,12 +179,12 @@ const Siply = () => {
             <div className="KeyFeatures padTop  border-b-4 border-[#F8E2CB]">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
-                        <h6 className='font-bold text-[#E89F50] text-4xl max-w-max pb-3'>Key Features</h6>
+                        <h6 className='font-bold text-[#E89F50] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Key Features</h6>
                         <div className="screens flex flex-col gap-18 items-center">
                             {
                                 KeyFeatures.map((items, index) => {
                                     return (
-                                        <img key={index} src={items} alt={`Screen ${index + 1}`} className="md:w-9/12 w-full" />
+                                        <img key={index} src={items} alt={`Screen ${index + 1}`} className="w-full" />
                                     )
                                 })
                             }
@@ -197,12 +197,12 @@ const Siply = () => {
             <div className="WireframeScreens padTop  border-b-4 border-[#F8E2CB]">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
-                        <h6 className='font-bold text-[#E89F50] text-4xl max-w-max pb-3'>Wireframe Screens</h6>
+                        <h6 className='font-bold text-[#E89F50] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Wireframe Screens</h6>
                         <div className="screens flex flex-col gap-18 items-center">
                             {
                                 WireframeScreens.map((items, index) => {
                                     return (
-                                        <img key={index} src={items} alt={`Screen ${index + 1}`} className="md:w-9/12 w-full" />
+                                        <img key={index} src={items} alt={`Screen ${index + 1}`} className="w-full" />
                                     )
                                 })
                             }
@@ -215,12 +215,12 @@ const Siply = () => {
             <div className="virtualscreen padTop  border-b-4 border-[#F8E2CB]">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
-                        <h6 className='font-bold text-[#E89F50] text-4xl max-w-max pb-3'>Visual Screens</h6>
+                        <h6 className='font-bold text-[#E89F50] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Visual Screens</h6>
                         <div className="screens flex flex-col gap-18 items-center">
                             {
                                 screen.map((items, index) => {
                                     return (
-                                        <img key={index} src={items} alt={`Screen ${index + 1}`} className="md:w-9/12 w-full" />
+                                        <img key={index} src={items} alt={`Screen ${index + 1}`} className="w-full" />
                                     )
                                 })
                             }
@@ -236,3 +236,5 @@ const Siply = () => {
 }
 
 export default Siply
+
+//complete

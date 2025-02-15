@@ -15,7 +15,7 @@ const Thanks = () => {
                 backgroundSize: "contain",
             }} className="thanks bg-[#fff]">
                 <div className="container">
-                    <h6 className="text-center text-2xl text-[#000] md:py-[100px] py-[50px]">THANKS FOR WATCHING</h6>
+                    <h6 className="text-center text-2xl text-[#000] md:py-[80px] py-[50px]">THANKS FOR WATCHING</h6>
                     <div className="socialMedia flex justify-end gap-5 md:pb-5 pb-[20px]">
                         <Link to="#">
                             <MdOutlineFacebook className="text-[#000] text-3xl" />
@@ -34,3 +34,5 @@ const Thanks = () => {
 }
 
 export default Thanks
+
+// complete

@@ -523,7 +523,7 @@ const Fitsician = () => {
             <div className="projectOver padTop">
                 <div className="container">
                     <div className="main flex flex-col items-center gap-10 text-center">
-                        <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Project Overview</h6>
+                        <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Project Overview</h6>
                         <div className="flex flex-col gap-10">
                             <p className='text-lg text-[#000]'>Our comprehensive health and fitness platform is designed to empower users on their wellness journey through personalized guidance, community support, and expert insights. With a range of features tailored to individual needs, our app aims to revolutionize the way users approach their diet, exercise, and overall well-being.</p>
                             <p className='text-lg text-[#000]'> our app provides a holistic approach to health and fitness, empowering users to make informed choices, stay motivated, and achieve their wellness goals effectively. Join our community and embark on a journey towards a healthier, happier you!</p>
@@ -537,7 +537,7 @@ const Fitsician = () => {
             <div className="designProcess padTop">
                 <div className="container">
                     <div className="main flex flex-col items-center gap-18">
-                        <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Design Process</h6>
+                        <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Design Process</h6>
                         <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-30 gap-10">
                             {
                                 designProcess.map((items, index) => {
@@ -571,7 +571,7 @@ const Fitsician = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Typography</h6>
+                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Typography</h6>
                         </div>
 
                         {/* // first  */}
@@ -679,7 +679,7 @@ const Fitsician = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Colors</h6>
+                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Colors</h6>
                         </div>
 
                         <div className="main flex flex-col gap-10">
@@ -804,7 +804,7 @@ const Fitsician = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex justify-center text-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Iconography & Components</h6>
+                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Iconography & Components</h6>
                         </div>
 
                         <div className="main flex flex-col gap-20">
@@ -822,7 +822,7 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>User Persona</h6>
+                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>User Persona</h6>
                         </div>
 
                         {/* Main Grid */}
@@ -878,7 +878,7 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>User Flow</h6>
+                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>User Flow</h6>
                         </div>
                         <img src={flow} alt={flow} />
                     </div>
@@ -891,7 +891,7 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>High Fidelity Designs</h6>
+                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>High Fidelity Designs</h6>
                         </div>
                         {
                             HighFidelity.map((items, index) => {
@@ -914,7 +914,7 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Take Aways</h6>
+                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Take Aways</h6>
                         </div>
                         <div className="main grid md:grid-cols-2 grid-cols-1 gap-18">
                             <div className="flex flex-col gap-5">
@@ -947,7 +947,7 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 text-4xl max-w-max pb-3'>Next Step</h6>
+                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Next Step</h6>
                         </div>
                         <div className="flex flex-col gap-5">
                             <p className="text-base md:text-lg">
@@ -972,3 +972,5 @@ const Fitsician = () => {
 }
 
 export default Fitsician
+
+//complete

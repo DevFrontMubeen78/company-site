@@ -42,7 +42,7 @@ const icons = [
 
 const CauseWay = () => {
     return (
-        <div>
+        <div className="bg-[#050505]">
             <Helmet>
                 <title> DTK - Causeway</title>
             </Helmet>
@@ -54,14 +54,14 @@ const CauseWay = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "bottom center",
                 backgroundSize: "cover",
-            }} className="oyrq padTop">
+            }} className="CauseWay padTop">
                 <div className="container">
                     <div className="flex flex-col gap-14">
                         <Link className='flex items-center gap-5 text-2xl text-[#fff]' to="/case-studies"><IoIosArrowBack /> <span>Back</span></Link>
-                        <div className="main grid md:grid-cols-2 gap-10 grid-cols-1">
+                        <div className="main grid md:grid-cols-2 md:gap-30 gap-15 grid-cols-1">
                             <div className="flex flex-col gap-8">
-                                <img src={causeway} className='w-46' alt={causeway} />
-                                <div className="flex flex-col gap-5">
+                                <img src={causeway} className='w-58' alt={causeway} />
+                                <div className="flex flex-col gap-10">
                                     <h6 className='xl:text-5xl text-4xl text-[#fff]'>About <span className="font-bold">roles <br className="inline" /> and process.</span></h6>
                                     <p className="text-lg text-[#fff]">In the field of user experience (UX) design, roles and processes play a key role in ensuring that the end product is user-friendly and meets the needs of the target audience. </p>
                                 </div>
@@ -86,36 +86,31 @@ const CauseWay = () => {
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "bottom center",
                     backgroundSize: "cover",
-                }} className="ProjectTime bg-[#050505] padTop flex flex-col gap-20">
-                <img className="w-72" src={DProcess} alt={ProjectTime} />
+                }} className="ProjectTime padTop flex flex-col gap-20">
+                <img className="w-80" src={DProcess} alt={ProjectTime} />
                 <div className="container">
                     <img className="md:w-8/12 w-full mx-auto" src={DProcess2} alt={DProcess2} />
                 </div>
             </div>
 
             {/* //project timeline */}
-            <div style={{
-                backgroundImage:
-                    "url('/images/causeway/Desktop - 63.png')",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "bottom center",
-                backgroundSize: "cover",
-            }} className="ProjectTime bg-[#050505] padTop flex flex-col gap-20">
-                <img className="w-72" src={projectTimeline2} alt={projectTimeline2} />
+            <div className="ProjectTime padTop flex flex-col gap-20">
+                <img className="w-80" src={projectTimeline2} alt={projectTimeline2} />
                 <div className="container">
                     <img className="w-full mx-auto" src={projectTimeline} alt={projectTimeline} />
                 </div>
             </div>
 
             {/* //project overviw */}
-            <div style={{
-                backgroundImage:
-                    "url('/images/causeway/Desktop - 5.png')",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "bottom center",
-                backgroundSize: "cover",
-            }} className="ProjectTime bg-[#050505] padTop flex flex-col gap-20">
-                <img className="w-72" src={ProjectOv} alt={ProjectOv} />
+            <div
+                style={{
+                    backgroundImage:
+                        "url('/images/causeway/car.png')",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "top right",
+                    backgroundSize: "contain",
+                }} className="ProjectTime padTop flex flex-col gap-20">
+                <img className="w-80" src={ProjectOv} alt={ProjectOv} />
                 <div className="container flex flex-col gap-10">
                     <p className="text-lg text-[#fff] md:w-6/12">Founded in 2022, causeway offers low rental rates and a fun, hassle- free customer experience at the most popular travel destinations throughout Johor Bahru. Our guiding principles, and humble beginning, revolve around personal honesty and integrity. We believe in strengthening our communities one at a time. Serving our customers as if they were our family.</p>
                     <p className="text-lg text-[#fff]">Causeway never stops looking for ways to enhance cleanliness and safety. We pledge to go above and beyond our already rigorous cleaning protocols. Your comfort is our priority. You can depend on us, whatever your motoring needs.</p>
@@ -123,14 +118,8 @@ const CauseWay = () => {
             </div>
 
             {/* //font */}
-            <div style={{
-                backgroundImage:
-                    "url('/images/causeway/Desktop - 5.png')",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "bottom center",
-                backgroundSize: "cover",
-            }} className="ProjectTime bg-[#050505] padTop flex flex-col gap-20">
-                <img className="w-32" src={font} alt={font} />
+            <div className="ProjectTime padTop flex flex-col gap-20">
+                <img className="w-38" src={font} alt={font} />
                 <div className="container">
                     <div className="fonts flex flex-col gap-7 text-[#fff]">
                         <div className="flex flex-col gap-3">
@@ -209,16 +198,16 @@ const CauseWay = () => {
                 </div>
             </div>
 
-            {/* //project timeline */}
+            {/* //User Flow */}
             <div
                 style={{
                     backgroundImage:
-                        "url('/images/causeway/Desktop - 33.png')",
+                        "url('/images/causeway/arrow.png')",
                     backgroundRepeat: "no-repeat",
-                    backgroundPosition: "bottom center",
-                    backgroundSize: "cover",
-                }} className="ProjectTime bg-[#050505] padTop flex flex-col gap-20">
-                <img className="w-48" src={flow} alt={flow} />
+                    backgroundPosition: "top right",
+                    backgroundSize: "40%",
+                }} className="useflow padTop flex flex-col gap-20">
+                <img className="w-60" src={flow} alt={flow} />
                 <div className="container flex flex-col gap-20">
                     <img className="w-9/12 mx-auto" src={Userflow} alt={Userflow} />
                     <img className="" src={mbile} alt={mbile} />
@@ -254,3 +243,5 @@ const CauseWay = () => {
 }
 
 export default CauseWay
+
+// complete
