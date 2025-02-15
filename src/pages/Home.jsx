@@ -15,6 +15,7 @@ import Calendar from "../components/Calendar";
 import { Link } from "react-router-dom";
 import PicTestimonial from "../components/PicTestimonial";
 import MapComponent from "../components/MapComponent";
+// import Slider from "../components/Slider";
 import CountUp from 'react-countup';
 import { Helmet } from "react-helmet-async";
 
@@ -45,27 +46,26 @@ const TeamMember = [
 
 const counter = [
   {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={125} suffix="+" />,
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={125} suffix="+" duration={25} />,
     text: "Mobile Application"
   },
   {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={45} suffix="+" />,
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={45} suffix="+" duration={25} />,
     text: "Web Applications"
   },
   {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={101} suffix="+" />,
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={101} suffix="+" duration={25} />,
     text: "Logos & Branding"
   },
   {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={11} suffix="+" />,
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={11} suffix="+" duration={25} />,
     text: "AI Systems"
   },
   {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={20} suffix="+" />,
+    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={20} suffix="+" duration={25} />,
     text: "Staff Augmentation"
   },
 ];
-
 
 const Home = () => {
   const scrollToSection = () => {
@@ -398,8 +398,8 @@ const Home = () => {
       {/* testimonials two */}
       <Testimonials />
 
-      {/* Speak to Our Results */}
-      <div className="Results padTop md:block hidden">
+      {/* our client */}
+      <div className="Clients padTop md:block hidden">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="section_content flex flex-col gap-5">
@@ -474,6 +474,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* <Slider/> */}
 
       {/* last section  */}
       <PageLastSec />

@@ -40,28 +40,28 @@ const ContactUs = () => {
                 <form>
                   <div className="mb-4">
                     <input
-                      className="focus:outline-none md:w-90 w-80 px-4 py-2 border-b-1 border-white text-[#fff]"
+                      className="focus:outline-none w-9/12 px-4 py-2 border-b-1 border-white text-[#fff]"
                       type="text"
                       id="name"
-                      placeholder="full name"
+                      placeholder="Full Name"
                       required
                     />
                   </div>
                   <div className="mb-4">
                     <input
-                      className="focus:outline-none w-70 px-4 py-2 border-b-1 border-white text-[#fff]"
+                      className="focus:outline-none w-9/12 px-4 py-2 border-b-1 border-white text-[#fff]"
                       type="email"
                       id="email"
-                      placeholder="email"
+                      placeholder="Email"
                       required
                     />
                   </div>
                   <div className="mb-4">
                     <textarea
-                      className="focus:outline-none w-70 px-4 py-2 border-b-1 border-white text-[#fff]"
+                      className="focus:outline-none w-9/12 px-4 py-2 border-b-1 border-white text-[#fff]"
                       id="message"
                       rows="4"
-                      placeholder="message"
+                      placeholder="Message"
                       required
                     ></textarea>
                   </div>

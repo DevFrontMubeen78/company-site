@@ -88,7 +88,7 @@ const DataScience = () => {
                     <div className="main flex flex-col gap-18">
                         <div className="content text-center flex flex-col gap-3">
                             <h1 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-[#fff]">Data Science & AI
-                                <span className="text-[#FF0066]">  Development Services</span>
+                                <span className="text-[#FF0066]">  Development</span>
                             </h1>
                             <p className="md:text-lg text-base leading-normal text-center w-full heading_content text-[#fff]">
                                 We are dedicated to creating end-to-end solutions for you. Partner with DTechKrews Data Science & AI development services to enjoy tailor-made products that perfectly fit your needs and goals.

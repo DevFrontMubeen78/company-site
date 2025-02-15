@@ -21,7 +21,7 @@ const GymSport = () => {
     return (
         <div>
             <Helmet>
-                <title> DTK - Siply</title>
+                <title> DTK - Gym Support</title>
             </Helmet>
 
             {/* // hero section  */}

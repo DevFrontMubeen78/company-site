@@ -15,7 +15,7 @@ const GetStarted = () => {
                                     Start with us today—fill out the form, and our sales team will help tailor the perfect solution for you.
                                 </p>
                             </div>
-                            <Link className="bg-[#fff] p-3 rounded-full w-max block mx-auto px-10" to="/Contact-us">Contact sales</Link>
+                            <Link className="bg-[#fff] p-3 rounded-full w-max block mx-auto px-10" to="/Contact-us">Contact Us</Link>
                         </div>
                         <div className="grid grid-cols-12 md:gap-10 gap-5">
                             {/* Left Side Box */}

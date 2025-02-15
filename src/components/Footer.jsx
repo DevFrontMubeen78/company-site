@@ -44,7 +44,7 @@ const Footer = () => {
                             <ul className="text-gray-600 space-y-2">
                                 <li><Link to="/staff-augmentation">Staff Augmentation</Link></li>
                                 <li><Link to="/mobile-app-development">App Development </Link></li>
-                                <li><Link to="/data-science-and-ai-development">AI & Data Science Development</Link></li>
+                                <li><Link to="/data-science-and-ai-development-services">Data Science & AI  Development Services</Link></li>
                                 <li><Link to="#"></Link>Digital Product Design</li>
                             </ul>
                         </div>

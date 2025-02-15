@@ -25,7 +25,7 @@ const CsDevelopments = {
 
 const IndWeWork = () => {
   return (
-    <div className="corporate padTop">
+    <div className="IndWeWork padTop">
       <div className="container">
         <div className="main flex flex-col gap-16">
           <div className="section_title text-center">

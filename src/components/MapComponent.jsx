@@ -35,7 +35,7 @@ const points = [
         name: "Michael Smith",
         designation: "Lead Developer, TechSolutions",
         clientImg: "/images/s.png",
-        position: { top: "65%", left: "25%" }
+        position: { top: "67%", left: "25%" }
     },
     {
         id: 5,
@@ -64,11 +64,11 @@ const MapComponent = () => {
             {points.map((point) => (
                 <div
                     key={point.id}
-                    className={`absolute w-7 h-7 rounded-full cursor-pointer transition-all duration-300 ${
+                    className={`absolute w-4 h-4 rounded-full cursor-pointer transition-all duration-300 ${
                         selectedPoint.id === point.id ? "bg-[#000]" : "bg-red-500"
                     }`}
                     style={{ top: point.position.top, left: point.position.left }}
-                    onClick={() => setSelectedPoint(point)}
+                    onMouseEnter={() => setSelectedPoint(point)}
                 ></div>
             ))}
 

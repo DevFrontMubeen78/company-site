@@ -71,13 +71,10 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] md:px-20 px-15 md:py-0 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>Glaze App</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI </h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl text-2xl'>Glaze App Case Study</h5>
                                         <p className="text text-base leading-snug">Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients.</p>
                                     </div>
-                                    <Link className='bg-[#827FE1] px-10 py-4 text-[#fff] rounded-lg relative max-w-max' to="/glaze"><span className='line'>View More</span></Link>
+                                    <Link className='bg-[#827FE1] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/glaze"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
                                 </div>
                                 <div className="flex justify-end">
                                     <img className='xl:w-80 w-96' src={caseONe} alt="" />
@@ -93,10 +90,7 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#eaeaea] p-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>OYRQ</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>OYRQ Case Study</h5>
                                         <p className="text text-base leading-snug">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                     </div>
                                     <Link className='bg-[#351C75] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/oyrq"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
@@ -115,10 +109,7 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#abebff] px-15 py-5 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>Fitsician</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>Fitsician Case Study</h5>
                                         <p className="text text-base leading-snug">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                     </div>
                                     <Link className='bg-[#008080] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/fitsician"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
@@ -137,10 +128,7 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#fff3e9] px-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>Thriving Minds</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>Thriving Minds Case Study</h5>
                                         <p className="text text-base leading-snug">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                     </div>
                                     <Link className='bg-[#3c855a] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/thriving"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
@@ -159,10 +147,7 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] px-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>Siply App</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>Siply App Case Study</h5>
                                         <p className="text text-base leading-snug">Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients.</p>
                                     </div>
                                     <Link className='bg-[#eb9539] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/siply"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
@@ -181,10 +166,7 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#eaeaea] px-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>My Gym Support</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>My Gym Support Case Study</h5>
                                         <p className="text text-base leading-snug">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                     </div>
                                     <Link className='bg-[#ff5252] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/gym-support"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
@@ -203,10 +185,7 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#e2c2d1] p-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>CAUSEWAY</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>CAUSEWAY Case Study</h5>
                                         <p className="text text-base leading-snug">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                                     </div>
                                     <Link className='bg-[#c23235] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/causeway"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
@@ -225,10 +204,7 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] p-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>UNITREE APP</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>UNITREE APP Case Study</h5>
                                         <p className="text text-base leading-snug">Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients.</p>
                                     </div>
                                     <Link className='bg-[#212121] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/unitree"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
@@ -247,13 +223,10 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] p-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>Mono Plug App</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>Mono Plug App Case Study</h5>
                                         <p className="text text-base leading-snug">Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients.</p>
                                     </div>
-                                    <Link className='bg-[#18001c] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="#"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
+                                    <Link className='bg-[#18001c] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/mono-plug"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
                                 </div>
                                 <div className="flex justify-end">
                                     <img className='w-100' src={caseNine} alt="" />
@@ -269,10 +242,7 @@ const CaseStudies = () => {
                             }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] px-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
-                                            <h5 className='font-bold xl:text-3xl text-2xl'>VEHRK APP</h5>
-                                            <h6 className='font-bold xl:text-4xl text-3xl'>Case Study UX/UI</h6>
-                                        </div>
+                                        <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>VEHRK APP Case Study</h5>
                                         <p className="text text-base leading-snug">Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients.</p>
                                     </div>
                                     <Link className='bg-[#363434] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="#"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
@@ -288,16 +258,6 @@ const CaseStudies = () => {
 
             {/* last section  */}
             <PageLastSec />
-
-            {/* check portfolio */}
-            <div className="portfolio flex justify-center items-center">
-                <div className="container flex justify-center">
-                    <Link className="bg-[#fff] text-[#79BCCF] py-3 uppercase rounded-full px-10 flex justify-center max-w-max" to="#">
-                        check our portfolio
-                    </Link>
-                </div>
-            </div>
-
 
             {/* footer  */}
             <Footer />

@@ -29,6 +29,7 @@ const Unitree = lazy(() => import("./pages/Unitree"));
 const Thriving = lazy(() => import("./pages/Thriving"));
 const CauseWay = lazy(() => import("./pages/CauseWay"));
 const Mono = lazy(() => import("./pages/Mono"));
+const DsciServices = lazy(() => import("./pages/DsciServices"));
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -68,6 +69,7 @@ const App = () => {
             <Route path="/hire-uiux-designer" element={<HireUiUX />} />
             <Route path="/staff-augmentation" element={<Augmentation />} />
             <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/data-science-and-ai-development-services" element={<DsciServices />} />
             <Route path="/glaze" element={<Glaze />} />
             <Route path="/oyrq" element={<OyrqPage />} />
             <Route path="/fitsician" element={<Fitsician />} />

@@ -8,13 +8,13 @@ const SocialIcon = () => {
     return (
         <div>
             <div className="socialMedia flex gap-5">
-                <Link to="#">
+                <Link to="https://www.facebook.com/DtechKrew/">
                     <MdOutlineFacebook className="text-[#fff] text-3xl" />
                 </Link>
-                <Link to="#">
+                <Link to="https://www.instagram.com/dtechkrew/">
                     <IoLogoInstagram className="text-[#fff] text-3xl" />
                 </Link>
-                <Link to="#">
+                <Link to="https://www.linkedin.com/company/104302596/admin/dashboard/">
                     <FaLinkedin className="text-[#fff] text-3xl" />
                 </Link>
             </div>

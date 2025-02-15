@@ -44,7 +44,7 @@ const CauseWay = () => {
     return (
         <div>
             <Helmet>
-                <title> DTK - Siply</title>
+                <title> DTK - Causeway</title>
             </Helmet>
 
             {/* // hero section  */}
@@ -122,7 +122,7 @@ const CauseWay = () => {
                 </div>
             </div>
 
-            {/* //project timeline */}
+            {/* //font */}
             <div style={{
                 backgroundImage:
                     "url('/images/causeway/Desktop - 5.png')",
