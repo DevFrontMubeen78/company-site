@@ -12,6 +12,7 @@
 body,
 .header {
   background: linear-gradient(to right, #eaf4fc, #f9e5e8);
+  user-select: none;
 }
 
 /* .shade {
@@ -122,6 +123,24 @@ body,
   bottom: 0px;
 } */
 
+.audience::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/vherk/Hat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -96px;
+  top: -84px;
+}
+
+@media (max-width : 767.98px){
+  .audience::after{
+    display: none;
+  }
+}
+
 /* // testimonial  */
 .PicTestimonial .swiper-slide.swiper-slide-next {
   transform: scale(1.3);
@@ -180,11 +199,11 @@ body,
   }
 
   .animate-marquee {
-    animation-duration: 30s;
+    animation-duration: 75s;
   }
 
   .animate-marquee-reverse {
-    animation-duration: 30s;
+    animation-duration: 75s;
   }
 }
 
@@ -195,11 +214,11 @@ body,
   }
 
   .animate-marquee {
-    animation-duration: 45s;
+    animation-duration: 75s;
   }
 
   .animate-marquee-reverse {
-    animation-duration: 45s;
+    animation-duration: 75s;
   }
 }
 

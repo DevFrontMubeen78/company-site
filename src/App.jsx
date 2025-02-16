@@ -30,6 +30,7 @@ const Thriving = lazy(() => import("./pages/Thriving"));
 const CauseWay = lazy(() => import("./pages/CauseWay"));
 const Mono = lazy(() => import("./pages/Mono"));
 const DsciServices = lazy(() => import("./pages/DsciServices"));
+const Vherk = lazy(() => import("./pages/Vherk"));
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -80,6 +81,7 @@ const App = () => {
             <Route path="/unitree" element={<Unitree />} />
             <Route path="/thriving" element={<Thriving />} />
             <Route path="/mono-plug" element={<Mono />} />
+            <Route path="/vherk" element={<Vherk />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Suspense>

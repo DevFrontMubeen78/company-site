@@ -245,7 +245,7 @@ const CaseStudies = () => {
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>VEHRK APP Case Study</h5>
                                         <p className="text text-base leading-snug">Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients.</p>
                                     </div>
-                                    <Link className='bg-[#363434] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="#"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
+                                    <Link className='bg-[#363434] px-10 py-4 text-[#fff] rounded-lg relative max-w-max flex gap-1 items-center' to="/vherk"><span>Read Case Study</span><FaArrowLeft className='rotate-145' /></Link>
                                 </div>
                                 <div className="flex justify-end">
                                     <img className='w-full' src={caseTen} alt="" />
