@@ -15,6 +15,11 @@ body,
   user-select: none;
 }
 
+img {
+  pointer-events: none;
+}
+
+
 /* .shade {
   background-image: url("/images/unitree/Vector 4.png");
   background-repeat: no-repeat;
