@@ -141,7 +141,13 @@ const MADev = () => {
                 <title>DTK - Mobile App Development</title>
             </Helmet>
             <Header />
-            <div className="padTop">
+            <div style={{
+                backgroundImage:
+                    "url('/images/Pattern-1.png')",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "top right",
+                backgroundSize: "contain",
+            }} className="padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="content text-center flex flex-col gap-3">
@@ -227,7 +233,14 @@ const MADev = () => {
             </div>
 
             {/* Our Process of Hiring */}
-            <div className="DTechKrewBen padTop">
+            <div 
+            style={{
+                backgroundImage:
+                    "url('/images/Pattern-2.png')",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "top right",
+                backgroundSize: "10%",
+            }} className="DTechKrewBen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
                         <div className="section_title text-center flex flex-col gap-5">
@@ -272,7 +285,7 @@ const MADev = () => {
                                     Empower Your <span className="text-[#827FE1]">Team</span>
                                 </h1>
                                 <p className="md:text-lg text-base leading-normal w-full heading_content text">
-                                We equip your team with the tools, resources, and training needed to unlock their full potential. By fostering a collaborative environment and prioritizing skill development, we empower your team to work more efficiently, drive innovation, and achieve outstanding results.
+                                    We equip your team with the tools, resources, and training needed to unlock their full potential. By fostering a collaborative environment and prioritizing skill development, we empower your team to work more efficiently, drive innovation, and achieve outstanding results.
                                 </p>
                             </div>
                             <div className="map">
