@@ -1,4 +1,4 @@
-import React from 'react'
+import Footer from "../components/Footer";
 import Frame from "../../public/images/oyrq/Frame 8.png"
 import Rectangle from "../../public/images/oyrq/Rectangle.png"
 import idea from "../../public/images/oyrq/idea.png"
@@ -7,7 +7,7 @@ import timeline from "../../public/images/oyrq/Group 1000002756.png"
 import Vector from "../../public/images/oyrq/Vector.png"
 import Colors from "../../public/images/oyrq/Colors.png"
 import wireFrame from "../../public/images/oyrq/Group 1686555515.png"
-import Thanks from '../components/Thanks'
+// import Thanks from '../components/Thanks'
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
@@ -252,7 +252,8 @@ const OyrqPage = () => {
             </div>
 
             {/* footer  */}
-            <Thanks />
+            {/* <Thanks /> */}
+            <Footer/>
         </div>
     )
 }

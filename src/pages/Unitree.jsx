@@ -17,6 +17,7 @@ import colors from "../../public/images/unitree/colors.png"
 import info from "../../public/images/unitree/info-arch.png"
 import flow from "../../public/images/unitree/user flow.png"
 import MyRole from "../components/MyRole"
+import Footer from "../components/Footer";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
@@ -884,7 +885,7 @@ const Unitree = () => {
             </div>
 
             {/* last section  */}
-            <div className="shade causeLast border border-t-[#474747] pt-[50px] pb-[10px]">
+            {/* <div className="shade causeLast border border-t-[#474747] pt-[50px] pb-[10px]">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
                         <h6 className="text-[#fff] md:text-4xl text-2xl text-center">THANKS FOR WATCHING</h6>
@@ -900,7 +901,8 @@ const Unitree = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Footer/>
         </div >
     )
 }

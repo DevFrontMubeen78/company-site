@@ -24,7 +24,7 @@ const PicTestimonial = () => {
                         Testimonials That <br className='inline' /> Speak to <span className="text-[#FF0066]"> Our Results</span>
                     </h5>
                     <p className="text-lg text leading-normal text-center xl:w-6/12 heading_content">
-                        Our clients' success stories are a testament to our commitment and expertise. At Dtechkrew, we take pride in delivering innovative solutions that drive real impact. Hear from our satisfied clients and see how we turn ideas into reality
+                        Our clients success stories are a testament to our commitment and expertise. At Dtechkrew, we take pride in delivering innovative solutions that drive real impact. Hear from our satisfied clients and see how we turn ideas into reality
                     </p>
                 </div>
                 <div className="slider">

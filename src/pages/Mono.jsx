@@ -25,7 +25,8 @@ import ttc from "../../public/images/mono/Group 1686555594.png"
 import otherScreen from "../../public/images/mono/Group 1686555596.png"
 import otherScreenM from "../../public/images/mono/Group 1686555543.png"
 import otherScreenM2 from "../../public/images/mono/Group 1686555597.png"
-import footLogo from "../../public/images/mono/image 2.png"
+// import footLogo from "../../public/images/mono/image 2.png"
+import Footer from "../components/Footer";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
@@ -330,7 +331,7 @@ const Mono = () => {
             </div>
 
             {/* //last section */}
-            <div style={{
+            {/* <div style={{
                 backgroundImage:
                     "url('/images/mono/Group 1686555598.png')",
                 backgroundRepeat: "no-repeat",
@@ -343,7 +344,8 @@ const Mono = () => {
                         <h6 className="md:text-6xl text-4xl font-bold text-[#fff]">Thanks for watching</h6>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Footer/>
 
 
         </div>

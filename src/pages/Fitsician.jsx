@@ -1,4 +1,3 @@
-import React from 'react'
 import glazeTitle from "../../public/images/fitsician/fseb.png"
 import figma from "../../public/images/fitsician/Group 1597883730.png"
 import mobiles from "../../public/images/fitsician/Group 1686555516.png"
@@ -9,7 +8,8 @@ import flow from "../../public/images/fitsician/vlow.png"
 import bold from "../../public/images/fitsician/Bold.png"
 import light from "../../public/images/fitsician/Light - (Border).png"
 import TwoTone from "../../public/images/fitsician/Two tone.png"
-import Thanks from '../components/Thanks'
+// import Thanks from '../components/Thanks'
+import Footer from "../components/Footer";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
@@ -966,7 +966,8 @@ const Fitsician = () => {
             </div>
 
             {/* footer  */}
-            <Thanks />
+            {/* <Thanks /> */}
+            <Footer/>
         </div>
     )
 }

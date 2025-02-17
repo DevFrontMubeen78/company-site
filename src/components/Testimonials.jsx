@@ -7,15 +7,15 @@ const testimonialsFirst = [
     rating: 5.0,
     review:
       "Exceptional service! The team at Dtechkrew exceeded my expectations. They delivered a high-quality product with excellent attention to detail. Highly recommended!",
-    images: "/images/home/cl2.png",
+    images: "/images/clients/client1.png",
   },
   {
-    ClientName: "Sophie Martinez",
+    ClientName: "James Anderson",
     country: "Canada",
     rating: 4.5,
     review:
       "Working with Dtechkrew was a seamless experience. Their technical expertise and ability to understand my requirements made the process smooth and hassle-free.",
-    images: "/images/home/cl1.png",
+    images: "/images/clients/client2.png",
   },
   {
     ClientName: "Daniel O'Connor",
@@ -23,18 +23,18 @@ const testimonialsFirst = [
     rating: 4.1,
     review:
       "Amazing work! They took my project to the next level with their skills and dedication. The team was highly responsive and always available to address any concerns.",
-    images: "/images/home/cl3.png",
+    images: "/images/clients/client3.png",
   },
 ];
 
 const testimonialsSecond = [
   {
-    ClientName: "Emily Brown",
+    ClientName: "William Brown",
     country: "Australia",
     rating: 4.7,
     review:
       "I am thoroughly impressed with the quality and professionalism of Dtechkrew. They delivered on time and ensured that every aspect of my project was perfect!",
-    images: "/images/home/cl2.png",
+    images: "/images/clients/client4.png",
   },
   {
     ClientName: "Rajesh Kumar",
@@ -42,18 +42,17 @@ const testimonialsSecond = [
     rating: 5.0,
     review:
       "Dtechkrew provided outstanding service! Their communication was top-notch, and they understood exactly what I needed. Will definitely work with them again.",
-    images: "/images/home/cl1.png",
+    images: "/images/clients/client5.png",
   },
   {
-    ClientName: "Isabella Rossi",
+    ClientName: "Antonio Rossi",
     country: "Italy",
     rating: 4.8,
     review:
       "Superb work! They delivered a well-optimized and beautifully designed website. The entire process was smooth, and their expertise shined through in every step.",
-    images: "/images/home/cl3.png",
+    images: "/images/clients/client6.png",
   },
 ];
-
 
 
 const Testimonials = () => {

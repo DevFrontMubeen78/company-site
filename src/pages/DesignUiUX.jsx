@@ -225,23 +225,23 @@ const DesignUiUX = () => {
               </div>
               <div className="grid grid-cols-3">
                 <div className="">
-                  <h1 className="md:text-lg text-base font-bold leading-snug text-[#000]">
+                  <h1 className="md:text-3xl text-base font-bold leading-snug text-[#000]">
                     5+ years
                   </h1>
                   <p className="md:text-lg text-base leading-normal w-full text">
                     in the market
                   </p>
                 </div>
-                <div className="block mx-auto">
-                  <h1 className="md:text-lg text-base font-bold leading-snug text-[#000]">
+                <div className="">
+                  <h1 className="md:text-3xl text-base font-bold leading-snug text-[#000]">
                     10+ clients
                   </h1>
                   <p className="md:text-lg text-base leading-normal w-full text">
                     were satisfied
                   </p>
                 </div>
-                <div className="text-end">
-                  <h1 className="md:text-lg text-base font-bold leading-snug text-[#000]">
+                <div className="">
+                  <h1 className="md:text-3xl text-base font-bold leading-snug text-[#000]">
                     7+ designers
                   </h1>
                   <p className="md:text-lg text-base leading-normal w-full text">
@@ -400,8 +400,8 @@ const DesignUiUX = () => {
                 <span className="text-[#FF0066]"> Design?</span>
               </h1>
             </div>
-            <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+            <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-5">
+              <div className="flex flex-col md:gap-20 gap-5">
                 {DesignUiUXs.whatYouGet.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -411,7 +411,7 @@ const DesignUiUX = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="flex flex-col md:gap-20 gap-5">
                 {DesignUiUXs.whatYouGet1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -429,8 +429,8 @@ const DesignUiUX = () => {
       {/* last section  */}
       <PageLastSec />
 
-         {/* footer  */}
-         <Footer />
+      {/* footer  */}
+      <Footer />
     </div>
   );
 };

@@ -62,10 +62,6 @@ const aboutContent = {
   ],
   corporate: [
     {
-      title: "Blood Donation Advocacy:",
-      desc: "We actively engage in blood donation drives, emphasizing the significance of this vital contribution. Many of our team members are dedicated, regular donors, playing a part in supporting the health and welfare of our local and global communities.",
-    },
-    {
       title: "Employee Learning Initiatives:",
       desc: "Investing in our workforce's growth, we provide diverse learning programs, including skill enhancement workshops and educational sponsorships. This empowers our team to excel both personally and professionally.",
     },
@@ -75,10 +71,6 @@ const aboutContent = {
     },
   ],
   corporate1: [
-    {
-      title: "Stands with Ukraine:",
-      desc: "Supporting Our Armed Forces: We proudly support our armed forces by donating funds and resources to meet their essential needs and initiatives, ensuring they receive the best possible assistance.",
-    },
     {
       title: "Community Engagement:",
       desc: "We enrich our local communities through outreach programs, supporting local events, sponsoring educational initiatives, and volunteering our time. Our commitment is to make a positive impact and strengthen our connections close to home.",

@@ -10,8 +10,9 @@ import Exclude2 from "../../public/images/glaze/Exclude2.png"
 import Exclude3 from "../../public/images/glaze/Exclude3.png"
 import ICONOGRAPHY from "../../public/images/glaze/icong.png"
 import virtual from "../../public/images/glaze/vitual.png"
-import Thanks from '../components/Thanks'
+// import Thanks from '../components/Thanks'
 import MyRole from "../components/MyRole"
+import Footer from "../components/Footer";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
@@ -399,7 +400,8 @@ const Glaze = () => {
             </div>
 
             {/* footer  */}
-            <Thanks />
+            {/* <Thanks /> */}
+            <Footer/>
         </div>
     )
 }

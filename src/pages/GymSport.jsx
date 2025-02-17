@@ -11,10 +11,12 @@ import lowFidelty from "../../public/images/gym/Low Fidelity Wireframe.png"
 import highFidelty from "../../public/images/gym/HIGH Fidelity Wireframe.png"
 import mobiless from "../../public/images/gym/Group 1597884427.png"
 import mobiles from "../../public/images/gym/Group 1686555527.png"
-import icon from "../../public/images/gym/Star Struck.png"
+// import icon from "../../public/images/gym/Star Struck.png"
+import Footer from "../components/Footer";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
+
 
 
 const GymSport = () => {
@@ -189,7 +191,7 @@ const GymSport = () => {
             </div>
 
             {/* last section  */}
-            <div
+            {/* <div
                 style={{
                     backgroundImage: "url('/images/gym/Foooter No21.png')",
                     backgroundRepeat: "no-repeat",
@@ -206,7 +208,8 @@ const GymSport = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Footer/>
 
         </div>
     )

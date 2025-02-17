@@ -12,6 +12,7 @@ import DProcess from "../../public/images/causeway/Group 1597884009.png"
 import DProcess2 from "../../public/images/causeway/Group 1597883757.png"
 import projectTimeline from "../../public/images/causeway/Group 1597883758.png"
 import projectTimeline2 from "../../public/images/causeway/Group 1597884010.png"
+import Footer from "../components/Footer";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
@@ -215,7 +216,7 @@ const CauseWay = () => {
             </div>
 
             {/* last section  */}
-            <div style={{
+            {/* <div style={{
                 backgroundImage:
                     "url('/images/causeway/Desktop - 29.png')",
                 backgroundRepeat: "no-repeat",
@@ -237,7 +238,8 @@ const CauseWay = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Footer/>
         </div>
     )
 }

@@ -12,8 +12,9 @@ import homeScreen from "../../public/images/thriving/Group 1686555519.png"
 import workout from "../../public/images/thriving/Group 1686555520.png"
 import dt from "../../public/images/thriving/dt.png"
 import MyRole from "../components/MyRole"
-import Heart from "../../public/images/siply/heart.png"
-import facebook from "../../public/images/siply/facebook.png"
+// import Heart from "../../public/images/siply/heart.png"
+// import facebook from "../../public/images/siply/facebook.png"
+import Footer from "../components/Footer";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
@@ -453,11 +454,10 @@ const Thriving = () => {
             </div>
 
             {/* last section */}
-            <div className="last flex justify-center items-center py-8">
+            {/* <div className="last flex justify-center items-center py-8">
                 <div className="container">
                     <div className="main flex flex-col gap-8 text-center justify-center items-center">
                         <div className="flex flex-col gap-2 max-w-max items-center">
-                            {/* Updated div with justify-end */}
                             <div className="flex justify-end items-center w-full">
                                 <img className="w-16" src={Heart} alt="Heart" />
                             </div>
@@ -478,7 +478,8 @@ const Thriving = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Footer />
         </div>
     )
 }

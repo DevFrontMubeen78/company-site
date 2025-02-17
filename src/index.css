@@ -19,6 +19,13 @@ img {
   pointer-events: none;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  background: #fd0367;
+  padding: 25px;
+  color: #fff !important;
+  border-radius: 5px;
+}
+
 
 /* .shade {
   background-image: url("/images/unitree/Vector 4.png");

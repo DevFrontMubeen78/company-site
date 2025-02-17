@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import designProcess from "../../public/images/siply/Group 1686555549.png"
 import Timeline from "../../public/images/siply/Timeline _ Suggestion 2 _ Ali Hassan.png"
 import ag from "../../public/images/siply/Ag.png"
@@ -9,7 +10,7 @@ import Frame176 from "../../public/images/siply/Frame 176.png"
 import UserFlow from "../../public/images/siply/User Flow _ Ali Hassan.png"
 import shots from "../../public/images/siply/76shots_so 1.png"
 import figma from "../../public/images/siply/logos_figma.png"
-import ThanksTw from "../components/ThanksTw"
+// import ThanksTw from "../components/ThanksTw"
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
@@ -230,7 +231,8 @@ const Siply = () => {
             </div>
 
             {/* last section */}
-            <ThanksTw />
+            {/* <ThanksTw /> */}
+            <Footer/>
         </div>
     )
 }

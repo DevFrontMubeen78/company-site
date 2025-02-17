@@ -21,7 +21,7 @@ const PageLastSec = () => {
                                 you an email with the information within the next two hours.
                             </p>
                         </div>
-                        <Link className="text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="#"> Let’s talk</Link>
+                        <Link className="text py-2 bg-[#fff] px-10 md:border-none border border-[#5353531c] rounded-full shadow-lg w-fit md:mx-auto md:mx-0" to="#"> Let’s talk</Link>
                     </div>
 
                 </div>

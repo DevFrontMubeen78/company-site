@@ -4,6 +4,7 @@ import colors from "../../public/images/vherk/Group 1686555593.png"
 import font from "../../public/images/vherk/Group 1686555594.png"
 import frameone from "../../public/images/vherk/frameone.png"
 import frameTwo from "../../public/images/vherk/frameTwo.png"
+import Footer from "../components/Footer";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
@@ -298,7 +299,7 @@ const Vherk = () => {
             </div>
 
             {/* // footer*/}
-            <div style={{
+            {/* <div style={{
                 backgroundImage:
                     "url('/images/vherk/Group 1597884385.png')",
                 backgroundRepeat: "no-repeat",
@@ -312,7 +313,8 @@ const Vherk = () => {
                     <div className="flex gap-5 items-center md:ml-55 ml-40"><img className='md:w-14 w-10' src="/images/vherk/Group 1686555597.png" alt="" /><p className="text-lg text-[#fff]">Solution we Offer</p></div>
                     <div className="flex gap-5 items-center md:ml-75 ml-60"><img className='md:w-14 w-10' src="/images/vherk/Group 1686555598.png" alt="" /><p className="text-lg text-[#fff]">Outcome</p></div>
                 </div>
-            </div>
+            </div> */}
+            <Footer/>
         </div>
     )
 }
