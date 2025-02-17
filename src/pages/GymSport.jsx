@@ -52,15 +52,9 @@ const GymSport = () => {
                                         <li className="flex gap-2 items-center"><img src={check} className='w-6' alt={check} />Pixel perfect</li>
                                     </ul>
                                 </div>
-                                <div className="flex flex-col gap-10">
-                                    <div className="imgs">
-                                        <h6 className='text-lg text-[#fff]'>Designed by:</h6>
-                                        <p className="text-sm md:text-[#FF5252] sm:text-[#000]">Hamza Bhatti</p>
-                                    </div>
-                                    <div className="flex gap-10">
-                                        <img src={figma} className='w-16' alt={figma} />
-                                        <img src={ps} className='w-16' alt={ps} />
-                                    </div>
+                                <div className="flex gap-10">
+                                    <img src={figma} className='w-16' alt={figma} />
+                                    <img src={ps} className='w-16' alt={ps} />
                                 </div>
                             </div>
                             <div className="">

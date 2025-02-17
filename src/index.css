@@ -60,7 +60,7 @@ img {
   animation: colorChange 7s infinite linear;
 } */
 
-.text {
+.lines {
   color: #858591;
 }
 
@@ -87,7 +87,7 @@ img {
   left: 12px;
 }
 
-.lines::before {
+/* .lines::before {
   content: "";
   position: absolute;
   background: #000;
@@ -96,7 +96,7 @@ img {
   bottom: 0px;
   height: 1px;
   left: 12px;
-}
+} */
 
 .titleCase::after {
   content: "";
@@ -140,8 +140,8 @@ img {
   top: -84px;
 }
 
-@media (max-width : 767.98px){
-  .audience::after{
+@media (max-width : 767.98px) {
+  .audience::after {
     display: none;
   }
 }
@@ -235,4 +235,49 @@ img {
   .container {
     width: 90%;
   }
+}
+
+/* button animations */
+
+.box {
+  --border-angle: 0deg;
+  border-radius: 5px;
+  padding: 5px 15px;
+  display: flex;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  animation: border-angle-rotate 2s infinite linear;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.box.b {
+  background: linear-gradient(#eaf4fc, #f9e5e8) padding-box,
+    conic-gradient(from var(--border-angle),
+      var(--bg) 50%,
+      #ff0164) border-box;
+}
+
+@keyframes border-angle-rotate {
+  from {
+    --border-angle: 0deg;
+  }
+
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+/** Boilerplate **/
+body {
+  --bg: hsl(190deg 20% 10%);
+  place-content: center;
+  background: linear-gradient(to right, #eaf4fc, #f9e5e8);
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }

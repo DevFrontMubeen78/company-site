@@ -141,7 +141,9 @@ const Home = () => {
                     <li>App prototyping and testing</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/mobile-app-developments"><span className='lines'>View More</span></Link>
+                <Link className="px-10 py-4 rounded-lg relative max-w-max box b" to="/mobile-app-developments">
+                  <span className="lines">View More</span>
+                </Link>
               </div>
               <div className="flex justify-end">
                 <img className='xl:w-80 w-96' src={caseONe} alt="" />
@@ -170,7 +172,7 @@ const Home = () => {
                     <li>API integration and development</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/web-app-development"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/web-app-development"><span className='lines animated-button'>View More</span></Link>
               </div>
             </div>
             {/* case 3 */}
@@ -193,7 +195,7 @@ const Home = () => {
                     <li>Predictive analytics and decision-making systems</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development-services"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development-services"><span className='lines animated-button'>View More</span></Link>
               </div>
 
               <div className="flex justify-end items-center">
@@ -447,7 +449,7 @@ const Home = () => {
                 <p className="md:text-lg text-base text">
                   Expand your technology team with the top Latin American talent and take your business to the next level. Enhance productivity, streamline workflows, and accelerate project timelines with highly skilled professionals. Whether you need to bridge a talent gap, reduce development time, or implement a specialized skill set for a specific project, our experts are ready to deliver high-quality results tailored to your needs. Partner with us to access a diverse pool of top-tier talent and drive innovation effortlessly.
                 </p>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines animated-button'>View More</span></Link>
               </div>
               <div className="">
                 <img src={augmentation} alt="augmentation" />
