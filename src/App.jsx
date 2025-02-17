@@ -31,6 +31,8 @@ const CauseWay = lazy(() => import("./pages/CauseWay"));
 const Mono = lazy(() => import("./pages/Mono"));
 const DsciServices = lazy(() => import("./pages/DsciServices"));
 const Vherk = lazy(() => import("./pages/Vherk"));
+const WADev = lazy(() => import("./pages/WADev"));
+const MADev = lazy(() => import("./pages/MADev"));
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -82,6 +84,8 @@ const App = () => {
             <Route path="/thriving" element={<Thriving />} />
             <Route path="/mono-plug" element={<Mono />} />
             <Route path="/vherk" element={<Vherk />} />
+            <Route path="/web-app-development" element={<WADev />} />
+            <Route path="/mobile-app-developments" element={<MADev />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Suspense>

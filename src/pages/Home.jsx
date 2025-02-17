@@ -141,7 +141,7 @@ const Home = () => {
                     <li>App prototyping and testing</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/mobile-app-development"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/mobile-app-developments"><span className='lines'>View More</span></Link>
               </div>
               <div className="flex justify-end">
                 <img className='xl:w-80 w-96' src={caseONe} alt="" />
@@ -170,7 +170,7 @@ const Home = () => {
                     <li>API integration and development</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/web-development"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/web-app-development"><span className='lines'>View More</span></Link>
               </div>
             </div>
             {/* case 3 */}
@@ -193,7 +193,7 @@ const Home = () => {
                     <li>Predictive analytics and decision-making systems</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development"><span className='lines'>View More</span></Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development-services"><span className='lines'>View More</span></Link>
               </div>
 
               <div className="flex justify-end items-center">

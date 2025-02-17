@@ -1,8 +1,6 @@
 import PageLastSec from "../components/PageLastSec";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import StageOfDev from "../components/StageOfDev";
-import IndWeWork from "../components/IndWeWork";
 import { Helmet } from "react-helmet-async";
 
 const DataSciences = {
@@ -159,7 +157,7 @@ const DsciServices = () => {
                             <h1 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-[#000]">Data Science & AI
                                 <span className="text-[#FF0066]">  Development Services</span>
                             </h1>
-                            <p className="md:text-lg text-base leading-normal text-center w-full heading_content text-[#000]">
+                            <p className="md:text-lg text-base leading-normal text-center w-full heading_content text">
                                 We are dedicated to creating end-to-end solutions for you. Partner with DTechKrews Data Science & AI development services to enjoy tailor-made products that perfectly fit your needs and goals.
                             </p>
                         </div>
@@ -177,7 +175,7 @@ const DsciServices = () => {
                                             return (
                                                 <div key={index} className="innertext flex flex-col gap-2">
                                                     <h6 className="font-bold text-2xl text-[#000]">{items.title}</h6>
-                                                    <p className="text-base text-[#000]">{items.desc}</p>
+                                                    <p className="text-base text">{items.desc}</p>
                                                 </div>
                                             )
                                         })
@@ -190,7 +188,7 @@ const DsciServices = () => {
                                             return (
                                                 <div key={index} className="innertext flex flex-col gap-2">
                                                     <h6 className="font-bold text-2xl text-[#000]">{items.title}</h6>
-                                                    <p className="text-base text-[#000]">{items.desc}</p>
+                                                    <p className="text-base text">{items.desc}</p>
                                                 </div>
                                             )
                                         })

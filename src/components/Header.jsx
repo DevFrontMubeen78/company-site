@@ -66,7 +66,7 @@ const Header = () => {
               ) : (
                 <button
                   className="flex items-center font-medium text-lg hover:text-[#ff0066]"
-                  onClick={() => setDropdown(dropdown === index ? null : index)}
+                  onMouseEnter={() => setDropdown(dropdown === index ? null : index)}
                 >
                   {item.name}
                   {item.subMenu && (
