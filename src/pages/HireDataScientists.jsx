@@ -158,14 +158,14 @@ const HireDataScientists = () => {
             <div className="ProductsTypes padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Types of Products <br className="inline" />
                                 <span className="text-[#FF0066]"> Data Scientists Build </span>
                             </h1>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {HireDataScientistss.ProductsTypes.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -175,7 +175,7 @@ const HireDataScientists = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {HireDataScientistss.ProductsTypes1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -200,12 +200,12 @@ const HireDataScientists = () => {
             }} className="skilled padTop">
                 <div className="container">
                     <div className="flex flex-col md:gap-30 gap-20">
-                        <div className="flex flex-col">
+                        <div className="scroll-animate flex flex-col">
                             <h1 className="md:text-4xl text-2xl font-bold leading-snug text-black">
                                 Need skilled Data Scientists? <br className="inline" /> Turn to DTechKrew to get the best talents.
                             </h1>
                         </div>
-                        <Link className="text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="/Contact-us"> Contact Us</Link>
+                        <Link className="scroll-animate text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="/Contact-us"> Contact Us</Link>
                     </div>
                 </div>
             </div>
@@ -214,14 +214,14 @@ const HireDataScientists = () => {
             <div className="DesignProcess padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Our Process of Hiring  <br className="inline" />
                                 <span className="text-[#FF0066]"> Data Science Developers </span>
                             </h1>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {HireDataScientistss.hireProcessing.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -231,7 +231,7 @@ const HireDataScientists = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {HireDataScientistss.hireProcessing1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">

@@ -183,13 +183,13 @@ const About = () => {
       <div className="trust padTop">
         <div className="container">
           <div className="main flex flex-col gap-10">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">
                 Who
                 <span className="text-[#000]">Trust Us</span>
               </h1>
             </div>
-            <div className="logos grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
+            <div className="scroll-animate logos grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
               {aboutContent.logos.map((items, index) => (
                 <div
                   key={index}
@@ -211,14 +211,14 @@ const About = () => {
       <div className="corporate padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">
                 Corporate Social
                 <span className="text-[#000]"> Responsibility</span>
               </h1>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {aboutContent.corporate.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -228,7 +228,7 @@ const About = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {aboutContent.corporate1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -250,7 +250,7 @@ const About = () => {
       <div className="corporate padTop">
         <div className="container flex flex-col gap-20">
           <div className="main flex flex-col gap-16">
-            <div className="content text-center flex flex-col gap-8">
+            <div className="scroll-animate content text-center flex flex-col gap-8">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Recruitment
                 <span className="text-[#FF0066]"> stages</span>
@@ -261,7 +261,7 @@ const About = () => {
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {aboutContent.stages.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -271,7 +271,7 @@ const About = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {aboutContent.stages1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">

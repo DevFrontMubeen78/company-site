@@ -204,7 +204,7 @@ const DsciServices = () => {
             <div className="DTechKrewBen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Benefits of DTechKrew Data Science &
                                 <span className="text-[#FF0066]"> <br className="inline" />
@@ -213,7 +213,7 @@ const DsciServices = () => {
                             </h1>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {CsDevelopments.DTechKrewBen.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -223,7 +223,7 @@ const DsciServices = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {CsDevelopments.DTechKrewBen1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -242,14 +242,14 @@ const DsciServices = () => {
             <div className="hireProcessing padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Stages of
                                 <span className="text-[#FF0066]"> Development</span>
                             </h1>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {CsDevelopmentss.stages.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -259,7 +259,7 @@ const DsciServices = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {CsDevelopmentss.stages1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -278,7 +278,7 @@ const DsciServices = () => {
             <div className="IndWeWork padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">
                                 Industries <span className="text-[#000]">We Work With</span>
                             </h1>
@@ -286,7 +286,7 @@ const DsciServices = () => {
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
 
                             {/* Manufacturing Section */}
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {CsDevelopmentsw.IndWork.map((item, index) => (
                                     <div key={index} className="innertext flex flex-col gap-8">
                                         <div className="flex flex-col gap-3">
@@ -306,7 +306,7 @@ const DsciServices = () => {
                             </div>
 
                             {/* Agriculture Section */}
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {CsDevelopmentsw.IndWork1.map((item, index) => (
                                     <div key={index} className="innertext flex flex-col gap-8">
                                         <div className="flex flex-col gap-3">

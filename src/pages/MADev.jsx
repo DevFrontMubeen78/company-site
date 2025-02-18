@@ -200,14 +200,14 @@ const MADev = () => {
             <div className="DTechKrewBen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center flex flex-col gap-5">
+                        <div className="scroll-animate section_title text-center flex flex-col gap-5">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Types of Applications Our <span className="text-[#827FE1]"> Developers Build</span>
                             </h1>
                             <p className="md:text-lg text-base leading-normal text-center w-full heading_content text">Entrepreneurs looking to hire a mobile app developer seek a versatile professional capable of handling a variety of tasks. The top-tier mobile app developers at DTechKrew go beyond basic development, offering expertise in app design, performance optimization, user experience, cross-platform solutions, and seamless integration with existing systems.</p>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {typeOfAp.DTechKrewBen.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -217,7 +217,7 @@ const MADev = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {typeOfAp.DTechKrewBen1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -243,14 +243,14 @@ const MADev = () => {
             }} className="DTechKrewBen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center flex flex-col gap-5">
+                        <div className="scroll-animate section_title text-center flex flex-col gap-5">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Our Process of Hiring <span className="text-[#827FE1]">  Mobile App Developers</span>
                             </h1>
                             <p className="md:text-lg text-base leading-normal text-center w-full heading_content text">Let’s begin by identifying the specific skills and expertise your project requires. Clearly defined business goals are essential for strategic planning. Our specialists provide guidance at every step, whether you’re looking to build mobile apps from scratch or optimize your existing mobile solutions for enhanced performance and user engagement.</p>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {OurProcess.DTechKrewBen.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -260,7 +260,7 @@ const MADev = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {OurProcess.DTechKrewBen1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -280,7 +280,7 @@ const MADev = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-                            <div className="flex flex-col gap-5 justify-center">
+                            <div className="slide-in-left flex flex-col gap-5 justify-center">
                                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                     Empower Your <span className="text-[#827FE1]">Team</span>
                                 </h1>
@@ -288,7 +288,7 @@ const MADev = () => {
                                     We equip your team with the tools, resources, and training needed to unlock their full potential. By fostering a collaborative environment and prioritizing skill development, we empower your team to work more efficiently, drive innovation, and achieve outstanding results.
                                 </p>
                             </div>
-                            <div className="map">
+                            <div className="slide-in-right map">
                                 <img src={emp} alt="python" />
                             </div>
                         </div>
@@ -300,14 +300,14 @@ const MADev = () => {
             <div className="DTechKrewBen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center flex flex-col gap-5">
+                        <div className="scroll-animate section_title text-center flex flex-col gap-5">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Why <span className="text-[#827FE1]"> DTeckrew?</span>
                             </h1>
                             <p className="md:text-lg text-base leading-normal text-center w-full heading_content text">Python developer hires in DTechKrew are a worthwhile investment because we are:</p>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {WhyDTeckrew.DTechKrewBen.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -317,7 +317,7 @@ const MADev = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {WhyDTeckrew.DTechKrewBen1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">

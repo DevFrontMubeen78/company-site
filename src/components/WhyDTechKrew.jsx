@@ -31,10 +31,10 @@ const WhyDTechKrew = () => {
             <div className="DTeckrew padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000] text-center">
+                        <h1 className="scroll-animate md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000] text-center">
                             Why <span className="text-[#FF0066]"> DTeckrew?</span></h1>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {WebDevs.DTeckrew.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -44,7 +44,7 @@ const WhyDTechKrew = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {WebDevs.DTeckrew1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">

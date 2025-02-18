@@ -51,7 +51,7 @@ const Technology = () => {
         <div>
             <div className="trust padTop">
                 <div className="main">
-                    <div className="logos grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
+                    <div className="scroll-animate logos grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
                         {logos.map((items, index) => (
                             <div
                                 key={index}

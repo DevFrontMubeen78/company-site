@@ -34,7 +34,7 @@ const role = [
 const MyRole = () => {
     return (
         <div>
-            <div className="grid md:grid-cols-3 grid-cols-2 gap-18">
+            <div className="scroll-animate grid md:grid-cols-3 grid-cols-2 gap-18">
                 {
                     role.map((items, index) => {
                         return (

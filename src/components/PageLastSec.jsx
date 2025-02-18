@@ -10,7 +10,7 @@ const PageLastSec = () => {
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "bottom right",
                         backgroundSize: "contain",
-                    }} className="LsContent flex flex-col gap-30 bg-white rounded-2xl md:p-20 p-10">
+                    }} className="scroll-animate LsContent flex flex-col gap-30 bg-white rounded-2xl md:p-20 p-10">
                         <div className="flex flex-col gap-3">
                             <h1 className="md:text-3xl text-2xl font-bold leading-snug text-black">
                                 Are you ready to brainstorm the <br className="inline" />

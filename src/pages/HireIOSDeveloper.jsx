@@ -153,14 +153,14 @@ const IosDeveloper = () => {
             <div className="ProductsTypes padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Types of Products <br className="inline" />
                                 <span className="text-[#FF0066]"> IOS Developers Build</span>
                             </h1>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {IosDevelopers.ProductsTypes.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -170,7 +170,7 @@ const IosDeveloper = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {IosDevelopers.ProductsTypes1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -194,13 +194,13 @@ const IosDeveloper = () => {
                 backgroundSize: "cover",
             }} className="skilled padTop">
                 <div className="container">
-                    <div className="flex flex-col md:gap-30 gap-20">
-                        <div className="flex flex-col">
-                            <h1 className="md:text-4xl text-2xl font-bold leading-snug text-black">
+                    <div className="scroll-animate flex flex-col md:gap-30 gap-20">
+                        <div className="scroll-animate flex flex-col">
+                            <h1 className="scroll-animate md:text-4xl text-2xl font-bold leading-snug text-black">
                                 Need skilled iOS developers? <br className="inline" /> Turn to DTechKrew to get the best talents.
                             </h1>
                         </div>
-                        <Link className="text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="/Contact-us"> Contact Us</Link>
+                        <Link className="scroll-animate text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="/Contact-us"> Contact Us</Link>
                     </div>
                 </div>
             </div>
@@ -209,14 +209,14 @@ const IosDeveloper = () => {
             <div className="DesignProcess padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Our Process
                                 <span className="text-[#FF0066]"> of Hiring <br className="inline" /> iOS Developers</span>
                             </h1>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {IosDevelopers.hireProcessing.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -226,7 +226,7 @@ const IosDeveloper = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {IosDevelopers.hireProcessing1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">

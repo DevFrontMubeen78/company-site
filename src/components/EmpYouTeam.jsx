@@ -5,7 +5,7 @@ const EmpYouTeam = () => {
         <div className="trust padTop">
         <div className="container">
           <div className="main flex flex-col gap-10">
-            <div className="content text-center flex flex-col gap-3">
+            <div className="scroll-animate content text-center flex flex-col gap-3">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
               Empower
                 <span className="text-[#FF0066]"> Your Team</span>

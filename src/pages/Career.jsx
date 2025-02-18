@@ -1,9 +1,8 @@
 // complete page 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import web from "/images/staff-aug/web.png";
 import figure from "../../public/images/career/Figure.png";
-import gallery from "../../public/images/career/Group 1686555552.png";
+import gallery from "/images/about/every.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -69,11 +68,11 @@ const Career = () => {
                 <div className="container">
                     <div className="flex flex-col gap-20">
                         <div className="main flex flex-col gap-20">
-                            <h1 className="md:text-4xl text-2xl text-[#FF0066] text-center">
+                            <h1 className="scroll-animate md:text-4xl text-2xl text-[#FF0066] text-center">
                                 Core principles
                                 <span className="text-[#000] "> that define us</span>
                             </h1>
-                            <div className="grid md:grid-cols-3 grid-cols-1 gap-20">
+                            <div className="scroll-animate grid md:grid-cols-3 grid-cols-1 gap-20">
                                 {
                                     principles.map((items, index) => {
                                         return (
@@ -89,9 +88,10 @@ const Career = () => {
                                 }
                             </div>
                         </div>
+
                         {/* //second  */}
                         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-                            <div className="flex flex-col gap-5 justify-center">
+                            <div className="slide-in-left flex flex-col gap-5 justify-center">
                                 <h1 className="md:text-4xl text-2xl text-[#FF0066]">
                                     More Than
                                     <span className="text-[#000] "> Just a Job</span>
@@ -104,7 +104,7 @@ const Career = () => {
                                     software; we’re building futures
                                 </p>
                             </div>
-                            <div className="map">
+                            <div className="slide-in-right map">
                                 <img src={figure} alt="python" />
                             </div>
                         </div>
@@ -116,11 +116,11 @@ const Career = () => {
             <div className="CorePrincipal padTop">
                 <div className="flex flex-col gap-20">
                     <div className="main flex flex-col gap-20">
-                        <h1 className="md:text-4xl text-2xl text-[#FF0066] text-center">
+                        <h1 className="scroll-animate md:text-4xl text-2xl text-[#FF0066] text-center">
                             Team that makes
                             <span className="text-[#000] "> everything possible</span>
                         </h1>
-                        <img src={gallery} alt={gallery} />
+                        <img className="scroll-animate" src={gallery} alt={gallery} />
                     </div>
                 </div>
             </div>

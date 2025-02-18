@@ -68,7 +68,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "8.5%, 16.8%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] md:px-20 px-15 md:py-0 rounded-3xl">
+                            }} className="slide-in-left grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] md:px-20 px-15 md:py-0 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl text-2xl'>Glaze App Case Study</h5>
@@ -87,7 +87,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 27%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#eaeaea] p-15 rounded-3xl">
+                            }} className="slide-in-right grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#eaeaea] p-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>OYRQ Case Study</h5>
@@ -106,7 +106,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 27%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#abebff] px-15 py-5 rounded-3xl">
+                            }} className="slide-in-left grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#abebff] px-15 py-5 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>Fitsician Case Study</h5>
@@ -125,7 +125,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 29%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#fff3e9] px-15 rounded-3xl">
+                            }} className="slide-in-right grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#fff3e9] px-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>Thriving Minds Case Study</h5>
@@ -144,7 +144,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 19%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] px-15 rounded-3xl">
+                            }} className="slide-in-left grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] px-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>Siply App Case Study</h5>
@@ -163,7 +163,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 25%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#eaeaea] px-15 rounded-3xl">
+                            }} className="slide-in-right grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#eaeaea] px-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>My Gym Support Case Study</h5>
@@ -182,7 +182,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 25%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#e2c2d1] p-15 rounded-3xl">
+                            }} className="slide-in-left grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#e2c2d1] p-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>CAUSEWAY Case Study</h5>
@@ -201,7 +201,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 19%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] p-15 rounded-3xl">
+                            }} className="slide-in-right grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] p-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>UNITREE APP Case Study</h5>
@@ -220,7 +220,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 20.9%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] p-15 rounded-3xl">
+                            }} className="slide-in-left grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] p-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>Mono Plug App Case Study</h5>
@@ -239,7 +239,7 @@ const CaseStudies = () => {
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top left, bottom right",
                                 backgroundSize: "9%, 17.2%",
-                            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] px-15 rounded-3xl">
+                            }} className="slide-in-right grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-5 bg-[#edf0f9] px-15 rounded-3xl">
                                 <div className="flex flex-col md:gap-20 gap-10 justify-center py-15">
                                     <div className="content flex flex-col gap-3">
                                         <h5 className='font-bold md:text-4xl sm:text-4xl text-2xl'>VEHRK APP Case Study</h5>

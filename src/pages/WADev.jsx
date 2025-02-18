@@ -193,14 +193,14 @@ const WADev = () => {
             <div className="DTechKrewBen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center flex flex-col gap-5">
+                        <div className="scroll-animate section_title text-center flex flex-col gap-5">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Types of Applications Our <span className="text-[#351C75]"> Developers Build</span>
                             </h1>
                             <p className="md:text-lg text-base leading-normal text-center w-full heading_content text">Entrepreneurs looking to hire a Python software developer seek a versatile professional capable of handling a variety of tasks. The top-tier Python developers at DTechKrew go beyond basic programming, offering expertise in business data collection and analytics, web development, design, automation, and scripting.</p>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {typeOfAp.DTechKrewBen.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -210,7 +210,7 @@ const WADev = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {typeOfAp.DTechKrewBen1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -229,14 +229,14 @@ const WADev = () => {
             <div className="DTechKrewBen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center flex flex-col gap-5">
+                        <div className="scroll-animate section_title text-center flex flex-col gap-5">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Our Process of Hiring <span className="text-[#351C75]"> Web Developers</span>
                             </h1>
                             <p className="md:text-lg text-base leading-normal text-center w-full heading_content text">Let’s start by identifying the specific skills and proficiencies your project requires. Clearly defined business goals are crucial for effective strategic planning. Our experts provide support at every stage of formulating a development strategy, whether you're building web applications from the ground up or optimizing existing software for better performance.</p>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {OurProcess.DTechKrewBen.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -246,7 +246,7 @@ const WADev = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {OurProcess.DTechKrewBen1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -266,7 +266,7 @@ const WADev = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-                            <div className="flex flex-col gap-5 justify-center">
+                            <div className="slide-in-left flex flex-col gap-5 justify-center">
                                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                     Empower Your <span className="text-[#351C75]">Team</span>
                                 </h1>
@@ -274,7 +274,7 @@ const WADev = () => {
                                     We provide the tools, resources, and training needed to help your team reach its full potential. By fostering a collaborative environment and supporting skill development, we enable your team to work more efficiently, innovate faster, and achieve greater success.
                                 </p>
                             </div>
-                            <div className="map">
+                            <div className="slide-in-right map">
                                 <img src={emp} alt="python" />
                             </div>
                         </div>
@@ -286,14 +286,14 @@ const WADev = () => {
             <div className="DTechKrewBen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center flex flex-col gap-5">
+                        <div className="scroll-animate section_title text-center flex flex-col gap-5">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Why <span className="text-[#351C75]"> DTeckrew?</span>
                             </h1>
                             <p className="md:text-lg text-base leading-normal text-center w-full heading_content text">Web app developer hires in DTechKrew are a worthwhile investment because we are:</p>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {WhyDTeckrew.DTechKrewBen.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -303,7 +303,7 @@ const WADev = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {WhyDTeckrew.DTechKrewBen1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">

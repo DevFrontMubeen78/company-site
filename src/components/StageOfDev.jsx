@@ -35,14 +35,14 @@ const StageOfDev = () => {
             <div className="hireProcessing padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Stages of
                                 <span className="text-[#FF0066]"> Development</span>
                             </h1>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {CsDevelopments.stages.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -52,7 +52,7 @@ const StageOfDev = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {CsDevelopments.stages1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">

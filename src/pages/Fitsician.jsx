@@ -523,12 +523,12 @@ const Fitsician = () => {
             <div className="projectOver padTop">
                 <div className="container">
                     <div className="main flex flex-col items-center gap-10 text-center">
-                        <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Project Overview</h6>
+                        <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Project Overview</h6>
                         <div className="flex flex-col gap-10">
-                            <p className='text-lg text-[#000]'>Our comprehensive health and fitness platform is designed to empower users on their wellness journey through personalized guidance, community support, and expert insights. With a range of features tailored to individual needs, our app aims to revolutionize the way users approach their diet, exercise, and overall well-being.</p>
-                            <p className='text-lg text-[#000]'> our app provides a holistic approach to health and fitness, empowering users to make informed choices, stay motivated, and achieve their wellness goals effectively. Join our community and embark on a journey towards a healthier, happier you!</p>
+                            <p className='scroll-animate text-lg text-[#000]'>Our comprehensive health and fitness platform is designed to empower users on their wellness journey through personalized guidance, community support, and expert insights. With a range of features tailored to individual needs, our app aims to revolutionize the way users approach their diet, exercise, and overall well-being.</p>
+                            <p className='scroll-animate text-lg text-[#000]'> our app provides a holistic approach to health and fitness, empowering users to make informed choices, stay motivated, and achieve their wellness goals effectively. Join our community and embark on a journey towards a healthier, happier you!</p>
                         </div>
-                        <img className='w-full' src={desktop} alt={desktop} />
+                        <img className='scroll-animate w-full' src={desktop} alt={desktop} />
                     </div>
                 </div>
             </div>
@@ -537,8 +537,8 @@ const Fitsician = () => {
             <div className="designProcess padTop">
                 <div className="container">
                     <div className="main flex flex-col items-center gap-18">
-                        <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Design Process</h6>
-                        <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-30 gap-10">
+                        <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Design Process</h6>
+                        <div className="scroll-animate grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-30 gap-10">
                             {
                                 designProcess.map((items, index) => {
                                     return (
@@ -571,11 +571,11 @@ const Fitsician = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Typography</h6>
+                            <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Typography</h6>
                         </div>
 
                         {/* // first  */}
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Poppins </h6>
                             <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-20 gap-10">
                                 {
@@ -589,7 +589,7 @@ const Fitsician = () => {
                         </div>
 
                         {/* // Heading  */}
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Heading </h6>
                             <div className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 md:gap-20 gap-10">
                                 {
@@ -603,7 +603,7 @@ const Fitsician = () => {
                         </div>
 
                         {/* // body  */}
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-3xl">Body </h6>
                             {/* // xl body  */}
                             <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-20 gap-10">
@@ -679,16 +679,16 @@ const Fitsician = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Colors</h6>
+                            <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Colors</h6>
                         </div>
 
-                        <div className="main flex flex-col gap-10">
+                        <div className="scroll-animate main flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Main </h6>
                             <img src={primary} alt={primary} />
                         </div>
 
                         {/* // Alert & Status  */}
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Alert & Status</h6>
                             <div className="grid md:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-10">
                                 {colors.alart.map((items, index) => (
@@ -704,7 +704,7 @@ const Fitsician = () => {
                         </div>
 
                         {/* // Greyscale  */}
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Greyscale</h6>
                             <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-10">
                                 {colors.Greyscale.map((items, index) => (
@@ -720,7 +720,7 @@ const Fitsician = () => {
                         </div>
 
                         {/* // Gradients  */}
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Greyscale</h6>
                             <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-10">
                                 {colors.Gradients.map((items, index) => (
@@ -733,7 +733,7 @@ const Fitsician = () => {
                         </div>
 
                         {/* // Dark  */}
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Dark Colors</h6>
                             <div className="grid md:grid-cols-3 sm:grid-cols-3 grid-cols-1 gap-10">
                                 {colors.Dark.map((items, index) => (
@@ -749,7 +749,7 @@ const Fitsician = () => {
                         </div>
 
                         {/* // other  */}
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="font-bold text-[#000] text-left text-2xl">Others</h6>
                             <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-10">
                                 {colors.other.map((items, index) => (
@@ -766,8 +766,8 @@ const Fitsician = () => {
 
                         {/* // Background  */}
                         <div className="flex flex-col gap-10">
-                            <h6 className="font-bold text-[#000] text-left text-2xl">Background</h6>
-                            <div className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-10">
+                            <h6 className="scroll-animate font-bold text-[#000] text-left text-2xl">Background</h6>
+                            <div className="scroll-animate grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-10">
                                 {colors.background.map((items, index) => (
                                     <div key={index} className="flex flex-col gap-5">
                                         <div className="flex justify-between">
@@ -782,8 +782,8 @@ const Fitsician = () => {
 
                         {/* // Transparent  */}
                         <div className="flex flex-col gap-10">
-                            <h6 className="font-bold text-[#000] text-left text-2xl">Transparent</h6>
-                            <div className="grid md:grid-cols-7 sm:grid-cols-3 grid-cols-2 gap-10">
+                            <h6 className="scroll-animate font-bold text-[#000] text-left text-2xl">Transparent</h6>
+                            <div className="scroll-animate grid md:grid-cols-7 sm:grid-cols-3 grid-cols-2 gap-10">
                                 {colors.transparent.map((items, index) => (
                                     <div key={index} className="flex flex-col gap-5">
                                         <div className="flex justify-between">
@@ -804,13 +804,13 @@ const Fitsician = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex justify-center text-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Iconography & Components</h6>
+                            <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Iconography & Components</h6>
                         </div>
 
                         <div className="main flex flex-col gap-20">
-                            <img src={bold} alt={bold} />
-                            <img src={light} alt={light} />
-                            <img src={TwoTone} alt={TwoTone} />
+                            <img className="scroll-animate" src={bold} alt={bold} />
+                            <img className="scroll-animate" src={light} alt={light} />
+                            <img className="scroll-animate" src={TwoTone} alt={TwoTone} />
                         </div>
                     </div>
                 </div>
@@ -822,18 +822,18 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>User Persona</h6>
+                            <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>User Persona</h6>
                         </div>
 
                         {/* Main Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
                             {/* Image Section */}
-                            <div className="md:col-span-4">
+                            <div className="slide-in-left md:col-span-4">
                                 <img className="w-full h-auto rounded-lg shadow-lg" src={girl} alt="User Persona" />
                             </div>
 
                             {/* Text Content Section */}
-                            <div className="md:col-span-8 flex flex-col gap-10">
+                            <div className="slide-in-right md:col-span-8 flex flex-col gap-10">
                                 {/* Bio Section */}
                                 <div className="flex flex-col gap-5">
                                     <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">Bio</h6>
@@ -878,9 +878,9 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>User Flow</h6>
+                            <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>User Flow</h6>
                         </div>
-                        <img src={flow} alt={flow} />
+                        <img className="scroll-animate" src={flow} alt={flow} />
                     </div>
                 </div>
             </div>
@@ -891,19 +891,18 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>High Fidelity Designs</h6>
+                            <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>High Fidelity Designs</h6>
                         </div>
                         {
                             HighFidelity.map((items, index) => {
                                 return (
-                                    <div key={index} className="main flex flex-col gap-10">
-                                        <img src={items.img} alt={items.img} />
-                                        <p className="text-lg leading-snug text-center">{items.desc}</p>
+                                    <div key={index} className=" main flex flex-col gap-10">
+                                        <img className="scroll-animate" src={items.img} alt={items.img} />
+                                        <p className="scroll-animate text-lg leading-snug text-center">{items.desc}</p>
                                     </div>
                                 )
                             })
                         }
-
                     </div>
                 </div>
             </div>
@@ -914,26 +913,26 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Take Aways</h6>
+                            <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Take Aways</h6>
                         </div>
                         <div className="main grid md:grid-cols-2 grid-cols-1 gap-18">
                             <div className="flex flex-col gap-5">
-                                <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">Impact</h6>
-                                <p className="text-base md:text-lg">
+                                <h6 className="scroll-animate font-bold text-2xl md:text-3xl text-[#008080]">Impact</h6>
+                                <p className="scroll-animate text-base md:text-lg">
                                     The health and fitness platform empowers users with personalized guidance, community support, and expert insights. It revolutionizes wellness journeys by fostering motivation, accountability, and knowledge sharing for transformative lifestyle changes.
                                 </p>
                             </div>
                             <div className="flex flex-col gap-5">
-                                <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">Feedback from a peer</h6>
-                                <p className="text-base md:text-lg text-[#008080]">
+                                <h6 className="scroll-animate font-bold text-2xl md:text-3xl text-[#008080]">Feedback from a peer</h6>
+                                <p className="scroll-animate text-base md:text-lg text-[#008080]">
                                     Your app's interface is sleek and user-friendly, making it easy to navigate. I particularly appreciate the personalized recommendations and progress tracking features, which have helped me stay motivated on my fitness journey. The community aspect is fantastic; it's inspiring to connect with others and share experiences. However, I'd love to see more diverse content in the blogs section, covering a broader range of topics. Overall, great job!"
                                 </p>
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-5">
-                            <h6 className="font-bold text-2xl md:text-3xl text-[#008080]">What I learned </h6>
-                            <p className="text-base md:text-lg">
+                            <h6 className="scroll-animate font-bold text-2xl md:text-3xl text-[#008080]">What I learned </h6>
+                            <p className="scroll-animate text-base md:text-lg">
                                 Through using the health and fitness platform, I learned the importance of personalized guidance and community support in achieving my wellness goals. Tracking my progress and accessing expert insights have empowered me to make informed decisions and stay motivated on my journey to better health.
                             </p>
                         </div>
@@ -947,13 +946,13 @@ const Fitsician = () => {
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
                         <div className="flex justify-center">
-                            <h6 className='font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Next Step</h6>
+                            <h6 className='scroll-animate font-bold text-[#008080] border-b-2 md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Next Step</h6>
                         </div>
                         <div className="flex flex-col gap-5">
-                            <p className="text-base md:text-lg">
+                            <p className="scroll-animate text-base md:text-lg">
                                 There are a few next steps that will  be taken after the development of the  B. Mental Health app  is finished to keep the product getting better include :
                             </p>
-                            <div className="flex flex-col gap-4">
+                            <div className="scroll-animate flex flex-col gap-4">
                                 <ul className="list-disc pl-5 flex flex-col gap-3 text-base md:text-lg ml-5">
                                     <li><strong className='text-[#008080]'>Tests with users:</strong> Using user testing to get feedback from real users and figure out where improvements can be made.</li>
                                     <li><strong className='text-[#008080]'>Implementing feedback from users: </strong> Incorporating user requests into the design of the app, such as by adding new features or modifying existing ones.</li>
@@ -967,7 +966,7 @@ const Fitsician = () => {
 
             {/* footer  */}
             {/* <Thanks /> */}
-            <Footer/>
+            <Footer />
         </div>
     )
 }

@@ -93,32 +93,33 @@ const WebDevs = {
     ],
     clients: [
         {
-            img: "/images/staff-aug/ssas.png",
-            status: "Mobile Product manager at Lesara",
-            title: "Waldo Vanderhaeghen",
+            img: "/images/staff-aug/clientr1.png",
+            status: "Mobile Product Manager at Lesara",
+            title: "John Doe",
             desc: "Our cooperation was successful because of the balance between quick turnaround and ensuring high quality in every feature. DTechKrew developers were fully integrated with the Lesara team. It enabled flexibility and clear communication.",
         },
         {
-            img: "/images/staff-aug/Group 9148.png",
-            status: "Mobile Product manager at Lesara",
-            title: "Waldo Vanderhaeghen",
+            img: "/images/staff-aug/clientr2.png",
+            status: "Mobile Product Manager at Lesara",
+            title: "David Wilson",
             desc: "Our cooperation was successful because of the balance between quick turnaround and ensuring high quality in every feature. DTechKrew developers were fully integrated with the Lesara team. It enabled flexibility and clear communication.",
         },
     ],
     clients1: [
         {
-            img: "/images/staff-aug/image(2)s.png",
-            status: "Mobile Product manager at Lesara",
-            title: "Waldo Vanderhaeghen",
+            img: "/images/staff-aug/clientr3.png",
+            status: "Mobile Product Manager at Lesara",
+            title: "Michael Brown",
             desc: "Our cooperation was successful because of the balance between quick turnaround and ensuring high quality in every feature. DTechKrew developers were fully integrated with the Lesara team. It enabled flexibility and clear communication.",
         },
         {
-            img: "/images/staff-aug/s.png",
-            status: "Mobile Product manager at Lesara",
-            title: "Waldo Vanderhaeghen",
+            img: "/images/staff-aug/clientr4.png",
+            status: "Mobile Product Manager at Lesara",
+            title: "Daniel Thomas",
             desc: "Our cooperation was successful because of the balance between quick turnaround and ensuring high quality in every feature. DTechKrew developers were fully integrated with the Lesara team. It enabled flexibility and clear communication.",
         },
     ]
+
 };
 const Augmentation = () => {
     return (
@@ -165,11 +166,11 @@ const Augmentation = () => {
                 </div>
             </div>
 
-            {/* Benefits of IT Staff Augmentation */}
+            {/* Benefits of IT Staff Augmentation */}
             <div className="Benefits padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="content text-center flex flex-col gap-3">
+                        <div className="scroll-animate content text-center flex flex-col gap-3">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Benefits of IT
                                 <span className="text-[#FF0066]"> Staff Augmentation</span>
@@ -179,7 +180,7 @@ const Augmentation = () => {
                             </p>
                         </div>
                         <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {WebDevs.Benefits.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -189,7 +190,7 @@ const Augmentation = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {WebDevs.Benefits1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-2">
@@ -204,21 +205,21 @@ const Augmentation = () => {
                 </div>
             </div>
 
-            {/* // Our Core Services  */}
+            {/* // Our Core Services  */}
             <div className="CoreServices padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
-                        <div className="section_title text-center">
+                        <div className="scroll-animate section_title text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Our
                                 <span className="text-[#FF0066]"> Core Services</span>
                             </h1>
                         </div>
                         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-                            <div className="map">
+                            <div className="slide-in-left map">
                                 <img src={mbile} alt="python" />
                             </div>
-                            <div className="flex flex-col gap-5 justify-center">
+                            <div className="slide-in-right flex flex-col gap-5 justify-center">
                                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                     Mobile App Development
                                 </h1>
@@ -228,7 +229,7 @@ const Augmentation = () => {
                             </div>
                         </div>
                         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-                            <div className="flex flex-col gap-5 justify-center">
+                            <div className="slide-in-left flex flex-col gap-5 justify-center">
                                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                     Web Development
                                 </h1>
@@ -236,15 +237,15 @@ const Augmentation = () => {
                                     We build responsive, scalable websites that prioritize user experience, modern design, and cutting-edge technology.
                                 </p>
                             </div>
-                            <div className="map">
+                            <div className="slide-in-right map">
                                 <img src={web} alt="python" />
                             </div>
                         </div>
                         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-                            <div className="map">
+                            <div className="slide-in-left map">
                                 <img src={uiux} alt="python" />
                             </div>
-                            <div className="flex flex-col gap-5 justify-center">
+                            <div className="slide-in-right flex flex-col gap-5 justify-center">
                                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                     UI/UX Design
                                 </h1>
@@ -257,17 +258,17 @@ const Augmentation = () => {
                 </div>
             </div>
 
-            {/* Our Team Extension Process */}
+            {/* Our Team Extension Process */}
             <div className="TeamExtensio padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="content text-center">
+                        <div className="scroll-animate content text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Our Team
                                 <span className="text-[#FF0066]"> Extension Process</span>
                             </h1>
                         </div>
-                        <div className="content_corporate">
+                        <div className="scroll-animate content_corporate">
                             <div className="flex flex-col gap-20">
                                 {WebDevs.DTeckrew.map((items, index) => {
                                     return (
@@ -283,18 +284,18 @@ const Augmentation = () => {
                 </div>
             </div>
 
-            {/* You can hire developers with the next skillset */}
+            {/* You can hire developers with the next skillset */}
             <div className="hireDevelopers padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="content text-center">
+                        <div className="scroll-animate content text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 You can hire
                                 <span className="text-[#FF0066]"> developers </span>with the next<span className="text-[#FF0066]"> skillset</span>
                             </h1>
                         </div>
                         <div className="content_corporate">
-                            <div className="flex flex-col gap-20">
+                            <div className="scroll-animate flex flex-col gap-20">
                                 <div className="grid md:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-10">
                                     {WebDevs.developers.map((item, index) => (
                                         <img key={index} src={item} alt={`Developer ${index}`} />
@@ -306,18 +307,18 @@ const Augmentation = () => {
                 </div>
             </div>
 
-            {/* Reasons to Choose Our Staff Augmentation */}
+            {/* Reasons to Choose Our Staff Augmentation */}
             <div className="Choose padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="content text-center">
+                        <div className="scroll-animate content text-center">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 Reasons to Choose Our
                                 <span className="text-[#FF0066]"> Staff Augmentation </span>
                             </h1>
                         </div>
                         <div className="content_corporate">
-                            <div className="grid md:grid-cols-3 grid-cols-2 md:gap-30 gap-15">
+                            <div className="scroll-animate grid md:grid-cols-3 grid-cols-2 md:gap-30 gap-15">
                                 {WebDevs.Choose.map((item, index) => (
                                     <div key={index} className="flex flex-col gap-3">
                                         <img className="w-16" src={item.img} alt={item} />
@@ -332,22 +333,22 @@ const Augmentation = () => {
                 </div>
             </div>
 
-            {/* What our clients say about us */}
+            {/* What our clients say about us */}
             <div className="Benefits padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-16">
-                        <div className="content">
+                        <div className="scroll-animate content">
                             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                                 What our clients
-                                <span className="text-[#FF0066]">say about us</span>
+                                <span className="text-[#FF0066]"> say about us</span>
                             </h1>
                         </div>
-                        <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-                            <div className="flex flex-col gap-20">
+                        <div className="scroll-animate content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 {WebDevs.clients.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-5">
-                                            <img className="w-38" src={items.img} alt={items.img} />
+                                            <img className="w-38 rounded-full" src={items.img} alt={items.img} />
                                             <div className="flex flex-col gap-2 ml-20">
                                                 <p className="text-base text">{items.status}</p>
                                                 <h6 className="font-bold text-2xl">{items.title}</h6>
@@ -357,11 +358,11 @@ const Augmentation = () => {
                                     );
                                 })}
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-right flex flex-col gap-20">
                                 {WebDevs.clients1.map((items, index) => {
                                     return (
                                         <div key={index} className="innertext flex flex-col gap-5">
-                                            <img className="w-38" src={items.img} alt={items.img} />
+                                            <img className="w-38 rounded-full" src={items.img} alt={items.img} />
                                             <div className="flex flex-col gap-2 ml-20">
                                                 <p className="text-base text">{items.status}</p>
                                                 <h6 className="font-bold text-2xl">{items.title}</h6>
@@ -375,7 +376,6 @@ const Augmentation = () => {
                     </div>
                 </div>
             </div>
-
 
 
             {/* last section  */}

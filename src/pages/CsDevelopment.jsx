@@ -242,17 +242,17 @@ const CsDevelopment = () => {
       <div className="collaboration padTop">
         <div className="container">
           <div className="main flex flex-col gap-20">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Collaboration
                 <span className="text-[#FF0066]"> models</span>
               </h1>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-              <div className="map">
+              <div className="slide-in-left map">
                 <img src={collab} alt="python" />
               </div>
-              <div className="flex flex-col gap-5 justify-center">
+              <div className="slide-in-right flex flex-col gap-5 justify-center">
                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                   Dedicated Team
                 </h1>
@@ -265,7 +265,7 @@ const CsDevelopment = () => {
               </div>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-              <div className="flex flex-col gap-5 justify-center">
+              <div className="slide-in-left flex flex-col gap-5 justify-center">
                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                   Team Extension
                 </h1>
@@ -277,15 +277,15 @@ const CsDevelopment = () => {
                   seamless collaboration and results.
                 </p>
               </div>
-              <div className="map">
+              <div className="slide-in-right map">
                 <img src={TeamEx} alt="python" />
               </div>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-              <div className="map">
+              <div className="slide-in-left map">
                 <img src={productive} alt="python" />
               </div>
-              <div className="flex flex-col gap-5 justify-center">
+              <div className="slide-in-right flex flex-col gap-5 justify-center">
                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                   Product development
                 </h1>
@@ -309,7 +309,7 @@ const CsDevelopment = () => {
       <div className="trust padTop">
         <div className="container">
           <div className="main flex flex-col gap-10">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Our
                 <span className="text-[#FF0066]"> Technology stack</span>

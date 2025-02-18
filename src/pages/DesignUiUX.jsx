@@ -194,7 +194,7 @@ const DesignUiUX = () => {
       <div className="Our Agency padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Our Agency
                 <span className="text-[#FF0066]"> Agency</span>
@@ -202,7 +202,7 @@ const DesignUiUX = () => {
             </div>
 
             <div className="content_corporate flex flex-col md:gap-20 gap-10">
-              <div className="flex flex-col gap-3">
+              <div className="scroll-animate flex flex-col gap-3">
                 <h1 className="md:text-3xl text-2xl font-bold leading-snug text-[#000]">
                   Expert Designers Driving Digital Innovation
                 </h1>
@@ -224,7 +224,7 @@ const DesignUiUX = () => {
                 </p>
               </div>
               <div className="grid grid-cols-3">
-                <div className="">
+                <div className="scroll-animate">
                   <h1 className="md:text-3xl text-base font-bold leading-snug text-[#000]">
                     5+ years
                   </h1>
@@ -232,7 +232,7 @@ const DesignUiUX = () => {
                     in the market
                   </p>
                 </div>
-                <div className="">
+                <div className="scroll-animate">
                   <h1 className="md:text-3xl text-base font-bold leading-snug text-[#000]">
                     10+ clients
                   </h1>
@@ -240,7 +240,7 @@ const DesignUiUX = () => {
                     were satisfied
                   </p>
                 </div>
-                <div className="">
+                <div className="scroll-animate">
                   <h1 className="md:text-3xl text-base font-bold leading-snug text-[#000]">
                     7+ designers
                   </h1>
@@ -258,17 +258,17 @@ const DesignUiUX = () => {
       <div className="collaboration padTop">
         <div className="container">
           <div className="main flex flex-col gap-20">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Collaboration
                 <span className="text-[#FF0066]"> models</span>
               </h1>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-              <div className="map">
+              <div className="map slide-in-left">
                 <img src={collab} alt="python" />
               </div>
-              <div className="flex flex-col gap-5 justify-center">
+              <div className="slide-in-right flex flex-col gap-5 justify-center">
                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                   Dedicated Team
                 </h1>
@@ -281,7 +281,7 @@ const DesignUiUX = () => {
               </div>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-              <div className="flex flex-col gap-5 justify-center">
+              <div className="slide-in-left flex flex-col gap-5 justify-center">
                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                   Team Extension
                 </h1>
@@ -293,15 +293,15 @@ const DesignUiUX = () => {
                   seamless collaboration and results.
                 </p>
               </div>
-              <div className="map">
+              <div className="map slide-in-right">
                 <img src={TeamEx} alt="python" />
               </div>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-              <div className="map">
+              <div className="map slide-in-left">
                 <img src={productive} alt="python" />
               </div>
-              <div className="flex flex-col gap-5 justify-center">
+              <div className="slide-in-right flex flex-col gap-5 justify-center">
                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                   Product development
                 </h1>
@@ -322,14 +322,14 @@ const DesignUiUX = () => {
       <div className="DesignProcess padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 How we
                 <span className="text-[#FF0066]"> design Process</span>
               </h1>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {DesignUiUXs.desingProcess.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -339,7 +339,7 @@ const DesignUiUX = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {DesignUiUXs.desingProcess1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -358,14 +358,14 @@ const DesignUiUX = () => {
       <div className="DtechKrewDesign padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Why DtechKrew
                 <span className="text-[#FF0066]"> Design?</span>
               </h1>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {DesignUiUXs.DtechKrewDesign.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -375,7 +375,7 @@ const DesignUiUX = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {DesignUiUXs.DtechKrewDesign1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -394,14 +394,14 @@ const DesignUiUX = () => {
       <div className="whatYouGet padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="section_title text-center">
+            <div className="scroll-animate section_title text-center">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Why DtechKrew
                 <span className="text-[#FF0066]"> Design?</span>
               </h1>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-5">
-              <div className="flex flex-col md:gap-20 gap-5">
+              <div className="slide-in-left flex flex-col md:gap-20 gap-5">
                 {DesignUiUXs.whatYouGet.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -411,7 +411,7 @@ const DesignUiUX = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col md:gap-20 gap-5">
+              <div className="slide-in-right flex flex-col md:gap-20 gap-5">
                 {DesignUiUXs.whatYouGet1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">

@@ -183,7 +183,7 @@ const MobileApp = () => {
       <div className="AppDevType padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="content text-center flex flex-col gap-3">
+            <div className="scroll-animate content text-center flex flex-col gap-3">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Types of Applications Our
                 <span className="text-[#FF0066]"> Developers Build</span>
@@ -198,7 +198,7 @@ const MobileApp = () => {
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {mobileApp.AppDevType.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -208,7 +208,7 @@ const MobileApp = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {mobileApp.AppDevType1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -227,7 +227,7 @@ const MobileApp = () => {
       <div className="mobileAPp padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="content text-center flex flex-col gap-3">
+            <div className="scroll-animate content text-center flex flex-col gap-3">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Our Process of Hiring
                 <span className="text-[#FF0066]"> Mobile App Developers</span>
@@ -242,7 +242,7 @@ const MobileApp = () => {
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {mobileApp.mobileAPp.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -252,7 +252,7 @@ const MobileApp = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {mobileApp.mobileAPp1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -271,7 +271,7 @@ const MobileApp = () => {
       <div className="contentMap padTop">
         <div className="container">
           <div className="main grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-            <div className="flex flex-col gap-5">
+            <div className="slide-in-left flex flex-col gap-5">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Empower Your
                 <span className="text-[#FF0066]"> Team</span>
@@ -285,7 +285,7 @@ const MobileApp = () => {
               </p>
               <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
             </div>
-            <div className="map">
+            <div className="slide-in-right map">
               <img src={python} alt="python" />
             </div>
           </div>
@@ -296,7 +296,7 @@ const MobileApp = () => {
       <div className="whyDTeckrew padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="flex flex-col gap-5">
+            <div className="scroll-animate flex flex-col gap-5">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold text-center leading-snug text-[#000]">
                 Why
                 <span className="text-[#FF0066]"> DTeckrew?</span>
@@ -306,7 +306,7 @@ const MobileApp = () => {
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {mobileApp.whyDTeckrew.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -316,7 +316,7 @@ const MobileApp = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {mobileApp.whyDTeckrew.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">

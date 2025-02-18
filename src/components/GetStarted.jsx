@@ -6,7 +6,7 @@ const GetStarted = () => {
        <div className="getStarted padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
-                        <div className="content text-center flex flex-col gap-8">
+                        <div className="scroll-animate content text-center flex flex-col gap-8">
                             <div className="flex flex-col gap-1">
                                 <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">Get started
                                     <span className="text-[#000]"> with us</span>
@@ -19,7 +19,7 @@ const GetStarted = () => {
                         </div>
                         <div className="grid grid-cols-12 md:gap-10 gap-5">
                             {/* Left Side Box */}
-                            <div className="md:col-span-4 col-span-12 rounded-lg bg-white md:p-8 p-5">
+                            <div className="slide-in-left md:col-span-4 col-span-12 rounded-lg bg-white md:p-8 p-5">
                                 <h6 className="xl:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">
                                     Innovative Solutions
                                     <span className="text-black"> for Business Growth</span>
@@ -27,7 +27,7 @@ const GetStarted = () => {
                             </div>
 
                             {/* Right Side Box */}
-                            <div className="md:col-span-8 col-span-12 rounded-lg bg-white md:p-8 p-5 flex flex-col md:gap-5 gap-3">
+                            <div className="slide-in-right md:col-span-8 col-span-12 rounded-lg bg-white md:p-8 p-5 flex flex-col md:gap-5 gap-3">
                                 <p className="md:text-lg text-base leading-relaxed text-gray-700">
                                     DTechKrew is a dynamic software solutions company dedicated to empowering businesses worldwide.
                                 </p>
@@ -39,7 +39,6 @@ const GetStarted = () => {
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

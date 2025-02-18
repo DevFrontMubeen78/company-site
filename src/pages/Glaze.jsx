@@ -15,7 +15,6 @@ import logo from "/images/about/logo.png";
 import { FaInfoCircle, FaBriefcase, FaPenNib, FaUsers } from "react-icons/fa";
 
 import MyRole from "../components/MyRole"
-import Footer from "../components/Footer";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
@@ -126,8 +125,8 @@ const Glaze = () => {
             <div className="designProcess padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-18 relative">
-                        <h6 className='headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Design Process</h6>
-                        <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-10">
+                        <h6 className='scroll-animate headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Design Process</h6>
+                        <div className="scroll-animate grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-10">
                             {
                                 designProcess.map((items, index) => {
                                     return (
@@ -160,8 +159,8 @@ const Glaze = () => {
             <div className="projectOver padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-5">
-                        <h6 className='headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Project Overview</h6>
-                        <p className='text-lg text-[#fff]'>Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients. This cutting-edge app is a true game-changer, catering to both individual professionals and dynamic beauty salon teams. At Glaze, we have meticulously crafted a comprehensive suite of features, elevating convenience to unprecedented heights. Picture a world where different businesses effortlessly showcase their unique profiles, presenting a dazzling array of top-notch services to our discerning customers. Glaze: Where beauty meets innovation, and your salon experience is transformed like never before.</p>
+                        <h6 className='scroll-animate headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Project Overview</h6>
+                        <p className='scroll-animate text-lg text-[#fff]'>Introducing Glaze, the ultimate game-changer in the beauty industry! Brace yourself for a revolutionary all-in-one platform designed to create seamless connections between beauty specialists and their valued clients. This cutting-edge app is a true game-changer, catering to both individual professionals and dynamic beauty salon teams. At Glaze, we have meticulously crafted a comprehensive suite of features, elevating convenience to unprecedented heights. Picture a world where different businesses effortlessly showcase their unique profiles, presenting a dazzling array of top-notch services to our discerning customers. Glaze: Where beauty meets innovation, and your salon experience is transformed like never before.</p>
                     </div>
                 </div>
             </div>
@@ -171,19 +170,19 @@ const Glaze = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-10 md:gap-16">
                         {/* Heading */}
-                        <h6 className="headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3">
+                        <h6 className="scroll-animate headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3">
                             User Persona
                         </h6>
 
                         {/* Main Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
                             {/* Image Section */}
-                            <div className="md:col-span-4">
+                            <div className="slide-in-left md:col-span-4">
                                 <img className="w-full h-auto rounded-lg shadow-lg" src={girl} alt="User Persona" />
                             </div>
 
                             {/* Text Content Section */}
-                            <div className="md:col-span-8 flex flex-col gap-10 text-white">
+                            <div className="slide-in-right md:col-span-8 flex flex-col gap-10 text-white">
                                 {/* Bio Section */}
                                 <div className="flex flex-col gap-5">
                                     <h6 className="font-bold text-2xl md:text-3xl">Bio</h6>
@@ -227,7 +226,7 @@ const Glaze = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-5">
                         <h6 className='headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Accessibility Considerations</h6>
-                        <div className=" text-[#fff] flex flex-col gap-10 relative">
+                        <div className="scroll-animate text-[#fff] flex flex-col gap-10 relative">
                             <div className="access relative flex gap-10 items-center">
                                 <span className='count  bg-[#6A67D2] rounded-full w-15 h-15 flex justify-center items-center'><div className="z-10">1</div></span>
                                 <div className=' flex flex-col gap-5'>
@@ -277,19 +276,19 @@ const Glaze = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex flex-col gap-5">
-                            <h6 className='headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>My Role</h6>
-                            <p className='text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can be implemented by developers.</p>
+                            <h6 className='scroll-animate headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>My Role</h6>
+                            <p className='scroll-animate text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can be implemented by developers.</p>
                         </div>
                         <MyRole />
                     </div>
                 </div>
             </div>
 
-            {/* //Accessibility */}
+            {/* //paint point */}
             <div className="Accessibility padTop">
                 <div className="container">
                     <div className="main grid md:grid-cols-2 grid-cols-1 gap-18">
-                        <div className=" text-[#fff] flex flex-col gap-10 relative">
+                        <div className="slide-in-left text-[#fff] flex flex-col gap-10 relative">
                             <h6 className='headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Pain Points</h6>
                             <div className="flex flex-col gap-5">
                                 <div className=' flex flex-col gap-2'>
@@ -310,7 +309,7 @@ const Glaze = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="img">
+                        <div className="slide-in-right img">
                             <img className='w-full' src={paint} alt="" />
                         </div>
                     </div>
@@ -321,9 +320,9 @@ const Glaze = () => {
             <div className="styleGuied padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-10">
-                        <h6 className='headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Style Guide</h6>
+                        <h6 className='scroll-animate headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Style Guide</h6>
                         {/* color */}
-                        <div className="color flex flex-col gap-2">
+                        <div className="scroll-animate color flex flex-col gap-2">
                             <div className="location flex gap-3 items-center">
                                 <img className='w-8' src={location} alt={location} />
                                 <h6 className='text-2xl text-[#fff]'>Color</h6>
@@ -336,7 +335,7 @@ const Glaze = () => {
                         </div>
 
                         {/* Typography */}
-                        <div className="color flex flex-col gap-5">
+                        <div className="scroll-animate color flex flex-col gap-5">
                             <div className="location flex gap-3 items-center">
                                 <img className='w-8' src={location} alt={location} />
                                 <h6 className='text-2xl text-[#fff]'>Typography</h6>
@@ -369,7 +368,7 @@ const Glaze = () => {
                         </div>
 
                         {/* ICONOGRAPHY */}
-                        <div className="ICONOGRAPHY flex flex-col gap-5">
+                        <div className="scroll-animate ICONOGRAPHY flex flex-col gap-5">
                             <div className="location flex gap-3 items-center">
                                 <img className='w-8' src={location} alt={location} />
                                 <h6 className='text-2xl text-[#fff]'>ICONOGRAPHY</h6>
@@ -387,8 +386,8 @@ const Glaze = () => {
             <div className="virtual screen padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
-                        <h6 className='headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Visual Screens</h6>
-                        <div className="screens flex flex-col gap-18 items-center">
+                        <h6 className='scroll-animate headingBorder font-bold text-[#6A67D2] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>Visual Screens</h6>
+                        <div className="scroll-animate screens flex flex-col gap-18 items-center">
                             <img className='md:w-5/12 w-full' src={virtual} alt={virtual} />
                             {
                                 screen.map((items, index) => {

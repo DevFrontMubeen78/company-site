@@ -201,7 +201,7 @@ const WebDev = () => {
       <div className="AppType padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="content text-center flex flex-col gap-3">
+            <div className="scroll-animate content text-center flex flex-col gap-3">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Types of Applications Our
                 <span className="text-[#FF0066]"> Developers Build</span>
@@ -215,7 +215,7 @@ const WebDev = () => {
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {WebDevs.AppType.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -225,7 +225,7 @@ const WebDev = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {WebDevs.AppType1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -244,7 +244,7 @@ const WebDev = () => {
       <div className="corporate padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="content text-center flex flex-col gap-3">
+            <div className="scroll-animate content text-center flex flex-col gap-3">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Our Process of Hiring
                 <span className="text-[#FF0066]"> Web App Developers</span>
@@ -259,7 +259,7 @@ const WebDev = () => {
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {WebDevs.ProcessHiring.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -269,8 +269,8 @@ const WebDev = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
-                {WebDevs.ProcessHiring.map((items, index) => {
+              <div className="slide-in-right flex flex-col gap-20">
+                {WebDevs.ProcessHiring1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
                       <h6 className="font-bold text-2xl">{items.title}</h6>
@@ -288,7 +288,7 @@ const WebDev = () => {
       <div className="contentMap padTop">
         <div className="container">
           <div className="main grid md:grid-cols-2 grid-cols-1 md:gap-40 gap-10">
-            <div className="flex flex-col gap-5">
+            <div className="slide-in-left flex flex-col gap-5">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Empower Your
                 <span className="text-[#FF0066]"> Team</span>
@@ -302,7 +302,7 @@ const WebDev = () => {
               </p>
               <Link className="bg-[#fff] py-3 px-18 rounded-full text-[#79BCCF] text-lg max-w-max" to="/Contact-us">Contact Us</Link>
             </div>
-            <div className="map">
+            <div className="slide-in-right map">
               <img src={python} alt="python" />
             </div>
           </div>
@@ -313,7 +313,7 @@ const WebDev = () => {
       <div className="DTeckrew padTop">
         <div className="container">
           <div className="main flex flex-col gap-16">
-            <div className="content text-center flex flex-col gap-3">
+            <div className="scroll-animate content text-center flex flex-col gap-3">
               <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#000]">
                 Why
                 <span className="text-[#FF0066]"> DTeckrew?</span>
@@ -323,7 +323,7 @@ const WebDev = () => {
               </p>
             </div>
             <div className="content_corporate grid md:grid-cols-2 grid-cols-1 xl:gap-40 md:gap-20 gap-10">
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-left flex flex-col gap-20">
                 {WebDevs.DTeckrew.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
@@ -333,7 +333,7 @@ const WebDev = () => {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-20">
+              <div className="slide-in-right flex flex-col gap-20">
                 {WebDevs.DTeckrew1.map((items, index) => {
                   return (
                     <div key={index} className="innertext flex flex-col gap-2">
