@@ -19,7 +19,8 @@ img {
   pointer-events: none;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   background: #fd0367;
   padding: 25px;
   color: #fff !important;
@@ -94,17 +95,17 @@ img {
   left: 12px;
 }
 
-/* .lines::before {
+.lines::before {
   content: "";
   background: #000;
   width: 20px;
   height: 1px;
   position: absolute;
   left: 0;
- 
+  top: 28px;
 }
 
-.lines {
+/* .lines {
   padding-left: 30px;
 } */
 
@@ -246,25 +247,29 @@ img {
     width: 90%;
   }
 }
+
 /* onpage load  */
 
 
 
-/* bottom to top  ----------------------------------------------------------------------  */ 
+/* bottom to top  ----------------------------------------------------------------------  */
 .scroll-animate {
   opacity: 0;
-  transform: translateY(50px); /* Initially placed at bottom */
+  transform: translateY(50px);
+  /* Initially placed at bottom */
   transition: all 0.9s ease-in-out;
 }
 
 .scroll-animate.visible {
   opacity: 1;
-  transform: translateY(0); /* Move to top */
+  transform: translateY(0);
+  /* Move to top */
 }
 
 @media screen and (max-width: 768px) {
   .scroll-animate {
-    transform: translateY(30px); /* Adjust for smaller screens */
+    transform: translateY(30px);
+    /* Adjust for smaller screens */
   }
 }
 
@@ -272,18 +277,21 @@ img {
 
 .slide-in-left {
   opacity: 0;
-  transform: translateX(-50px); /* Initially placed off the left */
+  transform: translateX(-50px);
+  /* Initially placed off the left */
   transition: all 0.9s ease-in-out;
 }
 
 .slide-in-left.visible {
   opacity: 1;
-  transform: translateX(0); /* Slide to original position */
+  transform: translateX(0);
+  /* Slide to original position */
 }
 
 @media screen and (max-width: 768px) {
   .slide-in-left {
-    transform: translateX(-30px); /* Adjust for smaller screens */
+    transform: translateX(-30px);
+    /* Adjust for smaller screens */
   }
 }
 
@@ -291,19 +299,20 @@ img {
 
 .slide-in-right {
   opacity: 0;
-  transform: translateX(50px); /* Initially placed off the right */
+  transform: translateX(50px);
+  /* Initially placed off the right */
   transition: all 0.5s ease-in-out;
 }
 
 .slide-in-right.visible {
   opacity: 1;
-  transform: translateX(0); /* Slide to original position */
+  transform: translateX(0);
+  /* Slide to original position */
 }
 
 @media screen and (max-width: 768px) {
   .slide-in-right {
-    transform: translateX(30px); /* Adjust for smaller screens */
+    transform: translateX(30px);
+    /* Adjust for smaller screens */
   }
 }
-
-

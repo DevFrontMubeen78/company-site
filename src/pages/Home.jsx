@@ -15,7 +15,6 @@ import Calendar from "../components/Calendar";
 import { Link } from "react-router-dom";
 import PicTestimonial from "../components/PicTestimonial";
 import MapComponent from "../components/MapComponent";
-import { FaArrowRightLong } from "react-icons/fa6";
 // import Slider from "../components/Slider";
 import CountUp from 'react-countup';
 import { Helmet } from "react-helmet-async";
@@ -112,7 +111,7 @@ const Home = () => {
       <div className="expertise padTop">
         <div className="container">
           <div className="content flex flex-col gap-20">
-            <div className="textss flex flex-col gap-4">
+            <div className="scroll-animate textss flex flex-col gap-4">
               <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
                 Our <span className="text-[#FF0066]"> Expertise</span>
               </h5>
@@ -142,9 +141,7 @@ const Home = () => {
                     <li>App prototyping and testing</li>
                   </ul>
                 </div>
-                <Link className="relative max-w-max flex gap-2 items-center" to="/mobile-app-developments">
-                  <span className="lines">View More</span> <FaArrowRightLong className="hovIcon"/>
-                </Link>
+                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/mobile-app-developments"><span className='lines animated-button'>View More</span></Link>
               </div>
               <div className="flex justify-end">
                 <img className='xl:w-80 w-96' src={caseONe} alt="" />
@@ -338,7 +335,7 @@ const Home = () => {
       <div className="about padTop">
         <div className="container">
           <div className="main flex flex-col gap-20">
-            <div className="section_content flex flex-col gap-5">
+            <div className="scroll-animate section_content flex flex-col gap-5">
               <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
                 About <span className="text-[#FF0066]"> Us</span>
               </h5>
@@ -448,7 +445,7 @@ const Home = () => {
                   <span className="text-[#FF0066]"> services</span>
                 </h6>
                 <p className="md:text-lg text-base text">
-                Enhance your team with top-tier IT professionals through our staff augmentation services. Whether you need skilled developers, UI/UX designers, project managers, or QA engineers, we provide on-demand talent to scale your projects efficiently. Our experts seamlessly integrate with your existing team, ensuring faster development, reduced costs, and enhanced productivity.
+                  Enhance your team with top-tier IT professionals through our staff augmentation services. Whether you need skilled developers, UI/UX designers, project managers, or QA engineers, we provide on-demand talent to scale your projects efficiently. Our experts seamlessly integrate with your existing team, ensuring faster development, reduced costs, and enhanced productivity.
                 </p>
                 <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines animated-button'>View More</span></Link>
               </div>
