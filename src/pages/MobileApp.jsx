@@ -102,7 +102,7 @@ const MobileApp = () => {
       <div
         style={{
           backgroundImage:
-            "url('/images/web/hire-python-developers-bg-scaled.png')",
+            "url('/images/hire-dev/hire1.png')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",

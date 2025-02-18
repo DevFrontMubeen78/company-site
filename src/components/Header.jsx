@@ -10,26 +10,26 @@ const navMenu = [
     name: "Our Expertise",
     path: "#",
     subMenu: [
-      { name: "Web Development", path: "/web-development" },
-      { name: "Mobile App Development", path: "/mobile-app-development" },
-      { name: "UI/UX Design Consult", path: "/uiux-design-consult" },
-      { name: "Data Science & AI Development", path: "/data-science-and-ai-development" },
-      { name: "Custom Software Development", path: "/custom-software-development" },
+      { name: "Web Development", path: "/web-development", icon: "/images/icons/expertise/icon1.png" },
+      { name: "Mobile App Development", path: "/mobile-app-development", icon: "/images/icons/expertise/icon2.png" },
+      { name: "UI/UX Design Consult", path: "/uiux-design-consult", icon: "/images/icons/expertise/icon3.png" },
+      { name: "Data Science & AI Development", path: "/data-science-and-ai-development", icon: "/images/icons/expertise/icon4.png" },
+      { name: "Custom Software Development", path: "/custom-software-development", icon: "/images/icons/expertise/icon5.png" },
     ],
   },
   {
     name: "Hire Developers",
     path: "#",
     subMenu: [
-      { name: "Hire Mobile App Developers", path: "/hire-mobile-app-developers" },
-      { name: "Hire IOS developers", path: "/hire-ios-developers" },
-      { name: "Hire Android developers", path: "/hire-android-developers" },
-      { name: "Hire Data Scientists", path: "/hire-data-scientists" },
-      { name: "Hire UI/UX Designers", path: "/hire-uiux-designer" },
+      { name: "Hire Mobile App Developers", path: "/hire-mobile-app-developers", icon: "/images/icons/hire/icon6.png" },
+      { name: "Hire iOS Developers", path: "/hire-ios-developers", icon: "/images/icons/hire/icon7.png" },
+      { name: "Hire Android Developers", path: "/hire-android-developers", icon: "/images/icons/hire/icon8.png" },
+      { name: "Hire Data Scientists", path: "/hire-data-scientists", icon: "/images/icons/hire/icon9.png" },
+      { name: "Hire UI/UX Designers", path: "/hire-uiux-designer", icon: "/images/icons/hire/icon10.png" },
     ],
   },
   { name: "Case Studies", path: "/case-studies" },
-  { name: "Contact", path: "/Contact-us" },
+  { name: "Contact", path: "/contact-us" },
 ];
 
 const Header = () => {
@@ -65,6 +65,7 @@ const Header = () => {
           {isMobileMenuOpen ? <RiCloseLine /> : <RiMenu3Line />}
         </button>
 
+        {/* Desktop Menu */}
         <nav className="hidden lg:flex lg:space-x-8">
           {navMenu.map((item, index) => (
             <div key={index} className="relative" ref={dropdown === index ? dropdownRef : null}>
@@ -82,11 +83,13 @@ const Header = () => {
                   {item.subMenu && <RiArrowDropDownLine className={`ml-2 w-6 h-6 transition-transform ${dropdown === index ? "rotate-180" : ""}`} />}
                 </button>
               )}
+              {/* Dropdown Menu */}
               {item.subMenu && dropdown === index && (
-                <ul className="absolute left-0 mt-2 bg-white border border-gray-200 shadow-lg rounded-lg w-72 z-10">
+                <ul className="absolute left-0 mt-2 bg-white border border-gray-200 shadow-lg rounded-lg w-82 z-10">
                   {item.subMenu.map((subItem, subIndex) => (
-                    <li key={subIndex}>
-                      <Link to={subItem.path} className="block px-4 py-2 font-medium text-lg hover:text-[#ff0066]">
+                    <li key={subIndex} className="flex items-center px-4 py-2 hover:text-[#ff0066]">
+                      <img src={subItem.icon} alt={subItem.name} className="w-8 h-8 mr-2" />
+                      <Link to={subItem.path} className="font-medium text-lg">
                         {subItem.name}
                       </Link>
                     </li>
@@ -98,6 +101,7 @@ const Header = () => {
         </nav>
       </div>
 
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-20 left-0 w-full bg-[#ff066d] shadow-md transition-all duration-300">
           <nav className="flex flex-col items-start px-4 py-4 space-y-2">
@@ -116,11 +120,13 @@ const Header = () => {
                     {item.subMenu && <RiArrowDropDownLine className={`w-6 h-6 transition-transform ${mobileDropdown === index ? "rotate-180" : ""}`} />}
                   </button>
                 )}
+                {/* Mobile Dropdown */}
                 {item.subMenu && mobileDropdown === index && (
                   <ul className="bg-[#ff066d] rounded-md">
                     {item.subMenu.map((subItem, subIndex) => (
-                      <li key={subIndex}>
-                        <Link to={subItem.path} className="block px-6 py-2 font-medium text-white hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>
+                      <li key={subIndex} className="flex items-center px-6 py-2 text-white hover:text-white">
+                        <img src={subItem.icon} alt={subItem.name} className="w-6 h-6 mr-2" />
+                        <Link to={subItem.path} onClick={() => setIsMobileMenuOpen(false)}>
                           {subItem.name}
                         </Link>
                       </li>

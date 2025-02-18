@@ -15,6 +15,7 @@ import Calendar from "../components/Calendar";
 import { Link } from "react-router-dom";
 import PicTestimonial from "../components/PicTestimonial";
 import MapComponent from "../components/MapComponent";
+import { FaArrowRightLong } from "react-icons/fa6";
 // import Slider from "../components/Slider";
 import CountUp from 'react-countup';
 import { Helmet } from "react-helmet-async";
@@ -141,8 +142,8 @@ const Home = () => {
                     <li>App prototyping and testing</li>
                   </ul>
                 </div>
-                <Link className="px-10 py-4 rounded-lg relative max-w-max box b" to="/mobile-app-developments">
-                  <span className="lines">View More</span>
+                <Link className="relative max-w-max flex gap-2 items-center" to="/mobile-app-developments">
+                  <span className="lines">View More</span> <FaArrowRightLong className="hovIcon"/>
                 </Link>
               </div>
               <div className="flex justify-end">
@@ -447,7 +448,7 @@ const Home = () => {
                   <span className="text-[#FF0066]"> services</span>
                 </h6>
                 <p className="md:text-lg text-base text">
-                  Expand your technology team with the top Latin American talent and take your business to the next level. Enhance productivity, streamline workflows, and accelerate project timelines with highly skilled professionals. Whether you need to bridge a talent gap, reduce development time, or implement a specialized skill set for a specific project, our experts are ready to deliver high-quality results tailored to your needs. Partner with us to access a diverse pool of top-tier talent and drive innovation effortlessly.
+                Enhance your team with top-tier IT professionals through our staff augmentation services. Whether you need skilled developers, UI/UX designers, project managers, or QA engineers, we provide on-demand talent to scale your projects efficiently. Our experts seamlessly integrate with your existing team, ensuring faster development, reduced costs, and enhanced productivity.
                 </p>
                 <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines animated-button'>View More</span></Link>
               </div>
