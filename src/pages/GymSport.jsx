@@ -77,12 +77,12 @@ const GymSport = () => {
                 className="prjectOverview padTop">
                 <div className="container">
                     <div className="main grid md:grid-cols-2 grid-cols-1 gap-20">
-                        <div className="flex flex-col gap-18">
+                        <div className="slide-in-left flex flex-col gap-18">
                             <div className="flex flex-col gap-5">
                                 <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#FF5252]">WHAT IS My Gym Support</h1>
                                 <p className="text text-lg">A revolutionary app designed to streamline your workout experience. As you download the app, a sleek and user-friendly interface welcomes you, providing easy navigation to various features. The onboarding process begins with a brief questionnaire, where you input essential information such as your fitness goals, current fitness level, and preferred workout duration. This sets the stage for the AI to work its magic in tailoring a personalized training program to suit your unique needs. The app ensures a seamless and ad-free experience, eliminating the frustrations of interruptions and time-consuming advertisements.</p>
                             </div>
-                            <div className="flex flex-col gap-10">
+                            <div className=" flex flex-col gap-10">
                                 <div className="flex flex-col gap-5">
                                     <h1 className="md:text-4xl text-3xl text-[#FF5252]">MY ROLE</h1>
                                     <p className="text text-lg">Carryout User Experience Research and User Interface Design</p>
@@ -90,7 +90,7 @@ const GymSport = () => {
                                 <img className="w-62" src={frameVL} alt={frameVL} />
                             </div>
                         </div>
-                        <div className="">
+                        <div className="slide-in-right">
                             <img className="w-full" src={gsupport} alt={gsupport} />
                         </div>
                     </div>
@@ -107,9 +107,9 @@ const GymSport = () => {
                 className="PROBLEMSTATEMENT padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
-                        <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#000] text-center font-bold leading-snug">Empowering Your Fitness Journey, One <br className="inline" /> Workout at a Time.</h1>
+                        <h1 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl text-[#000] text-center font-bold leading-snug">Empowering Your Fitness Journey, One <br className="inline" /> Workout at a Time.</h1>
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
-                            <div className="flex flex-col gap-14">
+                            <div className="slide-in-left flex flex-col gap-14">
                                 <div className="flex flex-col gap-5">
                                     <h1 className="md:text-4xl text-3xl text-[#FF5252]">PROBLEM STATEMENT</h1>
                                     <p className="text text-lg">Existing gym and fitness apps often lack personalized guidance, community support, and seamless integration of various fitness aspects, leading to user disengagement and limited long-term success in achieving fitness goals. Users face difficulties in tracking their progress effectively, accessing tailored workout plans, receiving timely motivation and support, and connecting with like-minded individuals for accountability and encouragement.</p>
@@ -120,7 +120,7 @@ const GymSport = () => {
                                         Solution: Implement an onboarding process with a detailed questionnaire to gather essential information about the user's fitness goals, current fitness level, and preferences. Utilize AI algorithms to create personalized training programs tailored to each user's needs and adjust the programs as users progress</p>
                                 </div>
                             </div>
-                            <div className="">
+                            <div className="slide-in-right ">
                                 <img className="w-full" src={probleums} alt={probleums} />
                             </div>
                         </div>
@@ -139,7 +139,7 @@ const GymSport = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
-                            <div className="flex flex-col gap-20">
+                            <div className="slide-in-left flex flex-col gap-20">
                                 <div className="flex flex-col gap-5">
                                     <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#000] font-bold">DM Sans</h1>
                                     <ul className="flex gap-10">
@@ -150,20 +150,17 @@ const GymSport = () => {
                                 </div>
                                 <img className="w-96" src={aaaa} alt={aaaa} />
                             </div>
-                            <div className="">
+                            <div className="slide-in-right ">
                                 <div className="grid grid-cols-2 gap-10">
-                                    {
-                                        [
-                                            "/images/gym/Color 6.png",
-                                            "/images/gym/Color 7.png",
-                                            "/images/gym/Group 1597884388.png"
-                                        ].map((item, index) => (
-
-                                            <img className="w-96" src={item} alt={`Image ${index + 1}`} />
-
-                                        ))
-                                    }
+                                    {[
+                                        "/images/gym/Color 6.png",
+                                        "/images/gym/Color 7.png",
+                                        "/images/gym/Group 1597884388.png"
+                                    ].map((item, index) => (
+                                        <img key={index} className="w-96" src={item} alt="gym image" />
+                                    ))}
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -174,8 +171,8 @@ const GymSport = () => {
             <div className="lowFidelty bg-[#f4b7c1] padTop">
                 <div className="container">
                     <div className="main flex flex-col md:gap-20 gap-10">
-                        <img className="w-3/5 md:ml-36" src={lowFidelty} alt={lowFidelty} />
-                        <img src={mobiles} alt={mobiles} />
+                        <img className="scroll-animate w-3/5 md:ml-36" src={lowFidelty} alt={lowFidelty} />
+                        <img className="scroll-animate " src={mobiles} alt={mobiles} />
                     </div>
                 </div>
             </div>
@@ -184,8 +181,8 @@ const GymSport = () => {
             <div className="highFidelty bg-[#fff] padTop">
                 <div className="container">
                     <div className="main flex flex-col md:gap-20 gap-10">
-                        <img className="w-3/5 md:ml-36" src={highFidelty} alt={highFidelty} />
-                        <img src={mobiless} alt={mobiless} />
+                        <img className="scroll-animate w-3/5 md:ml-36" src={highFidelty} alt={highFidelty} />
+                        <img className="scroll-animate " src={mobiless} alt={mobiless} />
                     </div>
                 </div>
             </div>
@@ -209,7 +206,7 @@ const GymSport = () => {
                     </div>
                 </div>
             </div> */}
-            <Footer/>
+            <Footer />
 
         </div>
     )

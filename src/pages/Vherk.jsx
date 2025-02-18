@@ -119,9 +119,9 @@ const Vherk = () => {
                             width: "100%",
                             height: "70px"
                         }} className="titleOverView flex items-center">
-                            <h6 className="text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15">Project Overview</h6>
+                            <h6 className="scroll-animate text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15">Project Overview</h6>
                         </div>
-                        <div className="detail flex flex-col gap-10">
+                        <div className="scroll-animate detail flex flex-col gap-10">
                             {
                                 projectOver.map((items, index) => {
                                     return (
@@ -150,10 +150,10 @@ const Vherk = () => {
                             width: "100%",
                             height: "70px"
                         }} className="titleOverView flex items-center">
-                            <h6 className="text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15">Target Audience</h6>
+                            <h6 className="scroll-animate text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15">Target Audience</h6>
                         </div>
                         <div className="audience border border-[#b1b5ba] bg-[#e4e6ea] p-10 rounded-2xl relative">
-                            <p className="text-lg text-[#000000]">Age Group: Depending on your app's content and functionality, you might target a specific age group. For instance, if your app is focused on senior citizens, your target audience might be aged 50 and above. If it's a platform for teenagers, you'd aim for users between 13-19.
+                            <p className="scroll-animate text-lg text-[#000000]">Age Group: Depending on your app's content and functionality, you might target a specific age group. For instance, if your app is focused on senior citizens, your target audience might be aged 50 and above. If it's a platform for teenagers, you'd aim for users between 13-19.
                                 Gender: Your app may cater more to a particular gender, and you can tailor your marketing strategies accordingly. However, keep in mind that it's important to be inclusive and not exclude potential users based on gender.</p>
                         </div>
                     </div>
@@ -173,9 +173,9 @@ const Vherk = () => {
                             width: "100%",
                             height: "70px"
                         }} className="titleOverView flex items-center">
-                            <h6 className="text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15">Design Process</h6>
+                            <h6 className="scroll-animate text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15">Design Process</h6>
                         </div>
-                        <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-30 gap-10">
+                        <div className="scroll-animate grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-30 gap-10">
                             {
                                 designProcess.map((items, index) => {
                                     return (
@@ -206,13 +206,13 @@ const Vherk = () => {
                             width: "100%",
                             height: "70px"
                         }} className="titleOverView flex items-center">
-                            <h6 className="text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15">Style Guide</h6>
+                            <h6 className="scroll-animate text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15">Style Guide</h6>
                         </div>
                         <div className="grid md:grid-cols-3 grid-cols-1 md:gap-30 gap-15">
-                            <div className="">
+                            <div className="slide-in-left">
                                 <img className='w-full' src={colors} alt={colors} />
                             </div>
-                            <div className="">
+                            <div className="scroll-animate">
                                 {
                                     typo.map((items, index) => {
                                         return (
@@ -224,7 +224,7 @@ const Vherk = () => {
                                     })
                                 }
                             </div>
-                            <div className="">
+                            <div className="slide-in-right">
                                 <img className='w-56' src={font} alt={font} />
                             </div>
                         </div>
@@ -245,9 +245,9 @@ const Vherk = () => {
                             width: "100%",
                             height: "70px"
                         }} className="titleOverView flex flex-col gap-20">
-                            <h6 className="text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15 mt-4">Wireframe Design</h6>
+                            <h6 className="scroll-animate text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15 mt-4">Wireframe Design</h6>
                         </div>
-                        <img className='w-full' src={frameone} alt={frameone} />
+                        <img className='scroll-animate w-full' src={frameone} alt={frameone} />
                     </div>
                 </div>
             </div>
@@ -265,9 +265,9 @@ const Vherk = () => {
                             width: "100%",
                             height: "70px"
                         }} className="titleOverView flex flex-col gap-20">
-                            <h6 className="text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15 mt-4">Design</h6>
+                            <h6 className="scroll-animate text-[#C31A20] md:text-5xl sm:text-4xl text-3xl font-bold ml-15 mt-4">Design</h6>
                         </div>
-                        <img className='w-full' src={frameTwo} alt={frameTwo} />
+                        <img className='scroll-animate w-full' src={frameTwo} alt={frameTwo} />
                     </div>
                 </div>
             </div>
@@ -285,12 +285,12 @@ const Vherk = () => {
                             width: "100%",
                             height: "70px"
                         }} className="titleOverView flex flex-col gap-20">
-                            <h6 className="text-[#fff] md:text-5xl sm:text-4xl text-3xl font-bold ml-15 mt-4">Presentation</h6>
+                            <h6 className="scroll-animate text-[#fff] md:text-5xl sm:text-4xl text-3xl font-bold ml-15 mt-4">Presentation</h6>
                         </div>
                         {
                             ["/images/vherk/vherk.png", "/images/vherk/Group 1686555595.png"].map((items, index) => {
                                 return (
-                                    <img key={index} className='w-full' src={items} alt={items} />
+                                    <img key={index} className='scroll-animate w-full' src={items} alt={items} />
                                 )
                             })
                         }

@@ -175,8 +175,8 @@ const Mono = () => {
             }} className="DesignProcess padTop flex flex-col gap-20">
                 <img className="w-72" src={DProcess2} alt={DProcess2} />
                 <div className="container flex flex-col gap-10">
-                    <p className="text-lg text-[#fff]">Founded in 2022, causeway offers low rental rates and a fun, hassle- free customer experience at the most popular travel destinations throughout Johor Bahru. Our guiding principles, and humble beginning, revolve around personal honesty and integrity. We believe in strengthening our communities one at a time. Serving our customers as if they were our family.</p>
-                    <img className="w-full mx-auto" src={DProcess} alt={DProcess} />
+                    <p className="scroll-animate text-lg text-[#fff]">Founded in 2022, causeway offers low rental rates and a fun, hassle- free customer experience at the most popular travel destinations throughout Johor Bahru. Our guiding principles, and humble beginning, revolve around personal honesty and integrity. We believe in strengthening our communities one at a time. Serving our customers as if they were our family.</p>
+                    <img className="scroll-animate w-full mx-auto" src={DProcess} alt={DProcess} />
                 </div>
             </div>
 
@@ -184,7 +184,7 @@ const Mono = () => {
             <div className="ProjectTime padTop flex flex-col gap-20">
                 <img className="w-72" src={projectTimeline2} alt={projectTimeline2} />
                 <div className="container">
-                    <img className="w-full mx-auto" src={projectTimeline} alt={projectTimeline} />
+                    <img className="scroll-animate w-full mx-auto" src={projectTimeline} alt={projectTimeline} />
                 </div>
             </div>
 
@@ -192,7 +192,7 @@ const Mono = () => {
             <div className="UserFlow padTop flex flex-col gap-20">
                 <img className="w-50" src={UserFlowH} alt={UserFlowH} />
                 <div className="container">
-                    <img className="md:w-9/12 w-full mx-auto" src={UserFlowD} alt={UserFlowD} />
+                    <img className="scroll-animate md:w-9/12 w-full mx-auto" src={UserFlowD} alt={UserFlowD} />
                 </div>
             </div>
 
@@ -201,10 +201,10 @@ const Mono = () => {
                 <img className="w-50" src={UserResearchH} alt={UserResearchH} />
                 <div className="container">
                     <div className="main grid md:grid-cols-2 grid-cols-1 md:gap-30 gap-15">
-                        <div className="">
+                        <div className="slide-in-left">
                             <p className="md:text-4xl text-3xl leading-snug font-semibold text-[#fff]">To create a product which would be used by users, it was necessary to interact with users in order to gain insights on how they think, what they think and how they feel about it. Thus user research was conducted by going from person to person. </p>
                         </div>
-                        <div className="">
+                        <div className="slide-in-right">
                             <img className="w-full mx-auto" src={UserResearch} alt={UserResearch} />
                         </div>
                     </div>
@@ -212,14 +212,14 @@ const Mono = () => {
             </div>
 
             {/* //User Persona */}
-            <div className="UserPersona padTop flex flex-col gap-20">
+            <div className="UserPersona padTop flex flex-col gap-20">slide-in-left
                 <img className="w-50" src={UserPersonaH} alt={UserPersonaH} />
                 <div className="container">
                     <div className="main grid md:grid-cols-2 grid-cols-1 md:gap-30 gap-15">
-                        <div className="">
+                        <div className="slide-in-left">
                             <img className="w-full mx-auto" src={UserPersona} alt={UserPersona} />
                         </div>
-                        <div className="">
+                        <div className="slide-in-right">
                             <p className="md:text-4xl text-3xl leading-snug font-semibold text-[#fff]">Based on the research made, i was able to know who i was designing for .I was able to define my target audience. </p>
                         </div>
                     </div>
@@ -227,14 +227,14 @@ const Mono = () => {
             </div>
 
             {/* //User idate */}
-            <div className="UserPersona padTop flex flex-col gap-20">
+            <div className="UserPersona padTop flex flex-col gap-20">slide-in-left
                 <img className="w-32" src={idateH} alt={idateH} />
                 <div className="container">
                     <div className="main grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-15">
-                        <div className="">
+                        <div className="slide-in-left">
                             <p className="md:text-5xl text-3xl text-end leading-snug font-semibold text-[#fff]">Style Guide, Low-Fi Design <br className="inline" />and Hi-Fi Design</p>
                         </div>
-                        <div className="">
+                        <div className="slide-in-right">
                             <img className="md:w-96 w-66 mx-auto" src={idate} alt={idate} />
                         </div>
                     </div>
@@ -252,25 +252,25 @@ const Mono = () => {
                 <img className="w-78" src={ProjectFeatureH} alt={ProjectFeatureH} />
                 <div className="container">
                     <div className="main grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-15">
-                        <div className="">
+                        <div className="slide-in-left">
                             <ol className="list-decimal pl-5 text-2xl text-[#fff]">
                                 {menuItems.map((item, index) => (
                                     <li key={index}>{item}</li>
                                 ))}
                             </ol>
                         </div>
-                        <div className="">
+                        <div className="slide-in-right">
                             <img className="w-full mx-auto" src={ProjectFeature} alt={ProjectFeature} />
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* //Group 1686555585 */}
-            <div className="Group 1686555585 padTop flex flex-col gap-20">
+            {/* //typography */}
+            <div className="typography padTop flex flex-col gap-20">
                 <img className="w-62" src={typographyH} alt={typographyH} />
                 <div className="container">
-                    <div className="fonts flex flex-col gap-7 text-[#fff]">
+                    <div className="scroll-animate fonts flex flex-col gap-7 text-[#fff]">
                         {
                             typo.map((items, index) => {
                                 return (
@@ -295,26 +295,26 @@ const Mono = () => {
                 <img className="w-72" src={buttonColorH} alt={buttonColorH} />
                 <div className="container flex flex-col gap-20">
                     <div className="main grid md:grid-cols-2 grid-cols-1 gap-15">
-                        <div className="flex flex-col gap-10">
+                        <div className="slide-in-left flex flex-col gap-10">
                             <h6 className="text-2xl font-semibold text-[#fff]">Primary Buttons</h6>
                             <img className="w-72" src={primary} alt={primary} />
                         </div>
-                        <div className="flex flex-col gap-10">
+                        <div className="slide-in-right flex flex-col gap-10">
                             <h6 className="text-2xl font-semibold text-[#fff]">Disable Buttons</h6>
                             <img className="w-72" src={secondary} alt={secondary} />
                         </div>
                     </div>
 
                     <div className="main grid md:grid-cols-3 grid-cols-2 gap-15">
-                        <div className="flex flex-col gap-10">
+                        <div className="slide-in-left flex flex-col gap-10">
                             <h6 className="text-2xl font-semibold text-[#fff]">Primary Color</h6>
                             <img className="md:w-72 w-full" src={PrimaryColor} alt={PrimaryColor} />
                         </div>
-                        <div className="flex flex-col gap-10">
+                        <div className="scroll-animate flex flex-col gap-10">
                             <h6 className="text-2xl font-semibold text-[#fff]">BG Color</h6>
                             <img className="md:w-28 sm:w-28 w-20" src={bgc} alt={bgc} />
                         </div>
-                        <div className="flex flex-col gap-10">
+                        <div className="slide-in-right flex flex-col gap-10">
                             <h6 className="text-2xl font-semibold text-[#fff]">Territory Colors</h6>
                             <img className="md:w-56 sm:w-56 w-10 w-full" src={ttc} alt={ttc} />
                         </div>
@@ -322,11 +322,11 @@ const Mono = () => {
                 </div>
             </div>
 
-            {/* //User flow */}
-            <div className="UserFlow flex flex-col gap-20">
+            {/* //other screen */}
+            <div className="otherScreen flex flex-col gap-20">
                 <img className="w-50" src={otherScreen} alt={otherScreen} />
                 <div className="container">
-                    <img className="md:w-9/12 w-full mx-auto" src={otherScreenM} alt={otherScreenM} />
+                    <img className="scroll-animate md:w-9/12 w-full mx-auto" src={otherScreenM} alt={otherScreenM} />
                 </div>
                 <img className="w-full mx-auto" src={otherScreenM2} alt={otherScreenM2} />
             </div>

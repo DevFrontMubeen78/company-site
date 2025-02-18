@@ -38,7 +38,7 @@ const MyRole = () => {
                 {
                     role.map((items, index) => {
                         return (
-                            <div key={index} className="text-[#fff] flex flex-col md:gap-10 gap-5 items-center text-center">
+                            <div key={index} className="scroll-animate text-[#fff] flex flex-col md:gap-10 gap-5 items-center text-center">
                                 <img className='w-12' src={items.img} alt="" />
                                 <div className="flex flex-col gap-4">
                                     <h6 className="text-2xl font-bold">{items.title}</h6>

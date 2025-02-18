@@ -16,7 +16,6 @@ import MyRole from "../components/MyRole"
 // import facebook from "../../public/images/siply/facebook.png"
 import logo from "/images/about/logo.png";
 import { FaInfoCircle, FaBriefcase, FaPenNib, FaUsers } from "react-icons/fa";
-import Footer from "../components/Footer";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
@@ -106,15 +105,15 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex flex-col gap-5">
-                            <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>My <span className="text-[#3C855A]">Role</span></h6>
-                            <p className='text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can be implemented by developers.</p>
+                            <h6 className='scroll-animate font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl max-w-max pb-3'>My <span className="text-[#3C855A]">Role</span></h6>
+                            <p className='scroll-animate text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can be implemented by developers.</p>
                         </div>
                         <MyRole />
                     </div>
                 </div>
             </div>
 
-            {/* // INTRODUCTION  */}
+            {/* // overview  */}
             <div
                 style={{
                     backgroundImage: "url('/images/thriving/overBG.png')",
@@ -125,8 +124,8 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
-                            <div className="flex flex-col gap-10">
-                                <h1 className="md:text-5xl sm:text-4xl  md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Over <span className="text-[#3C855A]">view</span></h1>
+                            <div className="slide-in-left flex flex-col gap-10">
+                                <h1 className="scroll-animate md:text-5xl sm:text-4xl  md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Over <span className="text-[#3C855A]">view</span></h1>
                                 <div>
                                     <h6 className='font-bold text-[#fff] text-3xl max-w-max pb-3'>About The Project</h6>
                                     <p className="text-base text-[#fff]">The project aims to create an innovative digital mentor application called MentorMind, providing users with personalized support and guidance for their personal growth journey. Leveraging advanced AI technology, MentorMind offers a unique holographic interface for engaging conversations, voice activation for seamless interaction, and insightful summaries of conversations for reflection and progress tracking.</p>
@@ -136,7 +135,7 @@ const Thriving = () => {
                                     <Link className="bg-[#3C855A] text-[#fff] py-2 rounded max-w-max rounded px-8 font-bold flex gap-3 items-center px-14 py-4" to="#"><IoIosPhonePortrait className="text-2xl" /> Mobile</Link>
                                 </div>
                             </div>
-                            <div className="flex md:justify-end justify-center">
+                            <div className="slide-in-right flex md:justify-end justify-center">
                                 <img className="w-9/12" src={LogosOv} alt={LogosOv} />
                             </div>
                         </div>
@@ -154,10 +153,10 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex flex-col gap-5">
-                            <img className='w-24' src={dt} alt={dt} />
-                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Design <span className="text-[#3C855A]">Process</span></h1>
+                            <img className='w-24 slide-in-left' src={dt} alt={dt} />
+                            <h1 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Design <span className="text-[#3C855A]">Process</span></h1>
                         </div>
-                        <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-30 gap-10">
+                        <div className="scroll-animate grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 md:gap-30 gap-10">
                             {
                                 designProcess.map((items, index) => {
                                     return (
@@ -180,10 +179,10 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="flex flex-col gap-5">
-                            <img className='w-24' src={dt} alt={dt} />
-                            <h1 className="md:text-5xl md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Design  <span className="text-[#3C855A]">Timeline</span></h1>
+                            <img className='slide-in-left w-24' src={dt} alt={dt} />
+                            <h1 className="scroll-animate md:text-5xl md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Design  <span className="text-[#3C855A]">Timeline</span></h1>
                         </div>
-                        <img className='w-full' src={ddesign} alt={ddesign} />
+                        <img className='w-full scroll-animate' src={ddesign} alt={ddesign} />
                     </div>
                 </div>
             </div>
@@ -195,7 +194,7 @@ const Thriving = () => {
                 backgroundPosition: "bottom right",
                 backgroundSize: "43% auto, cover",
             }} className="paintPoints padTop flex flex-col gap-20">
-                <div className="container">
+                <div className="container slide-in-left">
                     <div className="main grid md:grid-cols-2 grid-cols-1">
                         <div className=" text-[#fff] flex flex-col gap-10 relative">
                             <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Paint  <span className="text-[#3C855A]">points</span></h1>
@@ -230,10 +229,10 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className=" text-[#fff] flex flex-col gap-10">
-                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">User <span className="text-[#3C855A]">Personas</span></h1>
-                            <p className="text-[#fff] text-lg w-9/12">User personas are fictional characters created to represent different segments of a product or services target audience. They help teams understand and empathize with their users, guiding design, development, and marketing decisions.</p>
+                            <h1 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">User <span className="text-[#3C855A]">Personas</span></h1>
+                            <p className="scroll-animate text-[#fff] text-lg w-9/12">User personas are fictional characters created to represent different segments of a product or services target audience. They help teams understand and empathize with their users, guiding design, development, and marketing decisions.</p>
                         </div>
-                        <img className='w-full' src={UserPersona} alt={UserPersona} />
+                        <img className='scroll-animate w-full' src={UserPersona} alt={UserPersona} />
                     </div>
                 </div>
             </div>
@@ -248,16 +247,16 @@ const Thriving = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className=" text-[#fff] flex flex-col gap-10">
-                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">User <span className="text-[#3C855A]">Flow</span></h1>
-                            <p className="text-[#fff] text-lg md:w-6/12">Users engage holographic interface, converse via voice, receive summaries, access journal integration, and receive personalized recommendations, ensuring seamless, personalized, and impactful mentorship experience.</p>
+                            <h1 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">User <span className="text-[#3C855A]">Flow</span></h1>
+                            <p className="scroll-animate text-[#fff] text-lg md:w-6/12">Users engage holographic interface, converse via voice, receive summaries, access journal integration, and receive personalized recommendations, ensuring seamless, personalized, and impactful mentorship experience.</p>
                         </div>
-                        <img className='w-full' src={userFlow} alt={userFlow} />
+                        <img className='scroll-animate w-full' src={userFlow} alt={userFlow} />
                     </div>
                 </div>
             </div>
 
             {/* //Typography */}
-            <div className="UserPersona padTop">
+            <div className="scroll-animate userFlow padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-10">
                         <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Typog<span className="text-[#3C855A]">raphy</span></h1>
@@ -286,7 +285,7 @@ const Thriving = () => {
             </div>
 
             {/* //Iconography */}
-            <div className="UserPersona padTop">
+            <div className="scroll-animate Iconography padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-10">
@@ -294,20 +293,20 @@ const Thriving = () => {
                             <div className="bg-[#1A1A1E]  p-8 rounded">
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                                     <div className="flex flex-col gap-2">
-                                        <h1 className="text-4xl text-[#fff] font-bold">Iconography</h1>
-                                        <p className="text-[#fff] text-lg">Version 1.0</p>
+                                        <h1 className="scroll-animate text-4xl text-[#fff] font-bold">Iconography</h1>
+                                        <p className="scroll-animate text-[#fff] text-lg">Version 1.0</p>
                                     </div>
-                                    <h1 className="text-2xl text-[#fff] font-bold text-end">Thriving Minds App</h1>
+                                    <h1 className="scroll-animate text-2xl text-[#fff] font-bold text-end">Thriving Minds App</h1>
                                 </div>
                             </div>
                         </div>
-                        <img className='w-full' src={Iconography} alt={Iconography} />
+                        <img className='scroll-animate w-full' src={Iconography} alt={Iconography} />
                     </div>
                 </div>
             </div>
 
             {/* //logo */}
-            <div className="UserPersona padTop">
+            <div className="scroll-animate logo padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-10">
@@ -331,7 +330,7 @@ const Thriving = () => {
             </div>
 
             {/* //Colors */}
-            <div className="UserPersona padTop">
+            <div className="scroll-animate Colors padTop">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-10">
@@ -355,8 +354,8 @@ const Thriving = () => {
             <div className="UserPersona padTop">
                 <div className="container">
                     <div className="main flex flex-col md:gap-20 gap-10">
-                        <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">High Fide<span className="text-[#3C855A]">lity Designs</span></h1>
-                        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+                        <h1 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">High Fide<span className="text-[#3C855A]">lity Designs</span></h1>
+                        <div className="slide-in-left grid md:grid-cols-2 grid-cols-1 gap-10">
                             <img className='w-full' src={homeScreen} alt={homeScreen} />
                             <div className="flex flex-col gap-5">
                                 <h1 className="text-4xl text-[#fff] font-bold">Home <span className="text-[#3C855A]">Screen</span></h1>
@@ -364,7 +363,7 @@ const Thriving = () => {
                             </div>
                         </div>
                         {/* Workout Section */}
-                        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+                        <div className="slide-in-right grid md:grid-cols-2 grid-cols-1 gap-10">
                             <div className="flex flex-col gap-5">
                                 <h1 className="text-4xl text-[#fff] font-bold">Workout <span className="text-[#3C855A]">Section</span></h1>
                                 <p className="text-[#fff] text-lg border-l-3 border-[#3C855A] pl-5">The workout section provides tailored exercise routines, progress tracking, video demonstrations, and motivational tips for achieving fitness goals effectively.</p>
@@ -379,8 +378,8 @@ const Thriving = () => {
             <div className="UserPersona padTop flex flex-col gap-20">
                 <div className="container">
                     <div className="main flex flex-col gap-20">
-                        <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold border-l-3 border-[#3C855A] pl-5">Other <span className="text-[#3C855A]">Screens</span></h1>
-                        <img className='w-full' src={otherScreen} alt={otherScreen} />
+                        <h1 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold border-l-3 border-[#3C855A] pl-5">Other <span className="text-[#3C855A]">Screens</span></h1>
+                        <img className='scroll-animate w-full' src={otherScreen} alt={otherScreen} />
                     </div>
                 </div>
             </div>
@@ -395,46 +394,46 @@ const Thriving = () => {
                 <div className="container">
                     <div className="flex flex-col gap-20">
                         <div className=" text-[#fff] flex flex-col gap-10">
-                            <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Accessibility <span className="text-[#3C855A]">Considerations</span></h1>
+                            <h1 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">Accessibility <span className="text-[#3C855A]">Considerations</span></h1>
                             <div className="flex flex-col gap-5">
                                 <div className=' flex flex-col gap-2'>
-                                    <h6 className='text-3xl  text-[#fff] font-bold'>Text <span className="text-[#3C855A]">Alternative</span></h6>
-                                    <p className="text-[#fff] text-lg">The workout section offers customizable exercise plans, tracks progress, provides video guides, and offers motivational advice for effective fitness achievement.</p>
+                                    <h6 className='scroll-animate text-3xl  text-[#fff] font-bold'>Text <span className="text-[#3C855A]">Alternative</span></h6>
+                                    <p className="scroll-animate text-[#fff] text-lg">The workout section offers customizable exercise plans, tracks progress, provides video guides, and offers motivational advice for effective fitness achievement.</p>
                                 </div>
                                 <div className=' flex flex-col gap-2'>
-                                    <h6 className='text-3xl text-[#fff] font-bold'>Color <span className="text-[#3C855A]">Contrast</span></h6>
-                                    <p className="text-[#fff] text-lg">Color contrast refers to the difference in luminance or color between different parts of a digital interface, ensuring readability and accessibility for users with visual impairments.</p>
+                                    <h6 className='scroll-animate text-3xl text-[#fff] font-bold'>Color <span className="text-[#3C855A]">Contrast</span></h6>
+                                    <p className="scroll-animate text-[#fff] text-lg">Color contrast refers to the difference in luminance or color between different parts of a digital interface, ensuring readability and accessibility for users with visual impairments.</p>
                                 </div>
                                 <div className=' flex flex-col gap-2'>
-                                    <h6 className='text-3xl text-[#fff] font-bold'>Speaker <span className="text-[#3C855A]">Listening</span></h6>
-                                    <p className="text-[#fff] text-lg">Speaker listening refers to the capability of a device or system to actively receive and interpret audio input, enabling interactions through spoken commands or conversations with users.</p>
+                                    <h6 className='scroll-animate text-3xl text-[#fff] font-bold'>Speaker <span className="text-[#3C855A]">Listening</span></h6>
+                                    <p className="scroll-animate text-[#fff] text-lg">Speaker listening refers to the capability of a device or system to actively receive and interpret audio input, enabling interactions through spoken commands or conversations with users.</p>
                                 </div>
                                 <div className=' flex flex-col gap-2'>
-                                    <h6 className='text-3xl text-[#fff] font-bold'>Blogs <span className="text-[#3C855A]">Update</span></h6>
-                                    <p className="text-[#fff] text-lg">Blogs Update refers to the process of regularly adding new content or posts to a blog platform, keeping the audience engaged and informed about relevant topics or developments.</p>
+                                    <h6 className='scroll-animate text-3xl text-[#fff] font-bold'>Blogs <span className="text-[#3C855A]">Update</span></h6>
+                                    <p className="scroll-animate text-[#fff] text-lg">Blogs Update refers to the process of regularly adding new content or posts to a blog platform, keeping the audience engaged and informed about relevant topics or developments.</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Take aways  */}
                         <div className=" text-[#fff] flex flex-col gap-10">
-                            <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Take <span className="text-[#3C855A]">aways</span></h1>
+                            <h1 className="scroll-animate md:text-5xl text-3xl text-[#fff] font-bold">Take <span className="text-[#3C855A]">aways</span></h1>
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
                                 <div className="flex flex-col gap-10">
                                     <div className="flex flex-col gap-4">
-                                        <h1 className="text-3xl text-[#3C855A] font-bold">Impact</h1>
-                                        <p className="text-[#fff] text-lg">working on Thriving Minds showcased the tangible impact of thoughtful design—creating an inclusive, engaging platform that positively influences users fitness journeys and overall well-being.</p>
+                                        <h1 className="scroll-animate text-3xl text-[#3C855A] font-bold">Impact</h1>
+                                        <p className="scroll-animate text-[#fff] text-lg">working on Thriving Minds showcased the tangible impact of thoughtful design—creating an inclusive, engaging platform that positively influences users fitness journeys and overall well-being.</p>
                                     </div>
 
                                     <div className="flex flex-col gap-4">
-                                        <p className="text-[#3C855A] text-lg">Feedback from a peer :</p>
-                                        <p className="text-[#fff] text-lg"><i>The design is so much easier to use and navigate, I can find what I'm looking for much faster!</i></p>
+                                        <p className="scroll-animate text-[#3C855A] text-lg">Feedback from a peer :</p>
+                                        <p className="scroll-animate text-[#fff] text-lg"><i>The design is so much easier to use and navigate, I can find what I'm looking for much faster!</i></p>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col gap-4">
-                                    <h1 className="text-3xl text-[#3C855A] font-bold">What I learned </h1>
-                                    <p className="text-[#fff] text-lg">As a UI/UX designer for the Thriving Mind app, I gained a deep appreciation for the intersection of functionality and user-centric design. Crafting seamless workout flows, intuitive navigation, and an engaging community interface taught me the importance of empathy in design. Implementing accessible features, such as resizable text and closed captions, underscored the significance of inclusive design. Overall, OVAH Fitness not only honed my technical skills but reinforced the transformative impact thoughtful design can have on users well-being journeys.</p>
+                                    <h1 className="scroll-animate text-3xl text-[#3C855A] font-bold">What I learned </h1>
+                                    <p className="scroll-animate text-[#fff] text-lg">As a UI/UX designer for the Thriving Mind app, I gained a deep appreciation for the intersection of functionality and user-centric design. Crafting seamless workout flows, intuitive navigation, and an engaging community interface taught me the importance of empathy in design. Implementing accessible features, such as resizable text and closed captions, underscored the significance of inclusive design. Overall, OVAH Fitness not only honed my technical skills but reinforced the transformative impact thoughtful design can have on users well-being journeys.</p>
                                 </div>
                             </div>
                         </div>
@@ -442,13 +441,13 @@ const Thriving = () => {
                         {/* Next Step */}
                         <div className=" text-[#fff] flex flex-col gap-10">
                             <div className="flex flex-col gap-5">
-                                <h1 className="md:text-5xl text-3xl text-[#fff] font-bold">Next <span className="text-[#3C855A]">Step</span></h1>
-                                <p className="text-[#fff] text-lg">working on Thriving Minds showcased the tangible impact of thoughtful design—creating an inclusive, engaging platform that positively influences users fitness journeys and overall well-being.</p>
+                                <h1 className="scroll-animate md:text-5xl text-3xl text-[#fff] font-bold">Next <span className="text-[#3C855A]">Step</span></h1>
+                                <p className="scroll-animate text-[#fff] text-lg">working on Thriving Minds showcased the tangible impact of thoughtful design—creating an inclusive, engaging platform that positively influences users fitness journeys and overall well-being.</p>
                             </div>
                             <ul className="list-disc ml-10 flex flex-col gap-10">
-                                <li><span className="text-[#3C855A] text-2xl">Tests with users: </span>Using user testing to get feedback from real users and figure out where improvements can be made.</li>
-                                <li><span className="text-[#3C855A] text-2xl">Implementing feedback from users: </span> Incorporating user requests into the design of the app, such as by adding new features or modifying existing ones.</li>
-                                <li><span className="text-[#3C855A] text-2xl">Continuous advancement: </span>Collecting data and feedback on a regular basis and utilizing this information to continuously enhance the app.</li>
+                                <li><span className="scroll-animate text-[#3C855A] text-2xl">Tests with users: </span>Using user testing to get feedback from real users and figure out where improvements can be made.</li>
+                                <li><span className="scroll-animate text-[#3C855A] text-2xl">Implementing feedback from users: </span> Incorporating user requests into the design of the app, such as by adding new features or modifying existing ones.</li>
+                                <li><span className="scroll-animate text-[#3C855A] text-2xl">Continuous advancement: </span>Collecting data and feedback on a regular basis and utilizing this information to continuously enhance the app.</li>
                             </ul>
                         </div>
                     </div>

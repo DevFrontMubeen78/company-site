@@ -188,28 +188,28 @@ const sayAnDo = [
     },
 ]
 
-const icons = [
-    {
-        img: "images/causeway/icon1.png",
-        path: "#"
-    },
-    {
-        img: "images/causeway/icon2.png",
-        path: "#"
-    },
-    {
-        img: "images/causeway/icon3.png",
-        path: "#"
-    },
-    {
-        img: "images/causeway/icon4.png",
-        path: "#"
-    },
-    {
-        img: "images/causeway/icon5.png",
-        path: "#"
-    },
-]
+// const icons = [
+//     {
+//         img: "images/causeway/icon1.png",
+//         path: "#"
+//     },
+//     {
+//         img: "images/causeway/icon2.png",
+//         path: "#"
+//     },
+//     {
+//         img: "images/causeway/icon3.png",
+//         path: "#"
+//     },
+//     {
+//         img: "images/causeway/icon4.png",
+//         path: "#"
+//     },
+//     {
+//         img: "images/causeway/icon5.png",
+//         path: "#"
+//     },
+// ]
 
 const Unitree = () => {
     return (
@@ -255,15 +255,15 @@ const Unitree = () => {
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-6 text-center">
                             <div className="flex flex-col gap-2">
-                                <p className="text-base text-[#FECF29]">INTRODUCTION</p>
-                                <h1 className="md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">About This Project</h1>
+                                <p className="scroll-animate text-base text-[#FECF29]">INTRODUCTION</p>
+                                <h1 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl text-[#fff] font-bold">About This Project</h1>
                             </div>
                             <div className="">
-                                <p className="text-base text-[#fff]">This project functional UX and UI Designer to overcome the immense <br className="inline" /> difficulty, broad minded and interactive and advanced UI Design.</p>
+                                <p className="scroll-animate text-base text-[#fff]">This project functional UX and UI Designer to overcome the immense <br className="inline" /> difficulty, broad minded and interactive and advanced UI Design.</p>
                             </div>
                         </div>
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
-                            <div className="flex flex-col gap-6">
+                            <div className="slide-in-left flex flex-col gap-6">
                                 <div className="flex flex-col gap-2">
                                     <p className="text-base text-[#FECF29]">GET STARTED</p>
                                     <h1 className="text-3xl text-[#fff] font-bold">Overview</h1>
@@ -276,23 +276,23 @@ const Unitree = () => {
                                     <Link className="bg-[#fff] py-2 rounded max-w-max rounded px-8 font-bold flex gap-3 items-center" to="#"><IoIosPhonePortrait /> UI/UX Designer</Link>
                                 </div>
                             </div>
-                            <div className="flex md:justify-end justify-center">
+                            <div className="slide-in-right flex md:justify-end justify-center">
                                 <img className="w-9/12" src={Logos} alt={Logos} />
                             </div>
                         </div>
 
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
-                            <div className="flex flex-col gap-6">
+                            <div className="slide-in-left flex flex-col gap-6">
                                 <h1 className="text-3xl text-[#fff] font-bold">The Story</h1>
                                 <p className="text-base text-[#fff]">the lack of existing technology in the Sumbawa area, makes the author interested in designing applications that make it easier for users to order grocery items online.</p>
                             </div>
-                            <div className="flex md:justify-end justify-center">
+                            <div className="slide-in-right flex md:justify-end justify-center">
                                 <img className="w-9/12" src={Logoss} alt={Logoss} />
                             </div>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-                            <div className="probleum md:col-span-5 flex flex-col gap-8">
+                            <div className="slide-in-left probleum md:col-span-5 flex flex-col gap-8">
                                 <div className="flex flex-col gap-3">
                                     <h6 className="text-3xl font-bold border-l-4 pl-2 text-white">PROBLEM</h6>
                                     <p className="text-lg text-white">
@@ -324,11 +324,11 @@ const Unitree = () => {
                                 </ul>
                             </div>
 
-                            <div className="vs md:col-span-2 flex justify-center">
+                            <div className="scroll-animate vs md:col-span-2 flex justify-center">
                                 <img className="md:w-full w-10 max-w-[150px]" src={vs} alt="vs" />
                             </div>
 
-                            <div className="solution md:col-span-5 flex flex-col gap-8">
+                            <div className="slide-in-right solution md:col-span-5 flex flex-col gap-8">
                                 <div className="flex flex-col gap-3">
                                     <h6 className="text-3xl font-bold border-l-4 pl-2 text-[#00C48C]">SOLUTION</h6>
                                     <p className="text-base text-white">
@@ -370,11 +370,11 @@ const Unitree = () => {
                     <div className="main flex flex-col md:gap-30 gap-20">
                         <div className="flex flex-col gap-10">
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-                                <div className="flex flex-col gap-3">
+                                <div className="slide-in-left flex flex-col gap-3">
                                     <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">Preparation</p></div>
                                     <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">DESIGN PROCESS</h6>
                                 </div>
-                                <div className="grid grid-cols-2 md:gap-20 gap-10">
+                                <div className="slide-in-right grid grid-cols-2 md:gap-20 gap-10">
                                     <div className="flex flex-col gap-2">
                                         <h6 className="text-lg font-bold text-[#fff]">Design Flow</h6>
                                         <ul className="text-[#fff]">
@@ -393,7 +393,7 @@ const Unitree = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="grid md:grid-cols-4 grid-cols-2 md:gap-10 gap-10">
+                            <div className="scroll-animate grid md:grid-cols-4 grid-cols-2 md:gap-10 gap-10">
                                 {
                                     indecations.map((items, index) => {
                                         return (
@@ -411,12 +411,12 @@ const Unitree = () => {
                         </div>
                         <div className="flex flex-col md:gap-10 gap-5">
                             <div className="flex flex-col gap-3">
-                                <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">Design Timeline</h6>
-                                <p className="text-lg text-[#fff]">Our achievement in the journey depicted in numbers</p>
+                                <h6 className="scroll-animate md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">Design Timeline</h6>
+                                <p className="scroll-animate text-lg text-[#fff]">Our achievement in the journey depicted in numbers</p>
                             </div>
-                            <img className="w-full" src={graph} alt={graph} />
+                            <img className="scroll-animate w-full" src={graph} alt={graph} />
                         </div>
-                        <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
+                        <div className="scroll-animate grid md:grid-cols-3 grid-cols-1 gap-8">
                             {
                                 timeline.map((items, index) => {
                                     return (
@@ -447,8 +447,8 @@ const Unitree = () => {
                     <div className="main flex flex-col gap-18 text-center padTop">
                         <div className="container flex flex-col gap-20">
                             <div className="flex flex-col gap-5">
-                                <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>My Role</h6>
-                                <p className='text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can <br className="inline" /> be implemented by developers.</p>
+                                <h6 className='scroll-animate font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>My Role</h6>
+                                <p className='scroll-animate text-lg text-[#fff]'>As a UI/UX designer, I make sure that my designs are well received by users, and can <br className="inline" /> be implemented by developers.</p>
                             </div>
                             <MyRole />
                         </div>
@@ -456,12 +456,12 @@ const Unitree = () => {
                         {/* design stratgy  */}
                         <div className="relative">
                             <div className="container flex flex-col gap-5 text-center padTop">
-                                <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Design Strategy</h6>
-                                <p className='text-lg text-[#fff]'>A design strategy shows the value your product and services will bring to people and describes <br className="inline" /> this value to a goal. It also describes about the steps you will take to achieve the goal.</p>
+                                <h6 className='scroll-animate font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Design Strategy</h6>
+                                <p className='scroll-animate text-lg text-[#fff]'>A design strategy shows the value your product and services will bring to people and describes <br className="inline" /> this value to a goal. It also describes about the steps you will take to achieve the goal.</p>
                             </div>
-                            <div className="container">
-                                <div className="main  grid md:grid-cols-3 grid-cols-1 gap-14">
-                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 md:pt-40 pt-5 flex flex-col gap-5">
+                            <div className="container flex flex-col gap-15">
+                                <div className="scroll-animate main  grid md:grid-cols-3 grid-cols-1 gap-14">
+                                    <div className="bg-[#383838] rounded-2xl px-5 p-5 flex flex-col gap-5">
                                         <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
                                         <div className="flex gap-2">
                                             <img className="w-3 h-3" src={quote} alt={quote} />
@@ -471,7 +471,7 @@ const Unitree = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 md:pt-65 pt-5 flex flex-col gap-5">
+                                    <div className="bg-[#383838] rounded-2xl px-5 p-5 flex flex-col gap-5">
                                         <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
                                         <div className="flex gap-2">
                                             <img className="w-3 h-3" src={quote} alt={quote} />
@@ -481,7 +481,7 @@ const Unitree = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="bg-[#383838] rounded-2xl px-5 pb-5 md:pt-40 pt-5 flex flex-col gap-5">
+                                    <div className="bg-[#383838] rounded-2xl px-5 p-5 flex flex-col gap-5">
                                         <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
                                         <div className="flex gap-2">
                                             <img className="w-3 h-3" src={quote} alt={quote} />
@@ -492,7 +492,7 @@ const Unitree = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="mainm w-full md:flex gap-14 justify-center">
+                                <div className="scroll-animate mainm w-full md:flex gap-14 justify-center">
                                     <div className="bg-[#383838] h-auto w-92 rounded-2xl p-5 flex flex-col gap-5">
                                         <h6 className='font-bold text-[#fff] text-2xl text-left'>Design Strategy</h6>
                                         <div className="flex gap-2">
@@ -526,14 +526,14 @@ const Unitree = () => {
                     <div className="main flex flex-col gap-20">
                         <div className="flex flex-col gap-10">
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-                                <div className="flex flex-col gap-3">
+                                <div className="slide-in-left flex flex-col gap-3">
                                     <div className="flex items-center gap-3">
                                         <img className="w-12" src={location} alt="Location Icon" />
                                         <p className="text-2xl text-[#fff]">Preparation</p>
                                     </div>
                                     <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">USER RESEARCH</h6>
                                 </div>
-                                <div className="grid grid-cols-2 md:gap-20 gap-10">
+                                <div className="slide-in-right grid grid-cols-2 md:gap-20 gap-10">
                                     <div className="flex flex-col gap-2">
                                         <h6 className="text-lg font-bold text-[#fff]">Research Plan</h6>
                                         <ul className="text-[#fff]">
@@ -550,29 +550,29 @@ const Unitree = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-lg text-[#fff]">
+                            <p className="scroll-animate text-lg text-[#fff]">
                                 User research is a process to understand the user's perspective, frustrations, and struggles. I have used two methods that significantly contributed to my findings.
                             </p>
                         </div>
                         <div className="flex flex-col md:gap-20 gap-10">
                             <div className="flex flex-col gap-3">
-                                <h6 className="md:text-5xl text-3xl font-bold text-[#FECF29] border-l-8 pl-5">SURVEY</h6>
-                                <p className="text-lg text-[#fff]">
+                                <h6 className="slide-in-left md:text-5xl text-3xl font-bold text-[#FECF29] border-l-8 pl-5">SURVEY</h6>
+                                <p className="scroll-animate text-lg text-[#fff]">
                                     I conducted a survey with 55 potential users, combined with individual interviews, to gather their views, experiences, and both quantitative and qualitative data. The target audience was between the ages of 20-50 years.
                                 </p>
                             </div>
-                            <img className="w-full" src={research} alt="Survey Research" />
+                            <img className="scroll-animate w-full" src={research} alt="Survey Research" />
                         </div>
                         <div className="flex flex-col md:gap-20 gap-10">
                             <div className="flex flex-col gap-3">
-                                <h6 className="md:text-5xl text-3xl font-bold text-[#00C48C] border-l-8 pl-5">INTERVIEW</h6>
-                                <p className="text-lg text-[#fff]">
+                                <h6 className="scroll-animate md:text-5xl text-3xl font-bold text-[#00C48C] border-l-8 pl-5">INTERVIEW</h6>
+                                <p className="scroll-animate text-lg text-[#fff]">
                                     From the survey results, I filtered 15 people for direct interviews. These interviews were conducted online via Zoom at different times.
                                 </p>
                             </div>
-                            <img className="w-full" src={candidate} alt="Interview Process" />
+                            <img className="scroll-animate w-full" src={candidate} alt="Interview Process" />
                         </div>
-                        <div className="main grid md:grid-cols-2 grid-cols-1 gap-5">
+                        <div className="scroll-animate main grid md:grid-cols-2 grid-cols-1 gap-5">
                             {interview.map((item, index) => (
                                 <div key={index} className="bg-[#383838] rounded p-10 flex flex-col gap-5">
                                     <img className="w-18 self-end" src={item.mark} alt="Mark Icon" />
@@ -599,11 +599,11 @@ const Unitree = () => {
                 <div className="container">
                     <div className="main flex flex-col gap-20">
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-                            <div className="flex flex-col gap-3">
+                            <div className="scroll-animate flex flex-col gap-3">
                                 <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">Define</p></div>
                                 <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">USER PERSONA</h6>
                             </div>
-                            <div className="grid grid-cols-2 md:gap-20 gap-10">
+                            <div className="scroll-animate grid grid-cols-2 md:gap-20 gap-10">
                                 <div className="flex flex-col gap-2">
                                     <h6 className="text-lg font-bold text-[#fff]">Point Take away</h6>
                                     <ul className="text-[#fff] list-disc ml-4">
@@ -619,8 +619,8 @@ const Unitree = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid md:grid-cols-12 grid-cols-1 gap-5">
-                            <div className="md:col-span-4 col-span-12 bg-[#383838] rounded-2xl p-5 flex flex-col gap-5">
+                        <div className=" grid md:grid-cols-12 grid-cols-1 gap-5">
+                            <div className="slide-in-left md:col-span-4 col-span-12 bg-[#383838] rounded-2xl p-5 flex flex-col gap-5">
                                 <img className="w-full flex self-end" src={persona} alt={persona} />
                                 <ul className="text-[#fff] flex flex-col gap-3">
                                     <li className="flex justify-between text-sm"><span className="font-bold">Full Name</span> David Lim Junior</li>
@@ -635,7 +635,7 @@ const Unitree = () => {
                                     <p className='text-base text-[#fff] text-left'>I want a simple and easy order. that way I dont have to manually buy what I want.</p>
                                 </div>
                             </div>
-                            <div className="md:col-span-8 col-span-12 grid md:grid-cols-2 grid-cols-1 gap-5">
+                            <div className="slide-in-right md:col-span-8 col-span-12 grid md:grid-cols-2 grid-cols-1 gap-5">
                                 <div className="bg-[#383838] rounded-2xl p-5 flex flex-col gap-3">
                                     <h6 className='font-bold text-[#fff] text-2xl text-left'>About</h6>
                                     <p className='text-base text-[#fff] text-left'>He is hadrdworking, a Seller from a small village who likes to use his smartphone for his daily needs. David Lim is a person who has a high school education background. he often spends his time shopping at the market and selling the goods he bought in the market to resell in stalls around his house. lack of access and poor road conditions make him rarely go to the city to look for necessities.</p>
@@ -696,14 +696,14 @@ const Unitree = () => {
             <div className="padTop relative">
                 <div className="padTop">
                     <div className="container flex flex-col gap-5 text-center items-center">
-                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Empathy Map</h6>
-                        <p className='text-lg text-[#fff] md:w-8/12'>An empathy map is a collaborative visualization used to articulate what we know about a particular type of user. It helps to synthesize research data to bit assist to understand how people make decisions.</p>
+                        <h6 className='scroll-animate font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Empathy Map</h6>
+                        <p className='scroll-animate text-lg text-[#fff] md:w-8/12'>An empathy map is a collaborative visualization used to articulate what we know about a particular type of user. It helps to synthesize research data to bit assist to understand how people make decisions.</p>
                     </div>
                 </div>
                 <div className="container">
-                    <div className="md:pt-[350px] pt-[300px]">
-                        <img className="w-full" src={feel} alt={feel} />
-                        <div className="flex flex-col gap-20">
+                    <div className="">
+                        <img className="scroll-animate w-full" src={feel} alt={feel} />
+                        <div className="scroll-animate flex flex-col gap-20">
                             <div className="text-center  flex flex-col gap-3">
                                 <p className='text-lg text-[#fff]'>What does he</p>
                                 <h6 className='font-bold text-[#FECF29] text-4xl'>Say and Do</h6>
@@ -743,11 +743,11 @@ const Unitree = () => {
                         {/* //one  */}
                         <div className="flex flex-col gap-10">
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-                                <div className="flex flex-col gap-3">
+                                <div className="slide-in-left flex flex-col gap-3">
                                     <div className="flex items-center gap-3"><img className="w-12" src={location} alt={location} /> <p className="text-2xl text-[#fff]">UI Design</p></div>
                                     <h6 className="md:text-5xl sm:text-4xl  text-3xl font-bold text-[#fff]">STYLE GUIDE</h6>
                                 </div>
-                                <div className="flex flex-col gap-2">
+                                <div className="slide-in-right flex flex-col gap-2">
                                     <h6 className="text-lg font-bold text-[#fff]">Design system</h6>
                                     <ul className="text-[#fff] list-disc ml-4">
                                         <li>Typography</li>
@@ -756,16 +756,16 @@ const Unitree = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <img className="w-full" src={colors} alt={colors} />
+                            <img className="scroll-animate w-full" src={colors} alt={colors} />
                         </div>
 
                         {/* Typography */}
                         <div className="color flex flex-col gap-5">
                             <div className="location flex gap-3 items-center">
-                                <img className='w-8' src={location} alt={location} />
-                                <h6 className='text-2xl text-[#fff]'>Typography</h6>
+                                <img className='scroll-animate w-8' src={location} alt={location} />
+                                <h6 className='scroll-animate text-2xl text-[#fff]'>Typography</h6>
                             </div>
-                            <div className="flex flex-col gap-20">
+                            <div className="scroll-animate flex flex-col gap-20">
                                 <div className="typogrphy flex flex-col gap-8">
                                     <h6 className='text-5xl font-bold text-[#fff]'>DM SANS</h6>
                                     <div className="typo grid md:grid-cols-5 grid-cols-2 gap-18">
@@ -820,7 +820,7 @@ const Unitree = () => {
                         </div>
 
                         {/* ICONOGRAPHY */}
-                        <div className="ICONOGRAPHY flex flex-col gap-5">
+                        <div className="scroll-animate ICONOGRAPHY flex flex-col gap-5">
                             <div className="location flex gap-3 items-center">
                                 <img className='w-8' src={location} alt={location} />
                                 <h6 className='text-2xl text-[#fff]'>ICONOGRAPHY</h6>
@@ -839,11 +839,11 @@ const Unitree = () => {
             <div className="InformationArchitecture relative">
                 <div className="padTop flex flex-col gap-20">
                     <div className="container flex flex-col gap-5 text-center items-center">
-                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Information Architecture</h6>
-                        <p className='text-lg text-[#fff] md:w-8/12'>People often use the word “Information Architechture” to mean the meanus on website or apps, but thats not really correct. while menus are a part of IA. they’re relly only one part of it. Information architechture is all about organization of information in a clear and logical way. such organization follows a clear purpose helping users navigate complex sets of information</p>
+                        <h6 className='scroll-animate font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Information Architecture</h6>
+                        <p className='scroll-animate text-lg text-[#fff] md:w-8/12'>People often use the word “Information Architechture” to mean the meanus on website or apps, but thats not really correct. while menus are a part of IA. they’re relly only one part of it. Information architechture is all about organization of information in a clear and logical way. such organization follows a clear purpose helping users navigate complex sets of information</p>
                     </div>
                     <div className="container">
-                        <img className="w-9/12 mx-auto" src={info} alt={info} />
+                        <img className="scroll-animate w-9/12 mx-auto" src={info} alt={info} />
                     </div>
                 </div>
             </div>
@@ -852,11 +852,11 @@ const Unitree = () => {
             <div className="shade InformationArchitecture relative">
                 <div className="padTop flex flex-col gap-20">
                     <div className="container flex flex-col gap-5 text-center items-center">
-                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>User Flow</h6>
-                        <p className='text-lg text-[#fff] md:w-8/12'>The user flow is consciously kept easy hence that the apps users can reach their desired to put it on without much effort.</p>
+                        <h6 className='scroll-animate font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>User Flow</h6>
+                        <p className='scroll-animate text-lg text-[#fff] md:w-8/12'>The user flow is consciously kept easy hence that the apps users can reach their desired to put it on without much effort.</p>
                     </div>
                     <div className="container">
-                        <img className="w-9/12 mx-auto" src={flow} alt={flow} />
+                        <img className="scroll-animate w-9/12 mx-auto" src={flow} alt={flow} />
                     </div>
                 </div>
             </div>
@@ -865,10 +865,10 @@ const Unitree = () => {
             <div className="shade OtherDesign relative">
                 <div className="padTop flex flex-col gap-20">
                     <div className="container flex flex-col gap-5 text-center items-center">
-                        <h6 className='font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Other Design</h6>
-                        <p className='text-lg text-[#fff] md:w-8/12'>The user flow is consciously kept easy hence that the apps users can reach their desired to put it on without much effort.</p>
+                        <h6 className='scroll-animate font-bold text-[#fff] md:text-5xl sm:text-4xl  text-3xl'>Other Design</h6>
+                        <p className='scroll-animate text-lg text-[#fff] md:w-8/12'>The user flow is consciously kept easy hence that the apps users can reach their desired to put it on without much effort.</p>
                     </div>
-                    <div className="container flex flex-col gap-10">
+                    <div className="scroll-animate container flex flex-col gap-10">
                         {
                             [
                                 "/images/unitree/mockup22.png",

@@ -19,28 +19,28 @@ import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet-async";
 
 
-const icons = [
-    {
-        img: "images/causeway/icon1.png",
-        path: "#"
-    },
-    {
-        img: "images/causeway/icon2.png",
-        path: "#"
-    },
-    {
-        img: "images/causeway/icon3.png",
-        path: "#"
-    },
-    {
-        img: "images/causeway/icon4.png",
-        path: "#"
-    },
-    {
-        img: "images/causeway/icon5.png",
-        path: "#"
-    },
-]
+// const icons = [
+//     {
+//         img: "images/causeway/icon1.png",
+//         path: "#"
+//     },
+//     {
+//         img: "images/causeway/icon2.png",
+//         path: "#"
+//     },
+//     {
+//         img: "images/causeway/icon3.png",
+//         path: "#"
+//     },
+//     {
+//         img: "images/causeway/icon4.png",
+//         path: "#"
+//     },
+//     {
+//         img: "images/causeway/icon5.png",
+//         path: "#"
+//     },
+// ]
 
 const CauseWay = () => {
     return (
@@ -91,7 +91,7 @@ const CauseWay = () => {
                 }} className="ProjectTime padTop flex flex-col gap-20">
                 <img className="w-80" src={DProcess} alt={ProjectTime} />
                 <div className="container">
-                    <img className="md:w-8/12 w-full mx-auto" src={DProcess2} alt={DProcess2} />
+                    <img className="scroll-animate md:w-8/12 w-full mx-auto" src={DProcess2} alt={DProcess2} />
                 </div>
             </div>
 
@@ -99,7 +99,7 @@ const CauseWay = () => {
             <div className="ProjectTime padTop flex flex-col gap-20">
                 <img className="w-80" src={projectTimeline2} alt={projectTimeline2} />
                 <div className="container">
-                    <img className="w-full mx-auto" src={projectTimeline} alt={projectTimeline} />
+                    <img className="scroll-animate w-full mx-auto" src={projectTimeline} alt={projectTimeline} />
                 </div>
             </div>
 
@@ -114,8 +114,8 @@ const CauseWay = () => {
                 }} className="ProjectTime padTop flex flex-col gap-20">
                 <img className="w-80" src={ProjectOv} alt={ProjectOv} />
                 <div className="container flex flex-col gap-10">
-                    <p className="text-lg text-[#fff] md:w-6/12">Founded in 2022, causeway offers low rental rates and a fun, hassle- free customer experience at the most popular travel destinations throughout Johor Bahru. Our guiding principles, and humble beginning, revolve around personal honesty and integrity. We believe in strengthening our communities one at a time. Serving our customers as if they were our family.</p>
-                    <p className="text-lg text-[#fff]">Causeway never stops looking for ways to enhance cleanliness and safety. We pledge to go above and beyond our already rigorous cleaning protocols. Your comfort is our priority. You can depend on us, whatever your motoring needs.</p>
+                    <p className="scroll-animate text-lg text-[#fff] md:w-6/12">Founded in 2022, causeway offers low rental rates and a fun, hassle- free customer experience at the most popular travel destinations throughout Johor Bahru. Our guiding principles, and humble beginning, revolve around personal honesty and integrity. We believe in strengthening our communities one at a time. Serving our customers as if they were our family.</p>
+                    <p className="scroll-animate text-lg text-[#fff]">Causeway never stops looking for ways to enhance cleanliness and safety. We pledge to go above and beyond our already rigorous cleaning protocols. Your comfort is our priority. You can depend on us, whatever your motoring needs.</p>
                 </div>
             </div>
 
@@ -123,7 +123,7 @@ const CauseWay = () => {
             <div className="ProjectTime padTop flex flex-col gap-20">
                 <img className="w-38" src={font} alt={font} />
                 <div className="container">
-                    <div className="fonts flex flex-col gap-7 text-[#fff]">
+                    <div className="scroll-animate fonts flex flex-col gap-7 text-[#fff]">
                         <div className="flex flex-col gap-3">
                             <h6 className="text-2xl font-semibold">Headline 1</h6>
                             <div className="grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-2">
@@ -211,8 +211,8 @@ const CauseWay = () => {
                 }} className="useflow padTop flex flex-col gap-20">
                 <img className="w-60" src={flow} alt={flow} />
                 <div className="container flex flex-col gap-20">
-                    <img className="w-9/12 mx-auto" src={Userflow} alt={Userflow} />
-                    <img className="" src={mbile} alt={mbile} />
+                    <img className="scroll-animate w-9/12 mx-auto" src={Userflow} alt={Userflow} />
+                    <img className="scroll-animate" src={mbile} alt={mbile} />
                 </div>
             </div>
 
