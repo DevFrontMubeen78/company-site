@@ -129,7 +129,7 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top left, bottom right",
               backgroundSize: "8.5%, 17%",
-            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#edf0f9] md:px-20 px-5 md:py-0 rounded-3xl">
+            }} className="scroll-animate grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#edf0f9] md:px-20 px-5 md:py-0 rounded-3xl">
               <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
                 <div className="content flex flex-col gap-3">
                   <div className="flex flex-col gap-2">
@@ -157,7 +157,7 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top right, bottom right",
               backgroundSize: "8.5%, 23%",
-            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#f4f7ff] md:px-20 md:pt-10 px-5 md:py-0 rounded-3xl">
+            }} className="scroll-animate grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#f4f7ff] md:px-20 md:pt-10 px-5 md:py-0 rounded-3xl">
               <div className="">
                 <img className='xl:w-80 w-96' src={caseTwo} alt="" />
               </div>
@@ -183,7 +183,7 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top left, bottom right",
               backgroundSize: "8.5%, 24%",
-            }} className="grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#abebff] md:px-20 px-5 md:py-0 rounded-3xl">
+            }} className="scroll-animate grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#abebff] md:px-20 px-5 md:py-0 rounded-3xl">
               <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
                 <div className="content flex flex-col gap-3">
                   <div className="flex flex-col gap-2">
@@ -208,7 +208,7 @@ const Home = () => {
       </div>
 
       {/* team */}
-      <div className="team">
+      <div className="scroll-animate team">
         <div className="flex flex-col gap-20">
           <div className="main">
             <div className="flex flex-col gap-20">
@@ -228,7 +228,7 @@ const Home = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-              }} className="padTop">
+              }} className="padTop slide-in-left">
                 <div className="container">
                   <div className="grid grid-cols-12 md:gap-10 gap-5">
                     {/* own  */}
@@ -308,7 +308,7 @@ const Home = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
-          }} className="allMembers padTop">
+          }} className="allMembers padTop slide-in-right">
             <div className="container">
               <div className="grid md:grid-cols-4 grid-cols-1 gap-10">
                 {
@@ -348,7 +348,7 @@ const Home = () => {
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
               {/* //content  */}
-              <div className="aboutCon flex flex-col md:gap-5 gap-3">
+              <div className="slide-in-left aboutCon flex flex-col md:gap-5 gap-3">
                 <p className="text-2xl">About Our Company</p>
                 <h6 className="text-4xl font-bold">How We Can Help You</h6>
                 <div className="detail flex flex-col gap-5">
@@ -369,7 +369,7 @@ const Home = () => {
                 </div>
               </div>
               {/* // about img  */}
-              <div className="aboutIMg">
+              <div className="slide-in-right aboutIMg">
                 <img src={about} alt="" className="w-full h-auto" />
               </div>
             </div>
@@ -380,7 +380,7 @@ const Home = () => {
       {/* counter */}
       <div className="counter padTop bg-[#e8c6d7] p-5">
         <div className="container">
-          <div className="main grid md:grid-cols-5 grid-cols-2 md:gap-20 gap-10">
+          <div className="scroll-animate main grid md:grid-cols-5 grid-cols-2 md:gap-20 gap-10">
             {
               counter.map((items, index) => {
                 return (
@@ -402,7 +402,7 @@ const Home = () => {
       <Testimonials />
 
       {/* our client */}
-      <div className="Clients padTop md:block hidden">
+      <div className="scroll-animate Clients padTop md:block hidden">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="section_content flex flex-col gap-5">
@@ -435,13 +435,13 @@ const Home = () => {
       <div className="Augmentation padTop">
         <div className="container">
           <div className="main flex flex-col gap-20">
-            <div className="section_content flex flex-col gap-5">
+            <div className="scroll-animate section_content flex flex-col gap-5">
               <h5 className="md:text-5xl sm:text-4xl text-3xl font-bold uppercase leading-snug text-center">
                 Staff <span className="text-[#FF0066]"> Augmentation</span>
               </h5>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
-              <div className="flex flex-col gap-5">
+              <div className="slide-in-left flex flex-col gap-5">
                 <p className="md:text-2xl text-lg">S T A F F A U G E M E N T A T I O N</p>
                 <h6 className="md:text-4xl sm:text-3xl text-2xl font-bold uppercase">
                   IT Staff augmentation
@@ -452,7 +452,7 @@ const Home = () => {
                 </p>
                 <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines animated-button'>View More</span></Link>
               </div>
-              <div className="">
+              <div className="slide-in-right">
                 <img src={augmentation} alt="augmentation" />
               </div>
             </div>
@@ -461,7 +461,7 @@ const Home = () => {
       </div>
 
       {/* // calendar */}
-      <div id="booking" className="calendar">
+      <div id="booking" className="scroll-animate calendar">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="content flex flex-col gap-5">

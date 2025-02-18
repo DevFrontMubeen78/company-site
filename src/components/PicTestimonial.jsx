@@ -19,7 +19,7 @@ const PicTestimonial = () => {
     return (
         <div className="padTop PicTestimonial">
             <div className="main flex flex-col gap-20">
-                <div className="section_content flex flex-col gap-5">
+                <div className="scroll-animate section_content flex flex-col gap-5">
                     <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
                         Testimonials That <br className='inline' /> Speak to <span className="text-[#FF0066]"> Our Results</span>
                     </h5>
