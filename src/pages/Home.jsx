@@ -16,9 +16,8 @@ import { Link } from "react-router-dom";
 import PicTestimonial from "../components/PicTestimonial";
 import MapComponent from "../components/MapComponent";
 // import Slider from "../components/Slider";
-import CountUp from 'react-countup';
 import { Helmet } from "react-helmet-async";
-
+import CounterSection from "../components/CounterSection";
 
 
 const TeamMember = [
@@ -44,28 +43,7 @@ const TeamMember = [
   },
 ]
 
-const counter = [
-  {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={125} suffix="+" duration={25} />,
-    text: "Mobile Application"
-  },
-  {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={45} suffix="+" duration={25} />,
-    text: "Web Applications"
-  },
-  {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={101} suffix="+" duration={25} />,
-    text: "Logos & Branding"
-  },
-  {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={11} suffix="+" duration={25} />,
-    text: "AI Systems"
-  },
-  {
-    counter: <CountUp className="md:text-6xl text-4xl font-bold" end={20} suffix="+" duration={25} />,
-    text: "Staff Augmentation"
-  },
-];
+
 
 const Home = () => {
   const scrollToSection = () => {
@@ -98,17 +76,17 @@ const Home = () => {
                 transforming your ideas into cutting-edge applications that drive
                 growth and efficiency.
               </p>
-              <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max" to="#booking">Book a free consultation</Link>
+              <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max hover:bg-[#FF0066] hover:text-[#fff]" to="#booking">Book a free consultation</Link>
             </div>
             <div className="img">
-              <img src={mobile} alt="Group 70 1.png" />
+              <img className="zoom-in" src={mobile} alt="Group 70 1.png" />
             </div>
           </div>
         </div>
       </div>
 
       {/* expertise */}
-      <div className="expertise padTop">
+      <div className="overflow-hidden expertise padTop">
         <div className="container">
           <div className="content flex flex-col gap-20">
             <div className="scroll-animate textss flex flex-col gap-4">
@@ -128,7 +106,7 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top left, bottom right",
               backgroundSize: "8.5%, 17%",
-            }} className="scroll-animate grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#edf0f9] md:px-20 px-5 md:py-0 rounded-3xl">
+            }} className="slide-in-left grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#edf0f9] md:px-20 px-5 md:py-0 rounded-3xl">
               <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
                 <div className="content flex flex-col gap-3">
                   <div className="flex flex-col gap-2">
@@ -154,7 +132,7 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top right, bottom right",
               backgroundSize: "8.5%, 23%",
-            }} className="scroll-animate grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#f4f7ff] md:px-20 md:pt-10 px-5 md:py-0 rounded-3xl">
+            }} className="slide-in-right grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#f4f7ff] md:px-20 md:pt-10 px-5 md:py-0 rounded-3xl">
               <div className="">
                 <img className='xl:w-80 w-96' src={caseTwo} alt="" />
               </div>
@@ -180,7 +158,7 @@ const Home = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "top left, bottom right",
               backgroundSize: "8.5%, 24%",
-            }} className="scroll-animate grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#abebff] md:px-20 px-5 md:py-0 rounded-3xl">
+            }} className="slide-in-left grid md:grid-cols-2 grid-cols-1 xl:gap-20 gap-0 bg-[#abebff] md:px-20 px-5 md:py-0 rounded-3xl">
               <div className="flex flex-col md:gap-20 gap-0 justify-center py-15">
                 <div className="content flex flex-col gap-3">
                   <div className="flex flex-col gap-2">
@@ -205,7 +183,7 @@ const Home = () => {
       </div>
 
       {/* team */}
-      <div className="scroll-animate team">
+      <div className="overflow-hidden scroll-animate team">
         <div className="flex flex-col gap-20">
           <div className="main">
             <div className="flex flex-col gap-20">
@@ -332,7 +310,7 @@ const Home = () => {
       </div>
 
       {/* about us */}
-      <div className="about padTop">
+      <div className="overflow-hidden about padTop">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="scroll-animate section_content flex flex-col gap-5">
@@ -362,7 +340,7 @@ const Home = () => {
                     business success, enabling our clients to thrive in a rapidly
                     evolving digital landscape.
                   </p>
-                  <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max" to="#booking">Book a free consultation</Link>
+                  <Link onClick={() => scrollToSection()} className="bg-[#fff] py-3 px-10 rounded-full text-[#79BCCF] text-lg max-w-max hover:bg-[#FF0066] hover:text-[#fff]" to="#booking">Book a free consultation</Link>
                 </div>
               </div>
               {/* // about img  */}
@@ -375,21 +353,8 @@ const Home = () => {
       </div>
 
       {/* counter */}
-      <div className="counter padTop bg-[#e8c6d7] p-5">
-        <div className="container">
-          <div className="scroll-animate main grid md:grid-cols-5 grid-cols-2 md:gap-20 gap-10">
-            {
-              counter.map((items, index) => {
-                return (
-                  <div key={index} className="flex flex-col gap-5 items-center text-[#FF0066]">
-                    {items.counter}
-                    <p className="text-[#000] text-lg">{items.text}</p>
-                  </div>
-                )
-              })
-            }
-          </div>
-        </div>
+      <div className="overflow-hidden counter padTop bg-[#e8c6d7] p-5">
+        <CounterSection />
       </div>
 
       {/* testimonials */}
@@ -399,7 +364,7 @@ const Home = () => {
       <Testimonials />
 
       {/* our client */}
-      <div className="scroll-animate Clients padTop md:block hidden">
+      <div className="scroll-animate Clients py-[100px] md:block hidden">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="section_content flex flex-col gap-5">
@@ -429,7 +394,7 @@ const Home = () => {
       </div>
 
       {/* Staff Augmentation */}
-      <div className="Augmentation padTop">
+      <div className="overflow-hidden Augmentation padTop">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="scroll-animate section_content flex flex-col gap-5">
@@ -458,7 +423,7 @@ const Home = () => {
       </div>
 
       {/* // calendar */}
-      <div id="booking" className="scroll-animate calendar">
+      <div id="booking" className="overflow-hidden scroll-animate calendar">
         <div className="container">
           <div className="main flex flex-col gap-20">
             <div className="content flex flex-col gap-5">

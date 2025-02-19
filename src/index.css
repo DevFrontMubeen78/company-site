@@ -249,6 +249,21 @@ img {
 }
 
 /* onpage load  */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 0.9s ease-out forwards;
+}
 
 
 
@@ -315,4 +330,16 @@ img {
     transform: translateX(30px);
     /* Adjust for smaller screens */
   }
+}
+
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animate.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
