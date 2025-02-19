@@ -18,6 +18,7 @@ import MapComponent from "../components/MapComponent";
 // import Slider from "../components/Slider";
 import { Helmet } from "react-helmet-async";
 import CounterSection from "../components/CounterSection";
+import ViewMore from "../components/ViewMore";
 
 
 const TeamMember = [
@@ -119,7 +120,8 @@ const Home = () => {
                     <li>App prototyping and testing</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/mobile-app-developments"><span className='lines animated-button'>View More</span></Link>
+                <Link className='custom-btn max-w-max' to="/mobile-app-developments">View More</Link>
+                {/* <ViewMore to/> */}
               </div>
               <div className="flex justify-end">
                 <img className='xl:w-80 w-96' src={caseONe} alt="" />
@@ -148,7 +150,8 @@ const Home = () => {
                     <li>API integration and development</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/web-app-development"><span className='lines animated-button'>View More</span></Link>
+                {/* <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/web-app-development"><span className='lines animated-button'>View More</span></Link> */}
+                <Link className='custom-btn max-w-max' to="/web-app-development">View More</Link>
               </div>
             </div>
             {/* case 3 */}
@@ -171,7 +174,8 @@ const Home = () => {
                     <li>Predictive analytics and decision-making systems</li>
                   </ul>
                 </div>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development-services"><span className='lines animated-button'>View More</span></Link>
+                {/* <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/data-science-and-ai-development-services"><span className='lines animated-button'>View More</span></Link> */}
+                <Link className='custom-btn max-w-max' to="/web-app-development">View More</Link>
               </div>
 
               <div className="flex justify-end items-center">
@@ -412,7 +416,8 @@ const Home = () => {
                 <p className="md:text-lg text-base text">
                   Enhance your team with top-tier IT professionals through our staff augmentation services. Whether you need skilled developers, UI/UX designers, project managers, or QA engineers, we provide on-demand talent to scale your projects efficiently. Our experts seamlessly integrate with your existing team, ensuring faster development, reduced costs, and enhanced productivity.
                 </p>
-                <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines animated-button'>View More</span></Link>
+                {/* <Link className='px-10 py-4 text-[#000] rounded-lg relative max-w-max' to="/staff-augmentation"><span className='lines animated-button'>View More</span></Link> */}
+                <Link className='custom-btn max-w-max' to="/web-app-development">View More</Link>
               </div>
               <div className="slide-in-right">
                 <img src={augmentation} alt="augmentation" />

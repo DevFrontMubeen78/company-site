@@ -105,6 +105,63 @@ img {
   top: 28px;
 }
 
+/* view more ----------------------------------------------- */
+
+.custom-btn {
+  background: none;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.custom-btn::before {
+  content: "";
+  width: 30px;
+  /* Line pehle se visible hogi */
+  height: 2px;
+  background-color: #000;
+  margin-right: 10px;
+  transition: width 0.4s ease-in-out;
+}
+
+.custom-btn::after {
+  content: "→";
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 10px;
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.custom-btn:hover::before {
+  width: 0;
+  /* Hover pe line remove ho jayegi */
+}
+
+.custom-btn:hover::after {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.custom-btn:hover {
+  color: #000;
+}
+
+.custom-btn:hover::before {
+  background-color: #000;
+}
+
+.custom-btn:hover::after {
+  color: #000;
+}
+
 /* .lines {
   padding-left: 30px;
 } */
