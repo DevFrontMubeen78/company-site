@@ -9,9 +9,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const swiperSlider = [
-    "/images/home/video1.jpg",
     "/images/home/video2.png",
     "/images/home/video3.png",
+    "/images/home/video1.jpg",
     "/images/home/video3.png",
 ]
 
@@ -45,15 +45,16 @@ const PicTestimonial = () => {
                             swiperSlider.map((items, index) => {
                                 return (
                                     <SwiperSlide key={index} >
-                                        <div className="testSlider">
-                                            <img className='object-cover' src={items} alt="" />
+                                        <div className="testSlider h-[250px] w-full overflow-hidden rounded-4xl">
+                                            <img className="w-full h-full object-cover" src={items} alt="" />
                                         </div>
+
                                     </SwiperSlide>
                                 )
                             })
                         }
 
-                        
+
                     </Swiper>
                 </div>
             </div>

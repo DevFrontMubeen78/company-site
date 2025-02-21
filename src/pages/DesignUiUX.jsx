@@ -157,8 +157,7 @@ const DesignUiUX = () => {
                   <span className="text-[#FF0066]"> <br className="inline" /> Product Design Agency</span>
                 </h1>
                 <p className="md:text-lg text-base leading-normal text-center w-full heading_content text-[#fff]">
-                  Hire Objective-C Developers
-                  Want to create an efficient iOS app that works fast and is easy to use for your target audience? DTechKrew will help. Objective-C is an object-oriented programming language intended for building top iOS applications. Pick our staff augmentation services and get quality custom web projects
+                  At DTechKrew we are a digital product design agency dedicated to transforming ideas into intuitive, engaging, and high-performing digital products. From sleek UI/UX design to seamless user experiences, we bring creativity and strategy together to build products that captivate and convert.
                 </p>
               </div>
               {/* clients */}
