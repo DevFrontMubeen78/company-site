@@ -1,22 +1,25 @@
 import { Link } from "react-router-dom"
+import Calendar from "../components/ClendarModal"
 const GetStarted = () => {
-  return (
-    <div>
-       {/* get started */}
-       <div className="getStarted padTop">
-                <div className="container">
-                    <div className="main flex flex-col gap-18">
-                        <div className="scroll-animate content text-center flex flex-col gap-8">
-                            <div className="flex flex-col gap-1">
-                                <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">Get started
-                                    <span className="text-[#000]"> with us</span>
-                                </h1>
-                                <p className="md:text-lg text-base leading-normal text-center md:w-6/12 w-full heading_content text">
-                                    Start with us today—fill out the form, and our sales team will help tailor the perfect solution for you.
-                                </p>
-                            </div>
-                            <Link className="bg-[#fff] p-3 rounded-full w-max block mx-auto px-10" to="/Contact-us">Contact Us</Link>
+    return (
+        <div>
+            {/* get started */}
+            <div className="getStarted padTop">
+
+                <div className="main flex flex-col gap-18">
+                    <div className=" flex flex-col gap-8">
+                        <div className="container scroll-animate text-center  flex flex-col gap-5">
+                            <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold leading-snug text-[#FF0066]">Get started
+                                <span className="text-[#000]"> with us</span>
+                            </h1>
+                            <p className="md:text-lg text-base leading-normal text-center md:w-6/12 w-full heading_content text">
+                                Start with us today—fill out the form, and our sales team will help tailor the perfect solution for you.
+                            </p>
                         </div>
+                        {/* <Link className="bg-[#fff] p-3 rounded-full w-max block mx-auto px-10" to="/Contact-us">Contact Us</Link> */}
+                        <Calendar btnClass="bg-[#fff] p-3 rounded-full w-max block mx-auto px-10" btnText="Contact Us" />
+                    </div>
+                    <div className="container">
                         <div className="grid grid-cols-12 md:gap-10 gap-5">
                             {/* Left Side Box */}
                             <div className="slide-in-left md:col-span-4 col-span-12 rounded-lg bg-white md:p-8 p-5">
@@ -25,7 +28,6 @@ const GetStarted = () => {
                                     <span className="text-black"> for Business Growth</span>
                                 </h6>
                             </div>
-
                             {/* Right Side Box */}
                             <div className="slide-in-right md:col-span-8 col-span-12 rounded-lg bg-white md:p-8 p-5 flex flex-col md:gap-5 gap-3">
                                 <p className="md:text-lg text-base leading-relaxed text-gray-700">
@@ -42,8 +44,8 @@ const GetStarted = () => {
                     </div>
                 </div>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default GetStarted

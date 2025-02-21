@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import ClendarModal from "../components/ClendarModal";
 const PageLastSec = () => {
     return (
@@ -24,7 +23,7 @@ const PageLastSec = () => {
                                 </p>
                             </div>
                         </div>
-                        <ClendarModal />
+                        <ClendarModal btnClass="shadow" btnText="Let's Talk" />
                     </div>
                 </div>
             </div>

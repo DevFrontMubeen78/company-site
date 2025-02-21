@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import Calendar from './Calendar';
 
-const CalendarModal = () => {
+const CalendarModal = ({btnText, btnClass}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div>
-            <button
-                onClick={() => setIsOpen(true)}
-                className="cursor-pointer text py-2 bg-[#fff] px-10 md:border-none border border-[#5353531c] rounded-full shadow-lg w-fit md:mx-auto"
-            >
-                Let’s talk
+            <button onClick={() => setIsOpen(true)} className={`cursor-pointer py-3 px-10 rounded-full text ${btnClass}`}>
+                {btnText}
             </button>
 
             {isOpen && (
