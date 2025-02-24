@@ -23,7 +23,7 @@ const PageLastSec = () => {
                                 </p>
                             </div>
                         </div>
-                        <ClendarModal btnClass="shadow" btnText="Let's Talk" />
+                        <ClendarModal btnClass="shadow bg-[#fff] rounded-full text-[#000] text-lg max-w-max hover:bg-[#FF0066] hover:text-[#fff]" btnText="Let's Talk" />
                     </div>
                 </div>
             </div>

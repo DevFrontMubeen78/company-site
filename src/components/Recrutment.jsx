@@ -32,7 +32,7 @@ const Recrutment = () => {
                                 return (
                                     <Link
                                         key={index}
-                                        className="bg-[#fff] py-2 px-10 rounded-full text"
+                                        className="py-2 px-10 bg-[#fff] rounded-full text-[#000] text-lg max-w-max hover:bg-[#FF0066] hover:text-[#fff]"
                                         to={items.path}
                                     >
                                         {items.btnName}
