@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "/images/about/logo.png";
 
 const navMenu = [
-  { name: "Home", path: "/" },
+  { name: "Work", path: "#" },
   { name: "About", path: "/about" },
   {
     name: "Our Expertise",
@@ -70,7 +70,12 @@ const Header = () => {
           {navMenu.map((item, index) => (
             <div key={index} className="relative" ref={dropdown === index ? dropdownRef : null}>
               {item.path !== "#" ? (
-                <Link to={item.path} className="py-2 px-4 font-medium text-lg hover:text-[#ff0066]">
+                <Link
+                  to={item.path}
+                  className={`py-2 px-4 font-medium text-lg hover:text-[#ff0066] ${
+                    item.name === "Contact" ? "bg-[#fff] rounded-full text-[#000] text-lg max-w-max hover:bg-[#FF0066] hover:text-[#fff]" : ""
+                  }`}
+                >
                   {item.name}
                 </Link>
               ) : (

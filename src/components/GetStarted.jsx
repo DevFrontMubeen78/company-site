@@ -17,7 +17,7 @@ const GetStarted = () => {
                             </p>
                         </div>
                         {/* <Link className="bg-[#fff] p-3 rounded-full w-max block mx-auto px-10" to="/Contact-us">Contact Us</Link> */}
-                        <Calendar btnClass="bg-[#fff] p-3 rounded-full w-max block mx-auto px-10" btnText="Contact Us" />
+                        <Calendar btnClass="bg-[#fff] rounded-full text-[#000] text-lg max-w-max hover:bg-[#FF0066] hover:text-[#fff] block mx-auto" btnText="Contact Us" />
                     </div>
                     <div className="container">
                         <div className="grid grid-cols-12 md:gap-10 gap-5">

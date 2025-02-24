@@ -79,16 +79,7 @@ const HireAndroid = () => {
                 <title>DTK - Hire Android Developers</title>
             </Helmet>
             <Header />
-            <div
-                style={{
-                    backgroundImage:
-                        "url('/images/web/hire-objective-c-developers-bg-scaled.png')",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                }}
-                className="hero padTop"
-            >
+            <div className="hero padTop bg-[#001876]">
                 <div className="container">
                     <div className="main flex flex-col gap-18">
                         <div className="content text-center flex flex-col gap-20">
@@ -199,7 +190,7 @@ const HireAndroid = () => {
                                 Need skilled Android developers? <br className="inline" /> Turn to DTechKrew to get the best talents.
                             </h1>
                         </div>
-                        <Link className="scroll-animate text py-2 bg-[#fff] px-10 rounded-full shadow-lg w-fit mx-auto md:mx-0" to="/Contact-us"> Contact Us</Link>
+                        <Link className="scroll-animate border border-[#e1e0e0] py-2 px-4 shadow bg-[#fff] rounded-full text-[#000] text-lg max-w-max hover:bg-[#FF0066] hover:text-[#fff]" to="/Contact-us"> Contact Us</Link>
                     </div>
                 </div>
             </div>

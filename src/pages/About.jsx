@@ -8,6 +8,33 @@ import Teams from "../components/Teams";
 import Recrutment from "../components/Recrutment";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet-async";
+import hamza from "../../public/images/home/ali-hamza.png";
+import awais from "../../public/images/home/awais.png";
+import ownersss from "../../public/images/home/ownersss.png";
+
+const TeamMember = [
+  {
+    memName: "Muhammad Raheel",
+    status: "Product Manager",
+    profile: "/images/home/m.raheel.png"
+  },
+  {
+    memName: "Muhammad Ramzan",
+    status: "Senior UI UX Designer",
+    profile: "/images/home/ramzan.png"
+  },
+  {
+    memName: "Ali Hassan",
+    status: "Business  Development ",
+    profile: "/images/home/ali-hasan.png"
+  },
+  {
+    memName: "Anum Noor",
+    status: "Data Science project Manager",
+    profile: "/images/home/anam.png"
+  },
+]
+
 
 const aboutContent = {
   logos: [
@@ -237,6 +264,133 @@ const About = () => {
                     </div>
                   );
                 })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* team */}
+      <div className="overflow-hidden scroll-animate team">
+        <div className="flex flex-col gap-20">
+          <div className="main">
+            <div className="flex flex-col gap-20">
+              <div className="section_content flex flex-col gap-5">
+                <h5 className="md:text-5xl sm:text-4xl text-2xl font-bold uppercase leading-snug text-center">
+                  Our <span className="text-[#FF0066]"> Team</span>
+                </h5>
+                <p className="text-lg leading-normal text-center xl:w-8/12 heading_content">
+                  We are a dedicated team of experts specializing in mobile app design, development, and AI solutions. Our goal is to deliver innovative and high-quality digital experiences that drive success for businesses.
+                </p>
+              </div>
+
+
+              {/* team member  */}
+              <div style={{
+                backgroundImage: "url('/images/home/teambg.jpg')",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }} className="padTop slide-in-left">
+                <div className="container">
+                  <div className="grid grid-cols-12 md:gap-10 gap-5">
+                    {/* own  */}
+                    <div className="own md:col-span-4 col-span-12 flex flex-col gap-5">
+                      <img className="w-full h-auto" src={ownersss} alt="" />
+                      <div className="client_content text-center flex flex-col gap-3">
+                        <div className="stat">
+                          <h6 className="font-bold text-3xl">Dilshad Raza</h6>
+                          <span className="status text-sm text-[#FF0066]">
+                            Co-Founder & CEO
+                          </span>
+                        </div>
+                        <p className="text-base">
+                          Meet our talented CEO & Co-Founder, leading innovation and excellence at Dtechkrew.
+                        </p>
+                      </div>
+                    </div>
+                    {/* member  */}
+                    <div className="member md:col-span-8 col-span-12 flex flex-col gap-5">
+                      <div className="mem_content flex flex-col gap-2">
+                        <h5 className="md:text-4xl sm:text-3xl text-2xl font-bold uppercase">
+                          meet{" "}
+                          <span className="text-[#FF0066]"> our expertise</span>
+                        </h5>
+                        <p className="md:text-md text-base leading-snug text-[#000]">
+                          Meet the experts at Dtechkrew, where innovation and
+                          expertise drive exceptional results. Our team combines
+                          years of experience with cutting-edge technology to
+                          deliver top-tier solutions. From AI to app development,
+                          we’re here to turn your ideas into reality
+                        </p>
+                      </div>
+                      <div className="members grid md:grid-cols-2 gap-10">
+                        <div className="mem1">
+                          <div className="own flex flex-col gap-5">
+                            <img className="w-full h-auto" src={awais} alt="" />
+                            <div className="client_content text-center flex flex-col gap-3">
+                              <div className="stat">
+                                <h6 className="font-bold text-3xl">M Awais</h6>
+                                <span className="status text-sm text-[#FF0066]">
+                                  Project Manager
+                                </span>
+                              </div>
+                              <p className="text-base">
+                                Meet our Project Manager, expertly guiding teams to deliver projects on time, within scope, and beyond expectations
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="mem2">
+                          <div className="own flex flex-col gap-5">
+                            <img className="w-full h-auto" src={hamza} alt="" />
+                            <div className="client_content text-center flex flex-col gap-3">
+                              <div className="stat">
+                                <h6 className="font-bold text-3xl">Ali Hamza</h6>
+                                <span className="status text-sm text-[#FF0066]">
+                                  Senior Developer
+                                </span>
+                              </div>
+                              <p className="text-base">
+                                Meet our Senior Developer, crafting robust and scalable solutions with advanced coding expertise and innovative problem-solving
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* second member section  */}
+          <div style={{
+            backgroundImage: "url('/images/home/member.jpg')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }} className="allMembers padTop slide-in-right">
+            <div className="container">
+              <div className="grid md:grid-cols-4 grid-cols-1 gap-10">
+                {
+                  TeamMember.map((items, index) => {
+                    return (
+                      <div key={index} className="mem1">
+                        <div className="own flex flex-col gap-5">
+                          <img className="w-full h-auto" src={items.profile} alt="" />
+                          <div className="client_content text-center flex flex-col gap-1">
+                            <h6 className="font-bold text-2xl">{items.memName}</h6>
+                            <span className="status text-sm text-[#000]">
+                              {items.status}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })
+                }
               </div>
             </div>
           </div>
